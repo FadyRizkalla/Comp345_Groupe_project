@@ -4,9 +4,10 @@
 #pragma once //ensures header file is only included only once during compilation
 #ifndef TOWER_H
 #define TOWER_H
-#include <vector>
 
-class Tower {
+
+class Tower{
+
 
   protected:
     int cost;
@@ -28,9 +29,12 @@ class Tower {
 
       int getRange() const; //Getters for the Range and t he level. Method is defined in the derived class
       int getLevel() const;
+      int getCost() const;
+      int getPower() const;
+      int getRateOfFire() const;
+      int getUpgradeCost() const;
 
 };
-
 
 
 #endif //TOWER_H
