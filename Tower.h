@@ -1,12 +1,14 @@
 //
 // Created by Elisa on 2025-02-04.
 //
-#pragma once //ensures header file is only included only once during compilation
+#pragma once //ensures header file is included only once during compilation
 #ifndef TOWER_H
 #define TOWER_H
+#include <vector>
 
+class Critter;
 
-class Tower{
+class Tower {
 
 
   protected:
@@ -27,12 +29,24 @@ class Tower{
       virtual void upgrade(); //Upgrading and Selling functions to be overwritten in derived class
       virtual int sell();
 
-      int getRange() const; //Getters for the Range and t he level. Method is defined in the derived class
+      // each tower redefines its own attack methods
+      virtual void attack(Critter* target) = 0; // method on how each tower attacks a critter
+      bool isTargetInRange(Critter* target); // checking if the critter is in range
+      Critter* acquireTarget(std::vector<Critter*>& enemies); // acquiring the critters to shoot at them
+
+      int getRange() const; //Getters. Method is defined in the derived class
       int getLevel() const;
       int getCost() const;
       int getPower() const;
       int getRateOfFire() const;
       int getUpgradeCost() const;
+
+      void setRange(int x); //Setters. Method is defined in the derived class
+      void setLevel(int x);
+      void setCost(int x);
+      void setPower(int x);
+      void setRateOfFire(int x);
+      void setUpgradeCost(int x);
 
 };
 
