@@ -12,6 +12,16 @@ bool Map::isWithinBounds(int x, int y) const
     return x >= 0 && x < height && y >= 0 && y < width;
 }
 
+CellType Map::getCellType(int x, int y) const
+{
+    if (!isWithinBounds(x, y))
+    {
+        std::cerr << "Error: Coordinates out of bounds. Returning SCENERY as default.\n";
+        return CellType::SCENERY;
+    }
+    return grid[x][y];
+}
+
 void Map::setCell(int x, int y, CellType type)
 {
     if (!isWithinBounds(x, y))
