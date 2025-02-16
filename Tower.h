@@ -44,6 +44,8 @@ class Tower {
       bool isValidPlacement(int coX, int coY, const Map& map, const std::vector<Tower*>& towers);
 
 
+      //Choose a tower
+      void selectTowerType();
 
       int getRange() const; //Getters. Method is defined in the derived class
       int getLevel() const;

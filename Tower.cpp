@@ -117,6 +117,7 @@ Critter* Tower::acquireTarget(std::vector<Critter*>& targets) {
 
 }
 
+//place a tower on the map
 
 bool Tower::isValidPlacement(int coX, int coY, const Map& map, const std::vector<Tower *> &towers) {
 
@@ -137,13 +138,22 @@ bool Tower::isValidPlacement(int coX, int coY, const Map& map, const std::vector
     }
   }
 
-  cout << "Tower is placed in the following coordinates: (" << x << ", " << y << ")" << endl;
+  cout << "Tower is placed in the following coordinates: (" << coX << ", " << coY << ")" << endl;
   x = coX;
   y = coY;
   return true;
 
 }
 
+//Method to choose a tower
+
+void selectTowerType() {
+
+  int k;
+  cout << "Choose a tower type (from 1 to 5):  \n1. Archer Tower (100 gold) \n2. CrossBow Tower (173 gold) \n3. Sniper Tower (210 gold) \n4. Ice Wall (275 gold) \n5. Turret Tower (500)" << endl;
+  cin >> k;
+
+}
 
 // Getter (accessor methods)
 
