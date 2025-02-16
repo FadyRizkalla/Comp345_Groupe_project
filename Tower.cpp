@@ -56,13 +56,20 @@ Tower::~Tower()= default;
 // method for upgrading a tower
 void Tower::upgrade(){
 
-  level++;
-  power += 10;
-  range += 2;
-  rateOfFire += 5;
-  upgradeCost += 50;
-  refundValue = cost * 0.6;
-  cout << "Tower upgraded to level " << level << "!" << endl;
+  if (playerFunds >= upgradeCost) {
+
+    level++;
+    power += 10;
+    range += 2;
+    rateOfFire += 5;
+    upgradeCost += 50;
+    refundValue = cost * 0.6;
+    cout << "Tower upgraded to level " << level << "!" << endl;
+
+  }
+  else {
+    cout << "Tower upgrade failed! Not enough funds" << endl;
+  }
 
 }
 
@@ -127,19 +134,25 @@ double Tower::getCost() const{
  }
 
  int Tower::getPower() const{
-   cout << "Tower's power " << power << endl;
+   cout << "Tower's power " << power <<  endl;
    return power;
  }
 
  int Tower::getRateOfFire() const{
-   cout << "Tower's rateOfFire " << rateOfFire << endl;
+   cout << "Tower's rate of fire " << rateOfFire << " projectiles per second" << endl;
    return rateOfFire;
  }
 
  double Tower::getUpgradeCost() const{
-   cout << "Tower's upgradeCost " << upgradeCost << " gold!" << endl;
+   cout << "Tower's upgrade cost " << upgradeCost << " gold!" << endl;
    return upgradeCost;
  }
+
+double Tower::getPlayerFunds() const{
+  cout << "Player has " << playerFunds << " gold" << endl;
+  return playerFunds;
+}
+
 
 
  // Setters (setting methods)

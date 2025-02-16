@@ -10,7 +10,7 @@ using namespace std;
 
 void ArcherTower::upgrade() {
 
-    if (playerFunds <= upgradeCost) {
+    if (playerFunds >= upgradeCost) {
 
         playerFunds -= upgradeCost;
         level++;
@@ -20,8 +20,9 @@ void ArcherTower::upgrade() {
         upgradeCost += 50;
         refundValue = cost * 0.6;
         cout << "Archer Tower upgraded to level " << level << "!" << endl;
-
-
+    }
+    else {
+        cout << "Tower upgrade failed! Not enough funds" << endl;
     }
 
 }

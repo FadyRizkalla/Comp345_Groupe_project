@@ -8,7 +8,7 @@
 
 void IceWall::upgrade(){
 
-    if (playerFunds <= upgradeCost) {
+    if (playerFunds >= upgradeCost) {
 
         playerFunds -= upgradeCost;
         level++;
@@ -18,7 +18,9 @@ void IceWall::upgrade(){
         refundValue = cost * 0.6;
         cout << "Archer Tower upgraded to level " << level << "!" << endl;
 
-
+    }
+    else{
+        cout << "Tower upgrade failed! Not enough funds" << endl;
     }
 
  }

@@ -11,7 +11,7 @@ using namespace std;
 
 void CrossbowTower::upgrade() {
 
-    if (playerFunds <= upgradeCost) {
+    if (playerFunds >= upgradeCost) {
 
         playerFunds -= upgradeCost;
         level++;
@@ -22,7 +22,9 @@ void CrossbowTower::upgrade() {
         refundValue = cost * 0.65;
         cout << "Crossbow Tower upgraded to level " << level << "!" << endl;
 
-
+    }
+    else {
+        cout << "Tower upgrade failed! Not enough funds" << endl;
     }
 
 }
