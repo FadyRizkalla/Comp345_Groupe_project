@@ -96,17 +96,14 @@ bool Map::validateMap() const
 {
     if (entryPoint.first == -1 || exitPoint.first == -1)
     {
-        std::cerr << "Map validation failed: Entry and Exit points are required.\n";
         return false;
     }
 
     if (!isPathConnected())
     {
-        std::cerr << "Map validation failed: Path from Entry to Exit is not connected.\n";
         return false;
     }
 
-    std::cout << "Map is valid!\n";
     return true;
 }
 
@@ -155,3 +152,5 @@ void Map::userCustomizeMap()
         setCell(x, y, static_cast<CellType>(type));
     }
 }
+
+
