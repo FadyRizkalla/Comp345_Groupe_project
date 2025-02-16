@@ -12,41 +12,48 @@ class Tower {
 
 
   protected:
-    int cost;
-    int refundValue;
+
+    int x, y;
+    double cost;
     int range;
     int power;
     int rateOfFire;
     int level;
-    int upgradeCost;
+    double upgradeCost;
+
+  private:
+  double refundValue;
+  double playerFunds;
 
     public:
       Tower(); // default constructor
-      Tower(int cost, int range, int power, int rateOfFire, int upgradeCost); //Parameterized Constructor
+      Tower(double x, double y, double cost, int range, int power, int rateOfFire, double upgradeCost, int level, double refundValue); //Parameterized Constructor
       Tower(const Tower& tower); //copy constructor
 
       virtual ~Tower(); //destructor
       virtual void upgrade(); //Upgrading and Selling functions to be overwritten in derived class
-      virtual int sell();
+      virtual double sell();
 
       // each tower redefines its own attack methods
-      virtual void attack(Critter* target) = 0; // method on how each tower attacks a critter
-      bool isTargetInRange(Critter* target); // checking if the critter is in range
-      Critter* acquireTarget(std::vector<Critter*>& enemies); // acquiring the critters to shoot at them
+      virtual void attack(Critter* critter) = 0; // method on how each tower attacks a critter
+      bool isTargetInRange(Critter* Critter); // checking if the critter is in range
+      Critter* acquireTarget(std::vector<Critter*>& targets); // Selecting the critters to attack
 
       int getRange() const; //Getters. Method is defined in the derived class
       int getLevel() const;
-      int getCost() const;
+      double getCost() const;
       int getPower() const;
       int getRateOfFire() const;
-      int getUpgradeCost() const;
+      double getUpgradeCost() const;
+      double getPlayerFunds() const;
 
       void setRange(int x); //Setters. Method is defined in the derived class
       void setLevel(int x);
-      void setCost(int x);
+      void setCost(double x);
       void setPower(int x);
       void setRateOfFire(int x);
-      void setUpgradeCost(int x);
+      void setUpgradeCost(double x);
+      void setPlayerFunds(double x);
 
 };
 

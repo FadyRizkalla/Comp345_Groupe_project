@@ -5,6 +5,7 @@
 #ifndef ARCHERTOWER_H
 #define ARCHERTOWER_H
 #include "Tower.h"
+#include "Critter.h"
 
 
 // This is the lowest tier of the towers. It is the basic level that the user is able to use.
@@ -16,14 +17,13 @@
 
 class ArcherTower : public Tower {
 
+
   public:
-    ArcherTower();
+    ArcherTower(double x, double y) : Tower(x, y, 100, 5, 5, 2, 50 ,1, 30) {};
+    void attack(Critter *Critter) override;
+    void upgrade() override;
+    double sell() override;
 
-  protected: //damage
-    int directDamage;
-    int
-
-4
 
 };
 
