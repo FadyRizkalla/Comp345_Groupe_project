@@ -40,6 +40,11 @@ int Critter::getStrength() const { return strength; }
 int Critter::getSpeed() const { return speed; }
 int Critter::getLevel() const { return level; }
 std::pair<int, int> Critter::getPosition() const { return std::make_pair(x, y); }
+void Critter::setHitPoint(int hp) { hit_point = hp; }
+void Critter::setReward(int r) { reward = r; }
+void Critter::setStrength(int s) { strength = s; }
+void Critter::setSpeed(int s) { speed = s; }
+void Critter::setLevel(int l) { level = l; }
 
 // Check if critter is dead
 bool Critter::isDead() const { return hit_point <= 0; }
