@@ -1,5 +1,6 @@
-#include "Map.h"
+#include "map.h"
 #include <queue>
+#include <limits>
 
 Map::Map(int width, int height) : width(width), height(height)
 {
@@ -45,7 +46,7 @@ bool Map::isPathConnected() const
 {
     if (entryPoint.first == -1 || exitPoint.first == -1)
     {
-        return false; 
+        return false;
     }
 
     std::vector<std::vector<bool>> visited(height, std::vector<bool>(width, false));
@@ -53,7 +54,7 @@ bool Map::isPathConnected() const
     q.push(entryPoint);
     visited[entryPoint.first][entryPoint.second] = true;
 
-    int dx[] = {-1, 1, 0, 0}; 
+    int dx[] = {-1, 1, 0, 0};
     int dy[] = {0, 0, -1, 1};
 
     while (!q.empty())
@@ -122,5 +123,25 @@ void Map::displayMap() const
             }
         }
         std::cout << '\n';
+    }
+}
+
+void Map::userCustomizeMap()
+{
+    std::cout << "Enter coordinates (row col) and type (0: SCENERY, 1: PATH, 2: ENTRY, 3: EXIT). Enter -1 to stop.\n";
+    int x, y, type;
+    while (true)
+    {
+        std::cout << "Enter: ";
+        std::cin >> x;
+        if (x == -1)
+            break;
+        std::cin >> y >> type;
+        if (type < 0 || type > 3)
+        {
+            std::cout << "Invalid type. Try again.\n";
+            continue;
+        }
+        setCell(x, y, static_cast<CellType>(type));
     }
 }

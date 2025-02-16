@@ -21,13 +21,14 @@ private:
     std::pair<int, int> exitPoint{-1, -1};
 
     bool isWithinBounds(int x, int y) const;
-    bool isPathConnected() const; 
+    bool isPathConnected() const;
 
 public:
     Map(int width, int height);
     void setCell(int x, int y, CellType type);
     bool validateMap() const;
     void displayMap() const;
+    void userCustomizeMap();
 };
 
-#endif 
+#endif
