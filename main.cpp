@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-    double playerFunds = 250;
     int width, height;
 
     std::cout << "Enter the dimensions of the map (width height): ";

@@ -24,7 +24,6 @@ class Tower {
     int level;
     double upgradeCost;
     double refundValue;
-    double playerFunds;
 
     public:
       Tower(); // default constructor
@@ -53,7 +52,6 @@ class Tower {
       int getPower() const;
       int getRateOfFire() const;
       double getUpgradeCost() const;
-      double getPlayerFunds() const;
 
       void setRange(int x); //Setters. Method is defined in the derived class
       void setLevel(int x);
@@ -61,7 +59,6 @@ class Tower {
       void setPower(int x);
       void setRateOfFire(int x);
       void setUpgradeCost(double x);
-      void setPlayerFunds(double x);
 
 };
 

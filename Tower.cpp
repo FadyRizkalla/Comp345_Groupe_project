@@ -7,7 +7,16 @@
 #include <iostream>
 #include <cmath>
 #include "Map.h"
+#include "Player.h"
+
+#include "ArcherTower.h"
+#include "CrossbowTower.h"
+#include "SniperTower.h"
+#include "IceWall.h"
+#include "TurretTower.h"
+
 using namespace std;
+
 
 // Default constructor. Makes an instance of a default tower.
 Tower::Tower() {
@@ -57,9 +66,10 @@ Tower::~Tower()= default;
 // method for upgrading a tower
 void Tower::upgrade(){
 
-  if (playerFunds >= upgradeCost) {
+  Player player;
+  if (player.getPlayerFunds() >= upgradeCost) {
 
-    playerFunds -= upgradeCost;
+    player.setPlayerFunds(player.getPlayerFunds() - upgradeCost);
     level++;
     power += 10;
     range += 2;
@@ -78,9 +88,10 @@ void Tower::upgrade(){
 
 // you can sell an item for approx. the same amount as the refund value.
 double Tower::sell(){
+  Player player;
   double sellValue = refundValue + (level * 10.4 );
   cout << "Tower selling " << sellValue << " gold! Approx. " << cost - refundValue << " less than initial cost." << endl;
-  playerFunds += sellValue;
+  player.setPlayerFunds(player.getPlayerFunds() - sellValue);
   return sellValue;
 }
 
@@ -150,8 +161,99 @@ bool Tower::isValidPlacement(int coX, int coY, const Map& map, const std::vector
 void selectTowerType() {
 
   int k;
-  cout << "Choose a tower type (from 1 to 5):  \n1. Archer Tower (100 gold) \n2. CrossBow Tower (173 gold) \n3. Sniper Tower (210 gold) \n4. Ice Wall (275 gold) \n5. Turret Tower (500)" << endl;
-  cin >> k;
+  Player player;
+  vector<Tower*> towers;
+  Tower* newTower = nullptr;
+
+  do {
+    cout << "Select a tower type:  "
+            "\n1. Archer Tower (100 gold) "
+            "\n2. CrossBow Tower (173 gold) "
+            "\n3. Sniper Tower (210 gold) "
+            "\n4. Ice Wall (275 gold) "
+            "\n5. Turret Tower (500) "
+            "\nEnter choice (1-5)" << endl;
+    cin >> k;
+
+    if (k > 5 || k < 1) {
+      cout << "Invalid input, choose a tower type between 1 and 5!" << endl;
+    }
+    else {
+      break;
+    }
+  }
+  while (k > 5 || k < 1);
+
+
+  double towerCost = 0;
+  double x, y;
+  cout << "Enter tower coordinates (x,y): ";
+  cin >> x >> y;
+
+
+  switch (k) {
+    case 1:
+      if (player.getPlayerFunds() >= 100) {
+        cout << "You have chosen Archer Tower!" << endl;
+        towerCost = 100;
+        newTower = new ArcherTower(x,y);
+      }
+      else {
+        cout << "You don't have enough funds!" << endl;
+      }
+      break;
+
+    case 2:
+
+      if (player.getPlayerFunds() >= 175) {
+        cout << "You have chosen CrossBow Tower!" << endl;
+        towerCost = 175;
+        newTower = new CrossbowTower(x,y);
+      }
+      else {
+        cout << "You don't have enough funds!" << endl;
+      }
+    break;
+
+    case 3:
+      if (player.getPlayerFunds() >= 210) {
+        cout << "You have chosen Sniper Tower!" << endl;
+        towerCost = 210;
+        newTower = new SniperTower(x,y);
+      }
+      else {
+        cout << "You don't have enough funds!" << endl;
+      }
+      break;
+
+    case 4:
+      if (player.getPlayerFunds() >= 275) {
+        cout << "You have chosen the Ice Wall!" << endl;
+        towerCost = 275;
+        newTower = new IceWall(x,y);
+      }
+      else {
+        cout << "You don't have enough funds!" << endl;
+      }
+
+      break;
+    case 5:
+      if (player.getPlayerFunds() >= 500) {
+        cout << "You have chosen Turret Tower!" << endl;
+        towerCost = 500;
+        newTower = new TurretTower(x, y);
+      }
+      else {
+        cout << "You don't have enough funds!" << endl;
+      }
+      break;
+
+    default:
+      cout << "Invalid input, choose a tower type between 1 and 5!" << endl;
+
+  }
+
+  player.setPlayerFunds(player.getPlayerFunds() - towerCost);
 
 }
 
@@ -187,14 +289,6 @@ double Tower::getCost() const{
    cout << "Tower's upgrade cost " << upgradeCost << " gold!" << endl;
    return upgradeCost;
  }
-
-double Tower::getPlayerFunds() const{
-  cout << "Player has " << playerFunds << " gold" << endl;
-  return playerFunds;
-}
-
-
-
  // Setters (setting methods)
 
  void Tower::setRange(int Range){
@@ -223,10 +317,7 @@ double Tower::getPlayerFunds() const{
    upgradeCost = UpgradeCost;
  }
 
- void Tower::setPlayerFunds(double funds) {
-  playerFunds = funds;
 
-}
 
 
 
