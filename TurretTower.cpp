@@ -21,6 +21,7 @@ void TurretTower::upgrade() {
         upgradeCost += 120;
         refundValue = cost * 0.70;
         cout << "Crossbow Tower upgraded to level " << level << "!" << endl;
+
     }
     else {
         cout << "Tower upgrade failed! Not enough funds" << endl;
