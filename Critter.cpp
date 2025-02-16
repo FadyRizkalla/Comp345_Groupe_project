@@ -1,5 +1,5 @@
 //
-/* Created by fadig on 2025-02-11.
+/* Created by fadi on 2025-02-11.
 Todo
 Implement a group of C++ classes that allows the creation of a group of critters following the
 tower defense game rules. Individual critters should have the following characteristics: reward,

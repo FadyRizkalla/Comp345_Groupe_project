@@ -24,15 +24,14 @@ public:
     // Movement function
     void move();
 
-    // Getters
     int getHitPoints() const;
     int getReward() const;
     int getStrength() const;
     int getSpeed() const;
     int getLevel() const;
 
-    // Check if the critter is dead
     bool isDead() const;
+    std::pair<int, int> Critter::getPosition() const;
 };
 
-#endif // CRITTER_H
+#endif 
