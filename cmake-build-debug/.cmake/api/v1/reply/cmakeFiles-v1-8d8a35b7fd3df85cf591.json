@@ -21,6 +21,11 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
+			"path" : "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeMinGWFindMake.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
 			"path" : "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake"
 		},
 		{
@@ -817,8 +822,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/elele/CLionProjects/Comp345_Groupe_project/cmake-build-debug",
-		"source" : "C:/Users/elele/CLionProjects/Comp345_Groupe_project"
+		"build" : "C:/Users/fadig/CLionProjects/Comp345_Groupe_project/cmake-build-debug",
+		"source" : "C:/Users/fadig/CLionProjects/Comp345_Groupe_project"
 	},
 	"version" : 
 	{

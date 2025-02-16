@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Comp345_Groupe_project::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Comp345_Groupe_project-Debug-b69893417c8dc7f7552d.json",
+					"jsonFile" : "target-Comp345_Groupe_project-Debug-000c4444a9c2ecf2a1f6.json",
 					"name" : "Comp345_Groupe_project",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/elele/CLionProjects/Comp345_Groupe_project/cmake-build-debug",
-		"source" : "C:/Users/elele/CLionProjects/Comp345_Groupe_project"
+		"build" : "C:/Users/fadig/CLionProjects/Comp345_Groupe_project/cmake-build-debug",
+		"source" : "C:/Users/fadig/CLionProjects/Comp345_Groupe_project"
 	},
 	"version" : 
 	{
