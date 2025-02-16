@@ -196,7 +196,6 @@ void selectTowerType() {
       if (player.getPlayerFunds() >= 100) {
         cout << "You have chosen Archer Tower!" << endl;
         towerCost = 100;
-        newTower = new ArcherTower(x,y);
       }
       else {
         cout << "You don't have enough funds!" << endl;
@@ -208,7 +207,6 @@ void selectTowerType() {
       if (player.getPlayerFunds() >= 175) {
         cout << "You have chosen CrossBow Tower!" << endl;
         towerCost = 175;
-        newTower = new CrossbowTower(x,y);
       }
       else {
         cout << "You don't have enough funds!" << endl;
@@ -219,7 +217,6 @@ void selectTowerType() {
       if (player.getPlayerFunds() >= 210) {
         cout << "You have chosen Sniper Tower!" << endl;
         towerCost = 210;
-        newTower = new SniperTower(x,y);
       }
       else {
         cout << "You don't have enough funds!" << endl;
@@ -230,7 +227,6 @@ void selectTowerType() {
       if (player.getPlayerFunds() >= 275) {
         cout << "You have chosen the Ice Wall!" << endl;
         towerCost = 275;
-        newTower = new IceWall(x,y);
       }
       else {
         cout << "You don't have enough funds!" << endl;
@@ -241,7 +237,6 @@ void selectTowerType() {
       if (player.getPlayerFunds() >= 500) {
         cout << "You have chosen Turret Tower!" << endl;
         towerCost = 500;
-        newTower = new TurretTower(x, y);
       }
       else {
         cout << "You don't have enough funds!" << endl;
