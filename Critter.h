@@ -11,6 +11,8 @@ private:
     int strength;
     int speed;
     int level;
+    int x;
+    int y;
 
 public:
     // Constructor
