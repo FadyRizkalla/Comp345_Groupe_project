@@ -11,13 +11,10 @@ private:
     int strength;
     int speed;
     int level;
-
-
-public:
-
     int x;
     int y;
 
+public:
     // Constructor
     Critter(int hp, int str, int spd, int lvl);
 

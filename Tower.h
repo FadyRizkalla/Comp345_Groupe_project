@@ -35,16 +35,12 @@ class Tower {
       virtual double sell();
 
       // each tower redefines its own attack methods
-      virtual void attack(Critter* critter) = 0; // method on how each tower attacks a critter
-      bool isTargetInRange(Critter* Critter); // checking if the critter is in range
-      Critter* acquireTarget(std::vector<Critter *>& targets); // Selecting the critters to attack
+      virtual void attack(Critter* critter); // method on how each tower attacks a critter
+      bool isTargetInRange(const Critter* Critter) const; // checking if the critter is in range
+      void acquireTarget(std::vector<Critter *>& targets); // Selecting the critters to attack
 
       //method to allow the user to input a tower in the map.
-      bool isValidPlacement(int coX, int coY, const Map& map, const std::vector<Tower*>& towers);
-
-
-      //Choose a tower
-      void selectTowerType();
+      bool isValidPlacement(int coX, int coY, const Map& map, const std::vector<Tower*>& towers) const;
 
       int getRange() const; //Getters. Method is defined in the derived class
       int getLevel() const;

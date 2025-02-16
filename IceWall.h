@@ -14,10 +14,10 @@ Ice tower's only purpose is making critters slower. It has similar attributes
 in terms of costs as Sniper Tower.
  */
 
-class IceWall : Tower{
+class IceWall : public Tower{
 
   public:
-    IceWall(double x, double y) : Tower(x, y, 275, 40, 50, 0, 200 ,1, 192.5) {};
+    IceWall(double x, double y);
     void upgrade() override;
     void attack(Critter* critter) override;
 };

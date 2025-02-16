@@ -4,16 +4,23 @@
 
 #include "CrossbowTower.h"
 #include "Tower.h"
+#include "Player.h"
 #include <iostream>
+
+#include "ArcherTower.h"
 using namespace std;
 
+CrossbowTower::CrossbowTower(double x, double y) {
+    Tower cbTower(x, y, 175, 15, 12, 6, 75 ,1, 122.5);
 
+}
 
 void CrossbowTower::upgrade() {
+    Player player{};
 
-    if (playerFunds >= upgradeCost) {
+    if (player.getPlayerFunds() >= upgradeCost) {
 
-        playerFunds -= upgradeCost;
+        player.setPlayerFunds(player.getPlayerFunds() - upgradeCost);
         level++;
         power += 10;
         range += 5;
@@ -30,10 +37,10 @@ void CrossbowTower::upgrade() {
 }
 
 double CrossbowTower::sell() {
-
-    double sellValue = refundValue + (level * 10.6 );
+    Player player{};
+    const double sellValue = refundValue + (level * 10.6 );
     cout << "Crossbow tower sold for " << sellValue << " gold! Approx. " << cost - refundValue << " less than initial cost." << endl;
-    playerFunds += sellValue;
+    player.setPlayerFunds(player.getPlayerFunds() - sellValue);
     return sellValue;
 }
 

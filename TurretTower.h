@@ -15,10 +15,10 @@
 */
 
 
-class TurretTower : Tower{
+class TurretTower : public Tower{
 
     public:
-    TurretTower(double x, double y) : Tower(x, y, 500, 50, 30, 60, 270 ,1, 350) {};
+    TurretTower(double x, double y);
     void upgrade() override;
     double sell() override;
 

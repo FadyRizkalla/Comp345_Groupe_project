@@ -13,9 +13,9 @@
  * deal effective direct damage.
  */
 
-class SniperTower : Tower {
+class SniperTower : public Tower {
     public:
-    SniperTower(double x, double y) : Tower(x, y, 210, 60, 20, 10, 120 ,1, 147) {};
+    SniperTower(double x, double y);
     void upgrade() override;
     double sell() override;
 };

@@ -4,15 +4,24 @@
 
 #include "ArcherTower.h"
 #include "Tower.h"
+#include "Player.h"
+
 #include <iostream>
 using namespace std;
 
 
+ArcherTower::ArcherTower(double x, double y) {
+    Tower archT(x, y, 100, 5, 5, 2, 50 ,1, 70);
+
+}
+
 void ArcherTower::upgrade() {
 
-    if (playerFunds >= upgradeCost) {
+    Player player{};
 
-        playerFunds -= upgradeCost;
+    if (player.getPlayerFunds() >= upgradeCost) {
+
+        player.setPlayerFunds(player.getPlayerFunds() - upgradeCost);
         level++;
         power += 5;
         range += 2;
@@ -28,10 +37,10 @@ void ArcherTower::upgrade() {
 }
 
 double ArcherTower::sell() {
-
+    Player player{};
     double sellValue = refundValue + (level * 10.4 );
     cout << "Archer tower sold for " << sellValue << " gold! Approx. " << cost - refundValue << " less than initial cost." << endl;
-    playerFunds += sellValue;
+    player.setPlayerFunds(player.getPlayerFunds() - sellValue);
     return sellValue;
 }
 

@@ -9,18 +9,14 @@
 #include "Map.h"
 #include "Player.h"
 
-#include "ArcherTower.h"
-#include "CrossbowTower.h"
-#include "SniperTower.h"
-#include "IceWall.h"
-#include "TurretTower.h"
-
 using namespace std;
 
 
 // Default constructor. Makes an instance of a default tower.
 Tower::Tower() {
 
+  x = 0;
+  y = 0;
   level = 0;
   cost = 0;
   range = 0;
@@ -31,7 +27,7 @@ Tower::Tower() {
 
 }
 
-// Parameritized constructor. It creates towers
+// Parameterized constructor. It creates towers
 Tower::Tower(double coX, double coY, double Cost, int Range, int Power, int RateOfFire, double UpgradeCost, int Level, double RefundValue) {
 
   x = coX;
@@ -47,9 +43,11 @@ Tower::Tower(double coX, double coY, double Cost, int Range, int Power, int Rate
 
 }
 
-// initialize copy constructor. It makes an identical copy of a already made tower
+// initialize copy constructor. It makes an identical copy of an already made tower
 Tower::Tower(const Tower& tower) {
 
+  x = tower.x;
+  y = tower.y;
   cost = tower.cost;
   range = tower.range;
   power = tower.power;
@@ -66,7 +64,7 @@ Tower::~Tower()= default;
 // method for upgrading a tower
 void Tower::upgrade(){
 
-  Player player;
+  Player player{};
   if (player.getPlayerFunds() >= upgradeCost) {
 
     player.setPlayerFunds(player.getPlayerFunds() - upgradeCost);
@@ -88,7 +86,7 @@ void Tower::upgrade(){
 
 // you can sell an item for approx. the same amount as the refund value.
 double Tower::sell(){
-  Player player;
+  Player player{};
   double sellValue = refundValue + (level * 10.4 );
   cout << "Tower selling " << sellValue << " gold! Approx. " << cost - refundValue << " less than initial cost." << endl;
   player.setPlayerFunds(player.getPlayerFunds() - sellValue);
@@ -111,14 +109,14 @@ void Tower::attack(Critter* critter) {
 }
 
 //search for critters in range
-bool Tower::isTargetInRange(Critter* critter) {
+bool Tower::isTargetInRange(const Critter* critter) const {
   double distance = sqrt(pow(critter->x - x , 2) + pow(critter->y - y , 2));
   return distance <= range;
 
 }
 
 //Get critters in range and attack them
-Critter* Tower::acquireTarget(std::vector<Critter*>& targets) {
+void Tower::acquireTarget(std::vector<Critter*>& targets) {
 
   for (Critter* critter : targets) {
     if(isTargetInRange(critter)) {
@@ -130,7 +128,7 @@ Critter* Tower::acquireTarget(std::vector<Critter*>& targets) {
 
 //place a tower on the map
 
-bool Tower::isValidPlacement(int coX, int coY, const Map& map, const std::vector<Tower *> &towers) {
+bool Tower::isValidPlacement(int coX, int coY, const Map& map, const std::vector<Tower*>& towers) const {
 
   if (!map.isWithinBounds(coX,coY)) {
     cout << "Invalid placement: Tower is out of map bounds!" << endl;
@@ -150,105 +148,7 @@ bool Tower::isValidPlacement(int coX, int coY, const Map& map, const std::vector
   }
 
   cout << "Tower is placed in the following coordinates: (" << coX << ", " << coY << ")" << endl;
-  x = coX;
-  y = coY;
   return true;
-
-}
-
-//Method to choose a tower
-
-void selectTowerType() {
-
-  int k;
-  Player player;
-  vector<Tower*> towers;
-  Tower* newTower = nullptr;
-
-  do {
-    cout << "Select a tower type:  "
-            "\n1. Archer Tower (100 gold) "
-            "\n2. CrossBow Tower (173 gold) "
-            "\n3. Sniper Tower (210 gold) "
-            "\n4. Ice Wall (275 gold) "
-            "\n5. Turret Tower (500) "
-            "\nEnter choice (1-5)" << endl;
-    cin >> k;
-
-    if (k > 5 || k < 1) {
-      cout << "Invalid input, choose a tower type between 1 and 5!" << endl;
-    }
-    else {
-      break;
-    }
-  }
-  while (k > 5 || k < 1);
-
-
-  double towerCost = 0;
-  double x, y;
-  cout << "Enter tower coordinates (x,y): ";
-  cin >> x >> y;
-
-
-  switch (k) {
-    case 1:
-      if (player.getPlayerFunds() >= 100) {
-        cout << "You have chosen Archer Tower!" << endl;
-        towerCost = 100;
-      }
-      else {
-        cout << "You don't have enough funds!" << endl;
-      }
-      break;
-
-    case 2:
-
-      if (player.getPlayerFunds() >= 175) {
-        cout << "You have chosen CrossBow Tower!" << endl;
-        towerCost = 175;
-      }
-      else {
-        cout << "You don't have enough funds!" << endl;
-      }
-    break;
-
-    case 3:
-      if (player.getPlayerFunds() >= 210) {
-        cout << "You have chosen Sniper Tower!" << endl;
-        towerCost = 210;
-      }
-      else {
-        cout << "You don't have enough funds!" << endl;
-      }
-      break;
-
-    case 4:
-      if (player.getPlayerFunds() >= 275) {
-        cout << "You have chosen the Ice Wall!" << endl;
-        towerCost = 275;
-      }
-      else {
-        cout << "You don't have enough funds!" << endl;
-      }
-
-      break;
-    case 5:
-      if (player.getPlayerFunds() >= 500) {
-        cout << "You have chosen Turret Tower!" << endl;
-        towerCost = 500;
-      }
-      else {
-        cout << "You don't have enough funds!" << endl;
-      }
-      break;
-
-    default:
-      cout << "Invalid input, choose a tower type between 1 and 5!" << endl;
-
-  }
-
-  player.setPlayerFunds(player.getPlayerFunds() - towerCost);
 
 }
 

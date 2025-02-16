@@ -14,10 +14,10 @@
  *slowing or anything else. However, they are most effective in normal critters.
 */
 
-class CrossbowTower : Tower {
+class CrossbowTower : public Tower {
 
     public:
-    CrossbowTower(double x, double y) : Tower(x, y, 175, 15, 12, 6, 75 ,1, 122.5) {};
+    CrossbowTower(double x, double y);
     void upgrade() override;
     double sell() override;
 };

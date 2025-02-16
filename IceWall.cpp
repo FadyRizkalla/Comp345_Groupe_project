@@ -5,12 +5,20 @@
 #include "IceWall.h"
 #include "Tower.h"
 #include "Critter.h"
+#include "Player.h"
+
+IceWall::IceWall(double x, double y) {
+    Tower iceWall(x, y, 275, 40, 50, 0, 200 ,1, 192.5);
+
+}
 
 void IceWall::upgrade(){
 
-    if (playerFunds >= upgradeCost) {
+    Player player{};
 
-        playerFunds -= upgradeCost;
+    if (player.getPlayerFunds() >= upgradeCost) {
+
+        player.setPlayerFunds(player.getPlayerFunds() - upgradeCost);
         level++;
         power += 5;
         range += 10;
