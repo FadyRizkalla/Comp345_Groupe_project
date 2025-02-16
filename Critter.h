@@ -31,6 +31,13 @@ public:
     int getSpeed() const;
     int getLevel() const;
 
+    // Setters
+    void setHitPoints(int hp);
+    void setReward(int rw);
+    void setStrength(int str);
+    void setSpeed(int spd);
+    void setLevel(int lvl);
+
     // Check if the critter is dead
     bool isDead() const;
 };
