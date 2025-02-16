@@ -20,10 +20,8 @@ class Tower {
     int rateOfFire;
     int level;
     double upgradeCost;
-
-  private:
-  double refundValue;
-  double playerFunds;
+    double refundValue;
+    double playerFunds;
 
     public:
       Tower(); // default constructor
@@ -37,7 +35,7 @@ class Tower {
       // each tower redefines its own attack methods
       virtual void attack(Critter* critter) = 0; // method on how each tower attacks a critter
       bool isTargetInRange(Critter* Critter); // checking if the critter is in range
-      Critter* acquireTarget(std::vector<Critter*>& targets); // Selecting the critters to attack
+      Critter* acquireTarget(std::vector<Critter *>& targets); // Selecting the critters to attack
 
       int getRange() const; //Getters. Method is defined in the derived class
       int getLevel() const;

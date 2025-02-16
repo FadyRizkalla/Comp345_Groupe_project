@@ -22,16 +22,18 @@ Tower::Tower() {
 }
 
 // Parameritized constructor. It creates towers
-Tower::Tower(double x, double y, double cost, int range, int power, int rateOfFire, double upgradeCost, int level, double refundValue) {
+Tower::Tower(double coX, double coY, double Cost, int Range, int Power, int RateOfFire, double UpgradeCost, int Level, double RefundValue) {
 
-  x = x;
-  y = y;
-  cost = cost;
-  range = range;
-  power = power;
-  rateOfFire = rateOfFire;
-  upgradeCost = upgradeCost;
-  level = level;
+  x = coX;
+  y = coY;
+  cost = Cost;
+  range = Range;
+  power = Power;
+  rateOfFire = RateOfFire;
+  upgradeCost = UpgradeCost;
+  level = Level;
+  refundValue = RefundValue;
+
 
 }
 
@@ -74,7 +76,7 @@ double Tower::sell(){
 }
 
 //towers attack critters
-void attack(Critter* critter) {
+void Tower::attack(Critter* critter) {
 
   for (int i = 0; i < rateOfFire; i++) {
 
@@ -89,14 +91,14 @@ void attack(Critter* critter) {
 }
 
 //search for critters in range
-bool isTargetInRange(Critter* critter) {
+bool Tower::isTargetInRange(Critter* critter) {
   double distance = sqrt(pow(critter->x - x , 2) + pow(critter->y - y , 2));
   return distance <= range;
 
 }
 
 //Get critters in range and attack them
-Critter* acquireTarget(std::vector<Critter*> targets) {
+Critter* Tower::acquireTarget(std::vector<Critter*>& targets) {
 
   for (Critter* critter : targets) {
     if(isTargetInRange(critter)) {
@@ -118,7 +120,7 @@ int Tower::getLevel() const{
   return level;
 }
 
-int Tower::getCost() const{
+double Tower::getCost() const{
   cout << "Tower's cost " << cost << " gold!" << endl;
   return cost;
 
@@ -134,7 +136,7 @@ int Tower::getCost() const{
    return rateOfFire;
  }
 
- int Tower::getUpgradeCost() const{
+ double Tower::getUpgradeCost() const{
    cout << "Tower's upgradeCost " << upgradeCost << " gold!" << endl;
    return upgradeCost;
  }
@@ -142,34 +144,34 @@ int Tower::getCost() const{
 
  // Setters (setting methods)
 
- void Tower::setRange(int range){
+ void Tower::setRange(int Range){
 
-   range = range;
+   range = Range;
  }
 
- void Tower::setLevel(int level){
-   level = level;
+ void Tower::setLevel(int Level){
+   level = Level;
  }
 
 
- void Tower::setCost(double cost){
-   cost = cost;
+ void Tower::setCost(double Cost){
+   cost = Cost;
  }
 
- void Tower::setPower(int power){
-   power = power;
+ void Tower::setPower(int Power){
+   power = Power;
  }
 
- void Tower::setRateOfFire(int rateOfFire){
-   rateOfFire = rateOfFire;
+ void Tower::setRateOfFire(int RateOfFire){
+   rateOfFire = RateOfFire;
  }
 
- void Tower::setUpgradeCost(double upgradeCost){
-   upgradeCost = upgradeCost;
+ void Tower::setUpgradeCost(double UpgradeCost){
+   upgradeCost = UpgradeCost;
  }
 
- void Tower::setPlayerFunds(double x) {
-  playerFunds = x;
+ void Tower::setPlayerFunds(double funds) {
+  playerFunds = funds;
 
 }
 
