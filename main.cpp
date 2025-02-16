@@ -3,30 +3,25 @@
 
 int main()
 {
-    Map gameMap(5, 5);
+    int width, height;
 
-    gameMap.setCell(0, 0, CellType::ENTRY);
-    gameMap.setCell(4, 4, CellType::EXIT);
+    std::cout << "Enter the dimensions of the map (width height): ";
+    std::cin >> width >> height;
 
-    gameMap.setCell(0, 1, CellType::PATH);
-    gameMap.setCell(1, 1, CellType::PATH);
-    gameMap.setCell(2, 1, CellType::PATH);
-    gameMap.setCell(3, 1, CellType::PATH);
-    gameMap.setCell(4, 1, CellType::PATH);
-    gameMap.setCell(4, 2, CellType::PATH);
-    gameMap.setCell(4, 3, CellType::PATH);
-    gameMap.setCell(4, 4, CellType::PATH);
+    Map gameMap(width, height);
 
-    std::cout << "Generated Map:" << std::endl;
+    gameMap.userCustomizeMap();
+
+    std::cout << "\nCustomized Map:\n";
+    
     gameMap.displayMap();
-
     if (gameMap.validateMap())
     {
-        std::cout << "The map is valid!" << std::endl;
+        std::cout << "The map is valid!\n";
     }
     else
     {
-        std::cout << "The map is not valid!" << std::endl;
+        std::cout << "The map is not valid!\n";
     }
 
     return 0;
