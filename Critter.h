@@ -39,7 +39,7 @@ public:
 
     // Check if the critter is dead
     bool isDead() const;
-    std::pair<int, int> Critter::getPosition() const;
+    std::pair<int, int> getPosition() const;
 };
 
 #endif 
