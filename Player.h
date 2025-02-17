@@ -8,13 +8,15 @@
 
 
 class Player {
-  private:
+    private:
     double playerFunds;
 
     public:
-    void setPlayerFunds(double);
+    void setPlayerFunds(double funds);
     double getPlayerFunds();
     void displayPlayerFunds();
+    void subtractPlayerFunds(double amount);
+    bool hasEnoughFunds(double amount);
 
 };
 

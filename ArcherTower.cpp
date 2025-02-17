@@ -10,18 +10,14 @@
 using namespace std;
 
 
-ArcherTower::ArcherTower(double x, double y) {
-    Tower archT(x, y, 100, 5, 5, 2, 50 ,1, 70);
+ArcherTower::ArcherTower(double x, double y): Tower(x, y, 100, 5, 5, 2, 50 ,1, 70){}
 
-}
+void ArcherTower::upgrade(Player &player) {
 
-void ArcherTower::upgrade() {
-
-    Player player{};
 
     if (player.getPlayerFunds() >= upgradeCost) {
 
-        player.setPlayerFunds(player.getPlayerFunds() - upgradeCost);
+        player.subtractPlayerFunds(upgradeCost);
         level++;
         power += 5;
         range += 2;
@@ -36,11 +32,10 @@ void ArcherTower::upgrade() {
 
 }
 
-double ArcherTower::sell() {
-    Player player{};
+double ArcherTower::sell(Player &player) {
     double sellValue = refundValue + (level * 10.4 );
     cout << "Archer tower sold for " << sellValue << " gold! Approx. " << cost - refundValue << " less than initial cost." << endl;
-    player.setPlayerFunds(player.getPlayerFunds() - sellValue);
+    player.subtractPlayerFunds(sellValue);
     return sellValue;
 }
 

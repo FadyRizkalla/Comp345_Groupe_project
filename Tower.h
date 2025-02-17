@@ -4,6 +4,7 @@
 #pragma once //ensures header file is included only once during compilation
 #ifndef TOWER_H
 #define TOWER_H
+#include <Player.h>
 #include <vector>
 #include "Map.h"
 #include "Critter.h"
@@ -31,8 +32,8 @@ class Tower {
       Tower(const Tower& tower); //copy constructor
 
       virtual ~Tower(); //destructor
-      virtual void upgrade(); //Upgrading and Selling functions to be overwritten in derived class
-      virtual double sell();
+      virtual void upgrade(Player &player); //Upgrading and Selling functions to be overwritten in derived class
+      virtual double sell(Player &player);
 
       // each tower redefines its own attack methods
       virtual void attack(Critter* critter); // method on how each tower attacks a critter

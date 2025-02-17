@@ -18,7 +18,7 @@ class IceWall : public Tower{
 
   public:
     IceWall(double x, double y);
-    void upgrade() override;
+    void upgrade(Player &player) override;
     void attack(Critter* critter) override;
 };
 

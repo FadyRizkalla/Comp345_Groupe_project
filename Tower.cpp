@@ -62,12 +62,11 @@ Tower::~Tower()= default;
 
 
 // method for upgrading a tower
-void Tower::upgrade(){
+void Tower::upgrade(Player &player){
 
-  Player player{};
   if (player.getPlayerFunds() >= upgradeCost) {
 
-    player.setPlayerFunds(player.getPlayerFunds() - upgradeCost);
+    player.subtractPlayerFunds(upgradeCost);
     level++;
     power += 10;
     range += 2;
@@ -85,11 +84,11 @@ void Tower::upgrade(){
 
 
 // you can sell an item for approx. the same amount as the refund value.
-double Tower::sell(){
-  Player player{};
+double Tower::sell(Player &player){
+
   double sellValue = refundValue + (level * 10.4 );
   cout << "Tower selling " << sellValue << " gold! Approx. " << cost - refundValue << " less than initial cost." << endl;
-  player.setPlayerFunds(player.getPlayerFunds() - sellValue);
+  player.subtractPlayerFunds(sellValue);
   return sellValue;
 }
 

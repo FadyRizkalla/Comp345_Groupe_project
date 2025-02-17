@@ -11,10 +11,13 @@ private:
     int strength;
     int speed;
     int level;
+
+
+public:
+
     int x;
     int y;
 
-public:
     // Constructor
     Critter(int hp, int str, int spd, int lvl);
 
@@ -24,6 +27,7 @@ public:
     // Movement function
     void move();
 
+    // Getters
     int getHitPoints() const;
     int getReward() const;
     int getStrength() const;
@@ -42,4 +46,4 @@ public:
     std::pair<int, int> getPosition() const;
 };
 
-#endif 
+#endif // CRITTER_H

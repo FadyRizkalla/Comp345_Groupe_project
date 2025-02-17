@@ -18,8 +18,8 @@ class CrossbowTower : public Tower {
 
     public:
     CrossbowTower(double x, double y);
-    void upgrade() override;
-    double sell() override;
+    void upgrade(Player &player) override;
+    double sell(Player &player) override;
 };
 
 

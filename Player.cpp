@@ -20,3 +20,11 @@ void Player::displayPlayerFunds(){
   cout << "Player has: " << playerFunds << " gold!" << endl;
 }
 
+void Player::subtractPlayerFunds(double x){
+  playerFunds -= x;
+}
+
+bool Player::hasEnoughFunds(double x){
+  return playerFunds >= x;
+}
+
