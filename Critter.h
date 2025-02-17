@@ -31,7 +31,7 @@ public:
     int getLevel() const;
 
     // Setters
-    void setHitPoints(int hp);
+    void setHitPoint(int hp);
     void setReward(int rw);
     void setStrength(int str);
     void setSpeed(int spd);
