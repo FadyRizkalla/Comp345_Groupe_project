@@ -9,7 +9,8 @@ enum class CellType
     SCENERY,
     PATH,
     ENTRY,
-    EXIT
+    EXIT,
+    TOWER
 };
 
 class Map

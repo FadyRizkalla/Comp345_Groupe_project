@@ -127,6 +127,9 @@ void Map::displayMap() const
             case CellType::EXIT:
                 std::cout << "X ";
                 break;
+            case CellType::TOWER:
+                std::cout << "T ";
+                break;
             }
         }
         std::cout << '\n';
