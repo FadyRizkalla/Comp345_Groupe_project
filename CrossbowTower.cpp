@@ -10,17 +10,14 @@
 #include "ArcherTower.h"
 using namespace std;
 
-CrossbowTower::CrossbowTower(double x, double y) {
-    Tower cbTower(x, y, 175, 15, 12, 6, 75 ,1, 122.5);
+CrossbowTower::CrossbowTower(double x, double y): Tower(x, y, 175, 15, 12, 6, 75 ,1, 122.5){}
 
-}
+void CrossbowTower::upgrade(Player &player) {
 
-void CrossbowTower::upgrade() {
-    Player player{};
 
     if (player.getPlayerFunds() >= upgradeCost) {
 
-        player.setPlayerFunds(player.getPlayerFunds() - upgradeCost);
+        player.subtractPlayerFunds(upgradeCost);
         level++;
         power += 10;
         range += 5;
@@ -36,11 +33,10 @@ void CrossbowTower::upgrade() {
 
 }
 
-double CrossbowTower::sell() {
-    Player player{};
+double CrossbowTower::sell(Player &player) {
     const double sellValue = refundValue + (level * 10.6 );
     cout << "Crossbow tower sold for " << sellValue << " gold! Approx. " << cost - refundValue << " less than initial cost." << endl;
-    player.setPlayerFunds(player.getPlayerFunds() - sellValue);
+    player.subtractPlayerFunds(sellValue);
     return sellValue;
 }
 

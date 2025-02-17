@@ -20,8 +20,8 @@ class ArcherTower : public Tower {
   public:
     ArcherTower(double x, double y);
 
-    void upgrade() override;
-    double sell() override;
+    void upgrade(Player &player) override;
+    double sell(Player &player) override;
 
 
 };
