@@ -1,3 +1,4 @@
+#include <SFML/Graphics.hpp>
 #include "Map.h"
 #include "Player.h"
 #include "Tower.h"
@@ -59,7 +60,6 @@ int main()
         tower->placeTower(gameMap);
     }
 
-
     cout << "\nFinal Map with Towers:\n";
     gameMap.displayMap();
 
@@ -87,6 +87,34 @@ int main()
     cout << "Level: " << critters[1]->getLevel() << "\n";
     cout << "Reward: " << critters[1]->getReward() << "\n";
     cout << "-----------------------------\n";
+
+    // ========== SFML WINDOW ==========
+    sf::RenderWindow window(sf::VideoMode({800, 600}), "My window");
+
+    // run the program as long as the window is open
+    while (window.isOpen())
+    {
+        // check all the window's events that were triggered since the last iteration of the loop
+        while (const std::optional event = window.pollEvent())
+        {
+            // "close requested" event: we close the window
+            if (event->is<sf::Event::Closed>())
+                window.close();
+        }
+
+        // clear the window with black color
+        sf::CircleShape circle(50.f);
+        circle.setFillColor(sf::Color::Green);
+        circle.setPosition({100, 100});
+        window.draw(circle);
+
+
+        // draw everything here...
+        // window.draw(...);
+
+        // end the current frame
+        window.display();
+    }
 
     return 0;
 }
