@@ -9,6 +9,7 @@
 #include "TurretTower.h"
 #include "Ogre_Critter.h"
 #include "Goblin_Critter.h"
+#include <SFML/Graphics.hpp>
 
 #include <iostream>
 #include <cstdlib>
