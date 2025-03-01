@@ -1,20 +1,5 @@
 //
-/* Created by fadi on 2025-02-11.
-Todo
-Implement a group of C++ classes that allows the creation of a group of critters following the
-tower defense game rules. Individual critters should have the following characteristics: reward,
-hit point, strength, speed, level, etc. The critter group generator is a component of the game that
-is called at the beginning of each wave to create a group of critters whose characteristics are
-adapted to the level of difficulty of the next wave (assuming that every successive wave is of
-increasing difficulty). The critter group is a list of critters that will appear sequentially one after
-the other on the entry point of the map when the game is played. When it is its turn to act, a
-critter should determine where it will move, assuming that it knows where the exit point is of the
-map, then move at a certain speed. A critter may be attacked by towers, which will reduce its hit
-points, eventually dying if it reaches zero hit points. For every critter killed, the player should get
-a coin reward proportional to the level of the critter. Once a critter reaches the exit point, it steals
-coins from the player at a rate determined by the critter’s strength.
-
-*/
+// Created by fadi on 2025-02-11.
 
 #include "Critter.h"
 

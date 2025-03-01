@@ -127,28 +127,40 @@ void Tower::acquireTarget(std::vector<Critter*>& targets) {
 
 //place a tower on the map
 
-bool Tower::isValidPlacement(int coX, int coY, const Map& map, const std::vector<Tower*>& towers) const {
-
-  if (!map.isWithinBounds(coX,coY)) {
+bool Tower::isValidPlacement(int coX, int coY, const Map &map, const std::vector<Tower *> &towers) const
+{
+  if (!map.isWithinBounds(coX, coY))
+  {
     cout << "Invalid placement: Tower is out of map bounds!" << endl;
     return false;
   }
 
-  if (map.getCellType(x,y) == CellType::PATH) {
-    cout << "Invalid placement: Tower cannot be placed on the path!" << endl;
+  if (map.getCellType(coX, coY) != CellType::SCENERY)
+  {
+    cout << "Invalid placement: Tower can only be placed on SCENERY cells!" << endl;
+    return false;
   }
 
-  for(const Tower* tower : towers) {
-    if (tower -> x == coX && tower -> y == coY) {
-
-      cout << "Invalid placement: There is already a tower here" << endl;
+  for (const Tower *tower : towers)
+  {
+    if (tower->x == coX && tower->y == coY)
+    {
+      cout << "Invalid placement: There is already a tower here!" << endl;
       return false;
     }
   }
 
-  cout << "Tower is placed in the following coordinates: (" << coX << ", " << coY << ")" << endl;
   return true;
+}
 
+// Place the tower on the map
+void Tower::placeTower(Map &map)
+{
+  if (map.getCellType(x, y) == CellType::SCENERY)
+  {
+    map.setCell(x, y, CellType::TOWER);
+    cout << "Tower successfully placed at (" << x << ", " << y << ")" << endl;
+  }
 }
 
 // Getter (accessor methods)
