@@ -14,17 +14,15 @@ enum class GameState {
 };
 
 int main() {
-    // Create a window
     sf::RenderWindow window(sf::VideoMode({800, 600}), "Tower Defense");
 
-    // Load font
     sf::Font font;
     if (!font.openFromFile("arial.ttf")) {
         std::cerr << "Error loading font!\n";
         return -1;
     }
 
-    // ---------------- Main Menu UI ----------------
+    // UI Elements
     sf::Text title(font, "Tower Defense", 50);
     title.setFillColor(sf::Color::White);
     title.setPosition({250.f, 100.f});
@@ -37,7 +35,7 @@ int main() {
     startText.setFillColor(sf::Color::Black);
     startText.setPosition({370.f, 310.f});
 
-    // ---------------- Input Screen UI ----------------
+    // Map Input UI
     sf::Text lengthText(font, "Length:", 30);
     lengthText.setFillColor(sf::Color::White);
     lengthText.setPosition({200.f, 200.f});
@@ -46,7 +44,6 @@ int main() {
     widthText.setFillColor(sf::Color::White);
     widthText.setPosition({200.f, 300.f});
 
-    // ✅ **White Boxes for Input**
     sf::RectangleShape lengthBox({150.f, 40.f});
     lengthBox.setFillColor(sf::Color::White);
     lengthBox.setPosition({350.f, 200.f});
@@ -55,18 +52,16 @@ int main() {
     widthBox.setFillColor(sf::Color::White);
     widthBox.setPosition({350.f, 300.f});
 
-    // ✅ **Black Input Text**
     sf::Text lengthInput(font, "", 30);
     lengthInput.setFillColor(sf::Color::Black);
-    lengthInput.setPosition({365.f, 205.f}); // Center inside the box
+    lengthInput.setPosition({365.f, 205.f});
 
     sf::Text widthInput(font, "", 30);
     widthInput.setFillColor(sf::Color::Black);
-    widthInput.setPosition({365.f, 305.f}); // Center inside the box
+    widthInput.setPosition({365.f, 305.f});
 
     std::string lengthStr, widthStr;
 
-    // Done Button
     sf::RectangleShape doneButton({200.f, 50.f});
     doneButton.setFillColor(sf::Color::White);
     doneButton.setPosition({300.f, 400.f});
@@ -75,22 +70,37 @@ int main() {
     doneText.setFillColor(sf::Color::Black);
     doneText.setPosition({375.f, 410.f});
 
+    // Validate Button
+    sf::RectangleShape validateButton({200.f, 50.f});
+    validateButton.setFillColor(sf::Color::White);
+    validateButton.setPosition({300.f, 520.f}); // Below the grid
+
+    sf::Text validateText(font, "Validate", 30);
+    validateText.setFillColor(sf::Color::Black);
+    validateText.setPosition({355.f, 530.f}); // Centered on the button
+
+    // Validation Result Text
+    sf::Text validationResult(font, "", 24);
+    validationResult.setFillColor(sf::Color::White);
+    validationResult.setPosition({250.f, 580.f}); // Below the button
+
+
     bool typingLength = true;
     GameState gameState = GameState::MENU;
-
-    // ✅ **Map Pointer (Initially Null)**
     Map* gameMap = nullptr;
 
-    // ✅ **Grid Properties**
+    // Grid properties
     int gridWidth = 0, gridHeight = 0;
     std::vector<sf::RectangleShape> gridCells;
-    std::vector<std::vector<bool>> cellStates;  // ✅ Stores cell colors (true = white, false = default)
-    const int maxCellSize = 60;  // 🔥 Increased max cell size for a larger grid
+    std::vector<std::vector<bool>> cellStates;
+    const int maxCellSize = 60;
 
-    // ✅ **Instruction Text Above Grid**
-    sf::Text instructionText(font, "Please click the cells for the path", 24);
+    sf::Text instructionText(font, "Click to set Path (White), Entry (Green), Exit (Red)", 24);
     instructionText.setFillColor(sf::Color::White);
-    instructionText.setPosition({200.f, 20.f}); // Centered at the top
+    instructionText.setPosition({100.f, 20.f});
+
+    std::pair<int, int> entryPoint = {-1, -1};
+    std::pair<int, int> exitPoint = {-1, -1};
 
     while (window.isOpen()) {
         while (const std::optional<sf::Event> event = window.pollEvent()) {
@@ -107,30 +117,28 @@ int main() {
                 }
                 else if (gameState == GameState::MAP_INPUT) {
                     if (doneButton.getGlobalBounds().contains(mousePos) && !lengthStr.empty() && !widthStr.empty()) {
-                        int length = std::stoi(lengthStr); // Convert string to int
-                        int width = std::stoi(widthStr);   // Convert string to int
+                        int length = std::stoi(lengthStr);
+                        int width = std::stoi(widthStr);
 
-                        // ✅ **Create Map Object**
                         gameMap = new Map(length, width);
                         gridWidth = width;
                         gridHeight = length;
 
                         std::cout << "Map Created with size: " << length << " x " << width << std::endl;
 
-                        // ✅ **Build Larger Grid**
                         gridCells.clear();
-                        cellStates.assign(gridHeight, std::vector<bool>(gridWidth, false)); // Set all cells to default (false)
+                        cellStates.assign(gridHeight, std::vector<bool>(gridWidth, false));
 
-                        int cellSize = std::min(maxCellSize, std::min(600 / gridHeight, 800 / gridWidth)); // 🔥 Larger grid calculation
+                        int cellSize = std::min(maxCellSize, std::min(600 / gridHeight, 800 / gridWidth));
 
                         float startX = (800 - (gridWidth * cellSize)) / 2;
-                        float startY = (600 - (gridHeight * cellSize)) / 2 + 30; // Adjusted to avoid overlapping text
+                        float startY = (600 - (gridHeight * cellSize)) / 2 + 30;
 
                         for (int i = 0; i < gridHeight; i++) {
                             for (int j = 0; j < gridWidth; j++) {
                                 sf::RectangleShape cell(sf::Vector2f(cellSize, cellSize));
                                 cell.setFillColor(sf::Color::Transparent);
-                                cell.setOutlineThickness(2);  // 🔥 Thicker outline for visibility
+                                cell.setOutlineThickness(2);
                                 cell.setOutlineColor(sf::Color::White);
                                 cell.setPosition(sf::Vector2f(startX + j * cellSize, startY + i * cellSize));
                                 gridCells.push_back(cell);
@@ -141,40 +149,61 @@ int main() {
                     }
                 }
                 else if (gameState == GameState::DISPLAY_GRID) {
-                    // ✅ Detect which cell was clicked
-                    for (int i = 0; i < gridHeight; i++) {
-                        for (int j = 0; j < gridWidth; j++) {
-                            int index = i * gridWidth + j;
-                            if (gridCells[index].getGlobalBounds().contains(mousePos)) {
-                                // Toggle cell color
-                                cellStates[i][j] = !cellStates[i][j];
-                                gridCells[index].setFillColor(cellStates[i][j] ? sf::Color::White : sf::Color::Transparent);
-                            }
-                        }
+    if (validateButton.getGlobalBounds().contains(mousePos)) {
+        if (gameMap) {
+            bool isValid = gameMap->validateMap();
+            validationResult.setString(isValid ? "Map is valid!" : "Map is NOT valid!");
+            validationResult.setFillColor(isValid ? sf::Color::Green : sf::Color::Red);
+        }
+    }
+
+    for (int i = 0; i < gridHeight; i++) {
+        for (int j = 0; j < gridWidth; j++) {
+            int index = i * gridWidth + j;
+            if (gridCells[index].getGlobalBounds().contains(mousePos)) {
+                if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::E)) { // Entry point
+                    if (entryPoint.first != -1) {
+                        gameMap->setCell(entryPoint.first, entryPoint.second, CellType::SCENERY);
+                        gridCells[entryPoint.first * gridWidth + entryPoint.second].setFillColor(sf::Color::Transparent);
                     }
+                    gridCells[index].setFillColor(sf::Color::Green);
+                    gameMap->setCell(i, j, CellType::ENTRY);
+                    entryPoint = {i, j};
+                }
+                else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::X)) { // Exit point
+                    if (exitPoint.first != -1) {
+                        gameMap->setCell(exitPoint.first, exitPoint.second, CellType::SCENERY);
+                        gridCells[exitPoint.first * gridWidth + exitPoint.second].setFillColor(sf::Color::Transparent);
+                    }
+                    gridCells[index].setFillColor(sf::Color::Red);
+                    gameMap->setCell(i, j, CellType::EXIT);
+                    exitPoint = {i, j};
+                }
+                else { // Path toggle
+                    cellStates[i][j] = !cellStates[i][j];
+                    gameMap->setCell(i, j, cellStates[i][j] ? CellType::PATH : CellType::SCENERY);
+                    gridCells[index].setFillColor(cellStates[i][j] ? sf::Color::White : sf::Color::Transparent);
                 }
             }
+        }
+    }
+}
 
-            // ✅ **SFML 3.0 Text Input Handling**
+            }
+
             if (gameState == GameState::MAP_INPUT) {
                 if (auto textEvent = event->getIf<sf::Event::TextEntered>()) {
                     char inputChar = static_cast<char>(textEvent->unicode);
 
-                    if (std::isdigit(inputChar)) { // Allow only numbers
-                        if (typingLength) {
-                            if (lengthStr.size() < 3) lengthStr += inputChar;
-                        } else {
-                            if (widthStr.size() < 3) widthStr += inputChar;
-                        }
+                    if (std::isdigit(inputChar)) {
+                        if (typingLength && lengthStr.size() < 3) lengthStr += inputChar;
+                        else if (!typingLength && widthStr.size() < 3) widthStr += inputChar;
                     }
-                    else if (inputChar == '\b') { // Backspace key
-                        if (typingLength && !lengthStr.empty()) {
-                            lengthStr.pop_back();
-                        } else if (!typingLength && !widthStr.empty()) {
-                            widthStr.pop_back();
-                        }
+                    else if (inputChar == '\b') {
+                        if (typingLength && !lengthStr.empty()) lengthStr.pop_back();
+                        else if (!typingLength && !widthStr.empty()) widthStr.pop_back();
                     }
-                    else if (inputChar == '\r' || inputChar == '\n') { // Enter key switches input field
+                    else if (inputChar == '\r' || inputChar == '\n') {
                         typingLength = !typingLength;
                     }
 
@@ -184,7 +213,6 @@ int main() {
             }
         }
 
-        // Render UI
         window.clear(sf::Color::Black);
 
         if (gameState == GameState::MENU) {
@@ -203,17 +231,19 @@ int main() {
             window.draw(doneText);
         }
         else if (gameState == GameState::DISPLAY_GRID) {
-            window.draw(instructionText); // ✅ Draw instruction text
-            for (const auto& cell : gridCells) {
-                window.draw(cell);
-            }
+            window.draw(instructionText);
+            for (const auto& cell : gridCells) window.draw(cell);
+
+            // Draw Validate Button
+            window.draw(validateButton);
+            window.draw(validateText);
+            window.draw(validationResult); // Display validation result
         }
+
 
         window.display();
     }
 
-    // ✅ **Cleanup Memory**
     delete gameMap;
-
     return 0;
 }

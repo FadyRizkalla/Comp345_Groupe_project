@@ -432,8 +432,8 @@ _deps/vorbis-build/lib/clean: _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/c
 # All Build rule for target.
 CMakeFiles/Comp345_Groupe_project.dir/all: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all
 CMakeFiles/Comp345_Groupe_project.dir/all: _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/all
-CMakeFiles/Comp345_Groupe_project.dir/all: _deps/freetype-build/CMakeFiles/freetype.dir/all
 CMakeFiles/Comp345_Groupe_project.dir/all: _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
+CMakeFiles/Comp345_Groupe_project.dir/all: _deps/freetype-build/CMakeFiles/freetype.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=1,2,3,4,5 "Built target Comp345_Groupe_project"
