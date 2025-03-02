@@ -4,11 +4,13 @@
 #include <iostream>
 #include <cctype>
 #include <optional>
+#include "map.h"  // Include the Map class
 
 // Enum for tracking game state
 enum class GameState {
     MENU,
-    MAP_INPUT
+    MAP_INPUT,
+    DISPLAY_GRID
 };
 
 int main() {
@@ -76,6 +78,20 @@ int main() {
     bool typingLength = true;
     GameState gameState = GameState::MENU;
 
+    // ✅ **Map Pointer (Initially Null)**
+    Map* gameMap = nullptr;
+
+    // ✅ **Grid Properties**
+    int gridWidth = 0, gridHeight = 0;
+    std::vector<sf::RectangleShape> gridCells;
+    std::vector<std::vector<bool>> cellStates;  // ✅ Stores cell colors (true = white, false = default)
+    const int maxCellSize = 60;  // 🔥 Increased max cell size for a larger grid
+
+    // ✅ **Instruction Text Above Grid**
+    sf::Text instructionText(font, "Please click the cells for the path", 24);
+    instructionText.setFillColor(sf::Color::White);
+    instructionText.setPosition({200.f, 20.f}); // Centered at the top
+
     while (window.isOpen()) {
         while (const std::optional<sf::Event> event = window.pollEvent()) {
             if (event->is<sf::Event::Closed>())
@@ -91,7 +107,50 @@ int main() {
                 }
                 else if (gameState == GameState::MAP_INPUT) {
                     if (doneButton.getGlobalBounds().contains(mousePos) && !lengthStr.empty() && !widthStr.empty()) {
-                        std::cout << "Map Size: " << lengthStr << " x " << widthStr << std::endl;
+                        int length = std::stoi(lengthStr); // Convert string to int
+                        int width = std::stoi(widthStr);   // Convert string to int
+
+                        // ✅ **Create Map Object**
+                        gameMap = new Map(length, width);
+                        gridWidth = width;
+                        gridHeight = length;
+
+                        std::cout << "Map Created with size: " << length << " x " << width << std::endl;
+
+                        // ✅ **Build Larger Grid**
+                        gridCells.clear();
+                        cellStates.assign(gridHeight, std::vector<bool>(gridWidth, false)); // Set all cells to default (false)
+
+                        int cellSize = std::min(maxCellSize, std::min(600 / gridHeight, 800 / gridWidth)); // 🔥 Larger grid calculation
+
+                        float startX = (800 - (gridWidth * cellSize)) / 2;
+                        float startY = (600 - (gridHeight * cellSize)) / 2 + 30; // Adjusted to avoid overlapping text
+
+                        for (int i = 0; i < gridHeight; i++) {
+                            for (int j = 0; j < gridWidth; j++) {
+                                sf::RectangleShape cell(sf::Vector2f(cellSize, cellSize));
+                                cell.setFillColor(sf::Color::Transparent);
+                                cell.setOutlineThickness(2);  // 🔥 Thicker outline for visibility
+                                cell.setOutlineColor(sf::Color::White);
+                                cell.setPosition(sf::Vector2f(startX + j * cellSize, startY + i * cellSize));
+                                gridCells.push_back(cell);
+                            }
+                        }
+
+                        gameState = GameState::DISPLAY_GRID;
+                    }
+                }
+                else if (gameState == GameState::DISPLAY_GRID) {
+                    // ✅ Detect which cell was clicked
+                    for (int i = 0; i < gridHeight; i++) {
+                        for (int j = 0; j < gridWidth; j++) {
+                            int index = i * gridWidth + j;
+                            if (gridCells[index].getGlobalBounds().contains(mousePos)) {
+                                // Toggle cell color
+                                cellStates[i][j] = !cellStates[i][j];
+                                gridCells[index].setFillColor(cellStates[i][j] ? sf::Color::White : sf::Color::Transparent);
+                            }
+                        }
                     }
                 }
             }
@@ -127,6 +186,7 @@ int main() {
 
         // Render UI
         window.clear(sf::Color::Black);
+
         if (gameState == GameState::MENU) {
             window.draw(title);
             window.draw(startButton);
@@ -142,8 +202,18 @@ int main() {
             window.draw(doneButton);
             window.draw(doneText);
         }
+        else if (gameState == GameState::DISPLAY_GRID) {
+            window.draw(instructionText); // ✅ Draw instruction text
+            for (const auto& cell : gridCells) {
+                window.draw(cell);
+            }
+        }
+
         window.display();
     }
+
+    // ✅ **Cleanup Memory**
+    delete gameMap;
 
     return 0;
 }

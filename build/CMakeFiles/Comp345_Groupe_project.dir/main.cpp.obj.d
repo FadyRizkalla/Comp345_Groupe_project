@@ -281,4 +281,5 @@ CMakeFiles/Comp345_Groupe_project.dir/main.cpp.obj: \
  C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/InputStream.hpp \
  C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/MemoryInputStream.hpp \
  C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Sleep.hpp \
- C:/msys64/mingw64/include/c++/14.2.0/iostream
+ C:/msys64/mingw64/include/c++/14.2.0/iostream \
+ C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\map.h
