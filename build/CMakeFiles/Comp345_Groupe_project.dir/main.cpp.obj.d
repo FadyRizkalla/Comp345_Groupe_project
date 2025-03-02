@@ -281,15 +281,4 @@ CMakeFiles/Comp345_Groupe_project.dir/main.cpp.obj: \
  C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/InputStream.hpp \
  C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/MemoryInputStream.hpp \
  C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Sleep.hpp \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Map.h \
- C:/msys64/mingw64/include/c++/14.2.0/iostream \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Player.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Tower.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Critter.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\ArcherTower.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\CrossbowTower.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\SniperTower.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\IceWall.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\TurretTower.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Ogre_Critter.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Goblin_Critter.h
+ C:/msys64/mingw64/include/c++/14.2.0/iostream

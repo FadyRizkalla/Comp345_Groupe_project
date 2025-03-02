@@ -64,6 +64,26 @@ CMAKE_BINARY_DIR = C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\cmake
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
+	"C:\Program Files\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
+	"C:\Program Files\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/cmake-build-debug/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -83,6 +103,51 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"devel\" \"headers\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\Program Files\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\Program Files\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\Program Files\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\Program Files\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\Program Files\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\Program Files\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -128,6 +193,175 @@ Comp345_Groupe_project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/build
 .PHONY : Comp345_Groupe_project/fast
 
+#=============================================================================
+# Target rules for targets named sfml-system
+
+# Build rule for target.
+sfml-system: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-system
+.PHONY : sfml-system
+
+# fast build rule for target.
+sfml-system/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\System\CMakeFiles\sfml-system.dir\build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build
+.PHONY : sfml-system/fast
+
+#=============================================================================
+# Target rules for targets named sfml-main
+
+# Build rule for target.
+sfml-main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-main
+.PHONY : sfml-main
+
+# fast build rule for target.
+sfml-main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\Main\CMakeFiles\sfml-main.dir\build.make _deps/sfml-build/src/SFML/Main/CMakeFiles/sfml-main.dir/build
+.PHONY : sfml-main/fast
+
+#=============================================================================
+# Target rules for targets named sfml-window
+
+# Build rule for target.
+sfml-window: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-window
+.PHONY : sfml-window
+
+# fast build rule for target.
+sfml-window/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\Window\CMakeFiles\sfml-window.dir\build.make _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/build
+.PHONY : sfml-window/fast
+
+#=============================================================================
+# Target rules for targets named sfml-network
+
+# Build rule for target.
+sfml-network: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-network
+.PHONY : sfml-network
+
+# fast build rule for target.
+sfml-network/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\Network\CMakeFiles\sfml-network.dir\build.make _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build
+.PHONY : sfml-network/fast
+
+#=============================================================================
+# Target rules for targets named sfml-graphics
+
+# Build rule for target.
+sfml-graphics: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-graphics
+.PHONY : sfml-graphics
+
+# fast build rule for target.
+sfml-graphics/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\Graphics\CMakeFiles\sfml-graphics.dir\build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build
+.PHONY : sfml-graphics/fast
+
+#=============================================================================
+# Target rules for targets named freetype
+
+# Build rule for target.
+freetype: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 freetype
+.PHONY : freetype
+
+# fast build rule for target.
+freetype/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/build
+.PHONY : freetype/fast
+
+#=============================================================================
+# Target rules for targets named sfml-audio
+
+# Build rule for target.
+sfml-audio: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sfml-audio
+.PHONY : sfml-audio
+
+# fast build rule for target.
+sfml-audio/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\Audio\CMakeFiles\sfml-audio.dir\build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
+.PHONY : sfml-audio/fast
+
+#=============================================================================
+# Target rules for targets named ogg
+
+# Build rule for target.
+ogg: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ogg
+.PHONY : ogg
+
+# fast build rule for target.
+ogg/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\ogg-build\CMakeFiles\ogg.dir\build.make _deps/ogg-build/CMakeFiles/ogg.dir/build
+.PHONY : ogg/fast
+
+#=============================================================================
+# Target rules for targets named FLAC
+
+# Build rule for target.
+FLAC: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FLAC
+.PHONY : FLAC
+
+# fast build rule for target.
+FLAC/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\flac-build\src\libFLAC\CMakeFiles\FLAC.dir\build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build
+.PHONY : FLAC/fast
+
+#=============================================================================
+# Target rules for targets named benchmark_residual
+
+# Build rule for target.
+benchmark_residual: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 benchmark_residual
+.PHONY : benchmark_residual
+
+# fast build rule for target.
+benchmark_residual/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\flac-build\microbench\CMakeFiles\benchmark_residual.dir\build.make _deps/flac-build/microbench/CMakeFiles/benchmark_residual.dir/build
+.PHONY : benchmark_residual/fast
+
+#=============================================================================
+# Target rules for targets named vorbis
+
+# Build rule for target.
+vorbis: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 vorbis
+.PHONY : vorbis
+
+# fast build rule for target.
+vorbis/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build
+.PHONY : vorbis/fast
+
+#=============================================================================
+# Target rules for targets named vorbisenc
+
+# Build rule for target.
+vorbisenc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 vorbisenc
+.PHONY : vorbisenc
+
+# fast build rule for target.
+vorbisenc/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisenc.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/build
+.PHONY : vorbisenc/fast
+
+#=============================================================================
+# Target rules for targets named vorbisfile
+
+# Build rule for target.
+vorbisfile: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 vorbisfile
+.PHONY : vorbisfile
+
+# fast build rule for target.
+vorbisfile/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisfile.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build
+.PHONY : vorbisfile/fast
+
 ArcherTower.obj: ArcherTower.cpp.obj
 .PHONY : ArcherTower.obj
 
@@ -152,6 +386,30 @@ ArcherTower.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/ArcherTower.cpp.s
 .PHONY : ArcherTower.cpp.s
 
+Critter.obj: Critter.cpp.obj
+.PHONY : Critter.obj
+
+# target to build an object file
+Critter.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/Critter.cpp.obj
+.PHONY : Critter.cpp.obj
+
+Critter.i: Critter.cpp.i
+.PHONY : Critter.i
+
+# target to preprocess a source file
+Critter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/Critter.cpp.i
+.PHONY : Critter.cpp.i
+
+Critter.s: Critter.cpp.s
+.PHONY : Critter.s
+
+# target to generate assembly for a file
+Critter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/Critter.cpp.s
+.PHONY : Critter.cpp.s
+
 CrossbowTower.obj: CrossbowTower.cpp.obj
 .PHONY : CrossbowTower.obj
 
@@ -175,6 +433,126 @@ CrossbowTower.s: CrossbowTower.cpp.s
 CrossbowTower.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/CrossbowTower.cpp.s
 .PHONY : CrossbowTower.cpp.s
+
+Goblin_Critter.obj: Goblin_Critter.cpp.obj
+.PHONY : Goblin_Critter.obj
+
+# target to build an object file
+Goblin_Critter.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/Goblin_Critter.cpp.obj
+.PHONY : Goblin_Critter.cpp.obj
+
+Goblin_Critter.i: Goblin_Critter.cpp.i
+.PHONY : Goblin_Critter.i
+
+# target to preprocess a source file
+Goblin_Critter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/Goblin_Critter.cpp.i
+.PHONY : Goblin_Critter.cpp.i
+
+Goblin_Critter.s: Goblin_Critter.cpp.s
+.PHONY : Goblin_Critter.s
+
+# target to generate assembly for a file
+Goblin_Critter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/Goblin_Critter.cpp.s
+.PHONY : Goblin_Critter.cpp.s
+
+IceWall.obj: IceWall.cpp.obj
+.PHONY : IceWall.obj
+
+# target to build an object file
+IceWall.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/IceWall.cpp.obj
+.PHONY : IceWall.cpp.obj
+
+IceWall.i: IceWall.cpp.i
+.PHONY : IceWall.i
+
+# target to preprocess a source file
+IceWall.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/IceWall.cpp.i
+.PHONY : IceWall.cpp.i
+
+IceWall.s: IceWall.cpp.s
+.PHONY : IceWall.s
+
+# target to generate assembly for a file
+IceWall.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/IceWall.cpp.s
+.PHONY : IceWall.cpp.s
+
+Map.obj: Map.cpp.obj
+.PHONY : Map.obj
+
+# target to build an object file
+Map.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/Map.cpp.obj
+.PHONY : Map.cpp.obj
+
+Map.i: Map.cpp.i
+.PHONY : Map.i
+
+# target to preprocess a source file
+Map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/Map.cpp.i
+.PHONY : Map.cpp.i
+
+Map.s: Map.cpp.s
+.PHONY : Map.s
+
+# target to generate assembly for a file
+Map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/Map.cpp.s
+.PHONY : Map.cpp.s
+
+Ogre_Critter.obj: Ogre_Critter.cpp.obj
+.PHONY : Ogre_Critter.obj
+
+# target to build an object file
+Ogre_Critter.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/Ogre_Critter.cpp.obj
+.PHONY : Ogre_Critter.cpp.obj
+
+Ogre_Critter.i: Ogre_Critter.cpp.i
+.PHONY : Ogre_Critter.i
+
+# target to preprocess a source file
+Ogre_Critter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/Ogre_Critter.cpp.i
+.PHONY : Ogre_Critter.cpp.i
+
+Ogre_Critter.s: Ogre_Critter.cpp.s
+.PHONY : Ogre_Critter.s
+
+# target to generate assembly for a file
+Ogre_Critter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/Ogre_Critter.cpp.s
+.PHONY : Ogre_Critter.cpp.s
+
+Player.obj: Player.cpp.obj
+.PHONY : Player.obj
+
+# target to build an object file
+Player.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/Player.cpp.obj
+.PHONY : Player.cpp.obj
+
+Player.i: Player.cpp.i
+.PHONY : Player.i
+
+# target to preprocess a source file
+Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/Player.cpp.i
+.PHONY : Player.cpp.i
+
+Player.s: Player.cpp.s
+.PHONY : Player.s
+
+# target to generate assembly for a file
+Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/Player.cpp.s
+.PHONY : Player.cpp.s
 
 SniperTower.obj: SniperTower.cpp.obj
 .PHONY : SniperTower.obj
@@ -248,6 +626,30 @@ TurretTower.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/TurretTower.cpp.s
 .PHONY : TurretTower.cpp.s
 
+main.obj: main.cpp.obj
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -255,14 +657,51 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
+	@echo ... package
+	@echo ... package_source
 	@echo ... rebuild_cache
 	@echo ... Comp345_Groupe_project
+	@echo ... FLAC
+	@echo ... benchmark_residual
+	@echo ... freetype
+	@echo ... ogg
+	@echo ... sfml-audio
+	@echo ... sfml-graphics
+	@echo ... sfml-main
+	@echo ... sfml-network
+	@echo ... sfml-system
+	@echo ... sfml-window
+	@echo ... vorbis
+	@echo ... vorbisenc
+	@echo ... vorbisfile
 	@echo ... ArcherTower.obj
 	@echo ... ArcherTower.i
 	@echo ... ArcherTower.s
+	@echo ... Critter.obj
+	@echo ... Critter.i
+	@echo ... Critter.s
 	@echo ... CrossbowTower.obj
 	@echo ... CrossbowTower.i
 	@echo ... CrossbowTower.s
+	@echo ... Goblin_Critter.obj
+	@echo ... Goblin_Critter.i
+	@echo ... Goblin_Critter.s
+	@echo ... IceWall.obj
+	@echo ... IceWall.i
+	@echo ... IceWall.s
+	@echo ... Map.obj
+	@echo ... Map.i
+	@echo ... Map.s
+	@echo ... Ogre_Critter.obj
+	@echo ... Ogre_Critter.i
+	@echo ... Ogre_Critter.s
+	@echo ... Player.obj
+	@echo ... Player.i
+	@echo ... Player.s
 	@echo ... SniperTower.obj
 	@echo ... SniperTower.i
 	@echo ... SniperTower.s
@@ -272,6 +711,9 @@ help:
 	@echo ... TurretTower.obj
 	@echo ... TurretTower.i
 	@echo ... TurretTower.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 

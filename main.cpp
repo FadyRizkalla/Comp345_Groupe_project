@@ -1,119 +1,147 @@
 #include <SFML/Graphics.hpp>
-#include "Map.h"
-#include "Player.h"
-#include "Tower.h"
-#include "ArcherTower.h"
-#include "CrossbowTower.h"
-#include "SniperTower.h"
-#include "IceWall.h"
-#include "TurretTower.h"
-#include "Ogre_Critter.h"
-#include "Goblin_Critter.h"
-#include <SFML/Graphics.hpp>
-
+#include <SFML/Window.hpp>
+#include <SFML/System.hpp>
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
-#include <vector>
+#include <cctype>
+#include <optional>
 
-using namespace std;
+// Enum for tracking game state
+enum class GameState {
+    MENU,
+    MAP_INPUT
+};
 
-int main()
-{
-    Player player;
-    player.setPlayerFunds(500);
+int main() {
+    // Create a window
+    sf::RenderWindow window(sf::VideoMode({800, 600}), "Tower Defense");
 
-    Map gameMap(5, 5);
-
-    gameMap.setCell(0, 0, CellType::ENTRY);
-    gameMap.setCell(4, 4, CellType::EXIT);
-    gameMap.setCell(0, 1, CellType::PATH);
-    gameMap.setCell(1, 1, CellType::PATH);
-    gameMap.setCell(1, 2, CellType::PATH);
-    gameMap.setCell(2, 2, CellType::PATH);
-    gameMap.setCell(3, 2, CellType::PATH);
-    gameMap.setCell(4, 2, CellType::PATH);
-    gameMap.setCell(4, 3, CellType::PATH);
-
-    cout << "\nGenerated Map:\n";
-    gameMap.displayMap();
-
-    if (gameMap.validateMap())
-    {
-        cout << "The map is valid!\n";
-    }
-    else
-    {
-        cout << "The map is not valid!\n";
+    // Load font
+    sf::Font font;
+    if (!font.openFromFile("arial.ttf")) {
+        std::cerr << "Error loading font!\n";
+        return -1;
     }
 
-    // Place all types of towers on SCENERY cells
-    vector<Tower *> towers;
+    // ---------------- Main Menu UI ----------------
+    sf::Text title(font, "Tower Defense", 50);
+    title.setFillColor(sf::Color::White);
+    title.setPosition({250.f, 100.f});
 
-    towers.push_back(new ArcherTower(1, 0));
-    towers.push_back(new CrossbowTower(2, 1));
-    towers.push_back(new SniperTower(4, 1));
-    towers.push_back(new IceWall(3, 3));
-    towers.push_back(new TurretTower(0, 4));
+    sf::RectangleShape startButton({200.f, 50.f});
+    startButton.setFillColor(sf::Color::White);
+    startButton.setPosition({300.f, 300.f});
 
-    for (Tower *tower : towers)
-    {
-        tower->placeTower(gameMap);
-    }
+    sf::Text startText(font, "Start", 30);
+    startText.setFillColor(sf::Color::Black);
+    startText.setPosition({370.f, 310.f});
 
-    cout << "\nFinal Map with Towers:\n";
-    gameMap.displayMap();
+    // ---------------- Input Screen UI ----------------
+    sf::Text lengthText(font, "Length:", 30);
+    lengthText.setFillColor(sf::Color::White);
+    lengthText.setPosition({200.f, 200.f});
 
-    cout << "All tower types have been placed on the grid!" << endl;
+    sf::Text widthText(font, "Width:", 30);
+    widthText.setFillColor(sf::Color::White);
+    widthText.setPosition({200.f, 300.f});
 
-    vector<Critter *> critters;
+    // ✅ **White Boxes for Input**
+    sf::RectangleShape lengthBox({150.f, 40.f});
+    lengthBox.setFillColor(sf::Color::White);
+    lengthBox.setPosition({350.f, 200.f});
 
-    // Creating different Ogre and Goblin critters
-    critters.push_back(new Ogre_Critter());
-    critters.push_back(new Goblin_Critter());
+    sf::RectangleShape widthBox({150.f, 40.f});
+    widthBox.setFillColor(sf::Color::White);
+    widthBox.setPosition({350.f, 300.f});
 
-    cout << "\nDisplaying Critter Stats:\n";
-    cout << "Critter Type: Ogre\n";
-    cout << "Hit Points: " << critters[0]->getHitPoints() << "\n";
-    cout << "Strength: " << critters[0]->getStrength() << "\n";
-    cout << "Speed: " << critters[0]->getSpeed() << "\n";
-    cout << "Level: " << critters[0]->getLevel() << "\n";
-    cout << "Reward: " << critters[0]->getReward() << "\n";
-    cout << "-----------------------------\n";
+    // ✅ **Black Input Text**
+    sf::Text lengthInput(font, "", 30);
+    lengthInput.setFillColor(sf::Color::Black);
+    lengthInput.setPosition({365.f, 205.f}); // Center inside the box
 
-    cout << "Critter Type: Goblin\n";
-    cout << "Hit Points: " << critters[1]->getHitPoints() << "\n";
-    cout << "Strength: " << critters[1]->getStrength() << "\n";
-    cout << "Speed: " << critters[1]->getSpeed() << "\n";
-    cout << "Level: " << critters[1]->getLevel() << "\n";
-    cout << "Reward: " << critters[1]->getReward() << "\n";
-    cout << "-----------------------------\n";
+    sf::Text widthInput(font, "", 30);
+    widthInput.setFillColor(sf::Color::Black);
+    widthInput.setPosition({365.f, 305.f}); // Center inside the box
 
-    // ========== SFML WINDOW ==========
-    sf::RenderWindow window(sf::VideoMode({800, 600}), "My window");
+    std::string lengthStr, widthStr;
 
-    // run the program as long as the window is open
-    while (window.isOpen())
-    {
-        // check all the window's events that were triggered since the last iteration of the loop
-        while (const std::optional event = window.pollEvent())
-        {
-            // "close requested" event: we close the window
+    // Done Button
+    sf::RectangleShape doneButton({200.f, 50.f});
+    doneButton.setFillColor(sf::Color::White);
+    doneButton.setPosition({300.f, 400.f});
+
+    sf::Text doneText(font, "Done", 30);
+    doneText.setFillColor(sf::Color::Black);
+    doneText.setPosition({375.f, 410.f});
+
+    bool typingLength = true;
+    GameState gameState = GameState::MENU;
+
+    while (window.isOpen()) {
+        while (const std::optional<sf::Event> event = window.pollEvent()) {
             if (event->is<sf::Event::Closed>())
                 window.close();
+
+            if (event->is<sf::Event::MouseButtonPressed>()) {
+                sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+
+                if (gameState == GameState::MENU) {
+                    if (startButton.getGlobalBounds().contains(mousePos)) {
+                        gameState = GameState::MAP_INPUT;
+                    }
+                }
+                else if (gameState == GameState::MAP_INPUT) {
+                    if (doneButton.getGlobalBounds().contains(mousePos) && !lengthStr.empty() && !widthStr.empty()) {
+                        std::cout << "Map Size: " << lengthStr << " x " << widthStr << std::endl;
+                    }
+                }
+            }
+
+            // ✅ **SFML 3.0 Text Input Handling**
+            if (gameState == GameState::MAP_INPUT) {
+                if (auto textEvent = event->getIf<sf::Event::TextEntered>()) {
+                    char inputChar = static_cast<char>(textEvent->unicode);
+
+                    if (std::isdigit(inputChar)) { // Allow only numbers
+                        if (typingLength) {
+                            if (lengthStr.size() < 3) lengthStr += inputChar;
+                        } else {
+                            if (widthStr.size() < 3) widthStr += inputChar;
+                        }
+                    }
+                    else if (inputChar == '\b') { // Backspace key
+                        if (typingLength && !lengthStr.empty()) {
+                            lengthStr.pop_back();
+                        } else if (!typingLength && !widthStr.empty()) {
+                            widthStr.pop_back();
+                        }
+                    }
+                    else if (inputChar == '\r' || inputChar == '\n') { // Enter key switches input field
+                        typingLength = !typingLength;
+                    }
+
+                    lengthInput.setString(lengthStr);
+                    widthInput.setString(widthStr);
+                }
+            }
         }
 
-        // clear the window with black color
-        sf::CircleShape circle(50.f);
-        circle.setFillColor(sf::Color::Green);
-        circle.setPosition({100, 100});
-        window.draw(circle);
-
-
-        // draw everything here...
-        // window.draw(...);
-
-        // end the current frame
+        // Render UI
+        window.clear(sf::Color::Black);
+        if (gameState == GameState::MENU) {
+            window.draw(title);
+            window.draw(startButton);
+            window.draw(startText);
+        }
+        else if (gameState == GameState::MAP_INPUT) {
+            window.draw(lengthText);
+            window.draw(widthText);
+            window.draw(lengthBox);
+            window.draw(widthBox);
+            window.draw(lengthInput);
+            window.draw(widthInput);
+            window.draw(doneButton);
+            window.draw(doneText);
+        }
         window.display();
     }
 

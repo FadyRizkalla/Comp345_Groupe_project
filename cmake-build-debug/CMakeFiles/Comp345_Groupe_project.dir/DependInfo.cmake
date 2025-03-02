@@ -9,10 +9,17 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/ArcherTower.cpp" "CMakeFiles/Comp345_Groupe_project.dir/ArcherTower.cpp.obj" "gcc" "CMakeFiles/Comp345_Groupe_project.dir/ArcherTower.cpp.obj.d"
+  "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/Critter.cpp" "CMakeFiles/Comp345_Groupe_project.dir/Critter.cpp.obj" "gcc" "CMakeFiles/Comp345_Groupe_project.dir/Critter.cpp.obj.d"
   "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/CrossbowTower.cpp" "CMakeFiles/Comp345_Groupe_project.dir/CrossbowTower.cpp.obj" "gcc" "CMakeFiles/Comp345_Groupe_project.dir/CrossbowTower.cpp.obj.d"
+  "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/Goblin_Critter.cpp" "CMakeFiles/Comp345_Groupe_project.dir/Goblin_Critter.cpp.obj" "gcc" "CMakeFiles/Comp345_Groupe_project.dir/Goblin_Critter.cpp.obj.d"
+  "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/IceWall.cpp" "CMakeFiles/Comp345_Groupe_project.dir/IceWall.cpp.obj" "gcc" "CMakeFiles/Comp345_Groupe_project.dir/IceWall.cpp.obj.d"
+  "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/Map.cpp" "CMakeFiles/Comp345_Groupe_project.dir/Map.cpp.obj" "gcc" "CMakeFiles/Comp345_Groupe_project.dir/Map.cpp.obj.d"
+  "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/Ogre_Critter.cpp" "CMakeFiles/Comp345_Groupe_project.dir/Ogre_Critter.cpp.obj" "gcc" "CMakeFiles/Comp345_Groupe_project.dir/Ogre_Critter.cpp.obj.d"
+  "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/Player.cpp" "CMakeFiles/Comp345_Groupe_project.dir/Player.cpp.obj" "gcc" "CMakeFiles/Comp345_Groupe_project.dir/Player.cpp.obj.d"
   "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/SniperTower.cpp" "CMakeFiles/Comp345_Groupe_project.dir/SniperTower.cpp.obj" "gcc" "CMakeFiles/Comp345_Groupe_project.dir/SniperTower.cpp.obj.d"
   "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/Tower.cpp" "CMakeFiles/Comp345_Groupe_project.dir/Tower.cpp.obj" "gcc" "CMakeFiles/Comp345_Groupe_project.dir/Tower.cpp.obj.d"
   "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/TurretTower.cpp" "CMakeFiles/Comp345_Groupe_project.dir/TurretTower.cpp.obj" "gcc" "CMakeFiles/Comp345_Groupe_project.dir/TurretTower.cpp.obj.d"
+  "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/main.cpp" "CMakeFiles/Comp345_Groupe_project.dir/main.cpp.obj" "gcc" "CMakeFiles/Comp345_Groupe_project.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
