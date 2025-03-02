@@ -650,6 +650,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+map_observer.obj: map_observer.cpp.obj
+.PHONY : map_observer.obj
+
+# target to build an object file
+map_observer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/map_observer.cpp.obj
+.PHONY : map_observer.cpp.obj
+
+map_observer.i: map_observer.cpp.i
+.PHONY : map_observer.i
+
+# target to preprocess a source file
+map_observer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/map_observer.cpp.i
+.PHONY : map_observer.cpp.i
+
+map_observer.s: map_observer.cpp.s
+.PHONY : map_observer.s
+
+# target to generate assembly for a file
+map_observer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/map_observer.cpp.s
+.PHONY : map_observer.cpp.s
+
+sfml_map_observer.obj: sfml_map_observer.cpp.obj
+.PHONY : sfml_map_observer.obj
+
+# target to build an object file
+sfml_map_observer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/sfml_map_observer.cpp.obj
+.PHONY : sfml_map_observer.cpp.obj
+
+sfml_map_observer.i: sfml_map_observer.cpp.i
+.PHONY : sfml_map_observer.i
+
+# target to preprocess a source file
+sfml_map_observer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/sfml_map_observer.cpp.i
+.PHONY : sfml_map_observer.cpp.i
+
+sfml_map_observer.s: sfml_map_observer.cpp.s
+.PHONY : sfml_map_observer.s
+
+# target to generate assembly for a file
+sfml_map_observer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/sfml_map_observer.cpp.s
+.PHONY : sfml_map_observer.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -714,6 +762,12 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... map_observer.obj
+	@echo ... map_observer.i
+	@echo ... map_observer.s
+	@echo ... sfml_map_observer.obj
+	@echo ... sfml_map_observer.i
+	@echo ... sfml_map_observer.s
 .PHONY : help
 
 

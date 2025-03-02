@@ -31,6 +31,8 @@ set(SOURCES
         Critter.cpp
         Ogre_Critter.cpp
         Goblin_Critter.cpp
+        map_observer.cpp            # ✅ Added missing observer source file
+        sfml_map_observer.cpp       # ✅ Added SFML observer implementation
 )
 
 set(HEADERS
@@ -45,6 +47,8 @@ set(HEADERS
         Critter.h
         Ogre_Critter.h
         Goblin_Critter.h
+        map_observer.h              # ✅ Added missing observer header
+        sfml_map_observer.h         # ✅ Added SFML observer header
 )
 
 # Create a single executable

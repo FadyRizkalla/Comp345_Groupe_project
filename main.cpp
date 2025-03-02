@@ -4,7 +4,8 @@
 #include <iostream>
 #include <cctype>
 #include <optional>
-#include "map.h"  // Include the Map class
+#include "map.h"
+#include "sfml_map_observer.h"
 
 // Enum for tracking game state
 enum class GameState {
@@ -102,6 +103,8 @@ int main() {
     std::pair<int, int> entryPoint = {-1, -1};
     std::pair<int, int> exitPoint = {-1, -1};
 
+    SFMLMapObserver* observer = nullptr;
+
     while (window.isOpen()) {
         while (const std::optional<sf::Event> event = window.pollEvent()) {
             if (event->is<sf::Event::Closed>())
@@ -124,13 +127,10 @@ int main() {
                         gridWidth = width;
                         gridHeight = length;
 
-                        std::cout << "Map Created with size: " << length << " x " << width << std::endl;
-
                         gridCells.clear();
                         cellStates.assign(gridHeight, std::vector<bool>(gridWidth, false));
 
                         int cellSize = std::min(maxCellSize, std::min(600 / gridHeight, 800 / gridWidth));
-
                         float startX = (800 - (gridWidth * cellSize)) / 2;
                         float startY = (600 - (gridHeight * cellSize)) / 2 + 30;
 
@@ -145,8 +145,12 @@ int main() {
                             }
                         }
 
+                        // ✅ Attach Observer to the Map (Keep it Alive)
+                        observer = new SFMLMapObserver(gameMap, window, gridCells, gridWidth, gridHeight);
+
                         gameState = GameState::DISPLAY_GRID;
                     }
+
                 }
                 else if (gameState == GameState::DISPLAY_GRID) {
     if (validateButton.getGlobalBounds().contains(mousePos)) {
@@ -164,27 +168,25 @@ int main() {
                 if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::E)) { // Entry point
                     if (entryPoint.first != -1) {
                         gameMap->setCell(entryPoint.first, entryPoint.second, CellType::SCENERY);
-                        gridCells[entryPoint.first * gridWidth + entryPoint.second].setFillColor(sf::Color::Transparent);
                     }
-                    gridCells[index].setFillColor(sf::Color::Green);
                     gameMap->setCell(i, j, CellType::ENTRY);
                     entryPoint = {i, j};
                 }
                 else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::X)) { // Exit point
                     if (exitPoint.first != -1) {
                         gameMap->setCell(exitPoint.first, exitPoint.second, CellType::SCENERY);
-                        gridCells[exitPoint.first * gridWidth + exitPoint.second].setFillColor(sf::Color::Transparent);
                     }
-                    gridCells[index].setFillColor(sf::Color::Red);
                     gameMap->setCell(i, j, CellType::EXIT);
                     exitPoint = {i, j};
                 }
                 else { // Path toggle
                     cellStates[i][j] = !cellStates[i][j];
                     gameMap->setCell(i, j, cellStates[i][j] ? CellType::PATH : CellType::SCENERY);
-                    gridCells[index].setFillColor(cellStates[i][j] ? sf::Color::White : sf::Color::Transparent);
                 }
+
             }
+
+
         }
     }
 }
@@ -245,5 +247,6 @@ int main() {
     }
 
     delete gameMap;
+    delete observer;
     return 0;
 }

@@ -282,4 +282,10 @@ CMakeFiles/Comp345_Groupe_project.dir/main.cpp.obj: \
  C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/MemoryInputStream.hpp \
  C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Sleep.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/iostream \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\map.h
+ C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\map.h \
+ C:/msys64/mingw64/include/c++/14.2.0/set \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tree.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_set.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_multiset.h \
+ C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\sfml_map_observer.h \
+ C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\map_observer.h

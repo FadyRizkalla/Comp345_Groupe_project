@@ -251,6 +251,36 @@ CMakeFiles/Comp345_Groupe_project.dir/Goblin_Critter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Comp345_Groupe_project.dir/Goblin_Critter.cpp.s"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Goblin_Critter.cpp -o CMakeFiles\Comp345_Groupe_project.dir\Goblin_Critter.cpp.s
 
+CMakeFiles/Comp345_Groupe_project.dir/map_observer.cpp.obj: CMakeFiles/Comp345_Groupe_project.dir/flags.make
+CMakeFiles/Comp345_Groupe_project.dir/map_observer.cpp.obj: CMakeFiles/Comp345_Groupe_project.dir/includes_CXX.rsp
+CMakeFiles/Comp345_Groupe_project.dir/map_observer.cpp.obj: C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/map_observer.cpp
+CMakeFiles/Comp345_Groupe_project.dir/map_observer.cpp.obj: CMakeFiles/Comp345_Groupe_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Comp345_Groupe_project.dir/map_observer.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Comp345_Groupe_project.dir/map_observer.cpp.obj -MF CMakeFiles\Comp345_Groupe_project.dir\map_observer.cpp.obj.d -o CMakeFiles\Comp345_Groupe_project.dir\map_observer.cpp.obj -c C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\map_observer.cpp
+
+CMakeFiles/Comp345_Groupe_project.dir/map_observer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Comp345_Groupe_project.dir/map_observer.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\map_observer.cpp > CMakeFiles\Comp345_Groupe_project.dir\map_observer.cpp.i
+
+CMakeFiles/Comp345_Groupe_project.dir/map_observer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Comp345_Groupe_project.dir/map_observer.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\map_observer.cpp -o CMakeFiles\Comp345_Groupe_project.dir\map_observer.cpp.s
+
+CMakeFiles/Comp345_Groupe_project.dir/sfml_map_observer.cpp.obj: CMakeFiles/Comp345_Groupe_project.dir/flags.make
+CMakeFiles/Comp345_Groupe_project.dir/sfml_map_observer.cpp.obj: CMakeFiles/Comp345_Groupe_project.dir/includes_CXX.rsp
+CMakeFiles/Comp345_Groupe_project.dir/sfml_map_observer.cpp.obj: C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/sfml_map_observer.cpp
+CMakeFiles/Comp345_Groupe_project.dir/sfml_map_observer.cpp.obj: CMakeFiles/Comp345_Groupe_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Comp345_Groupe_project.dir/sfml_map_observer.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Comp345_Groupe_project.dir/sfml_map_observer.cpp.obj -MF CMakeFiles\Comp345_Groupe_project.dir\sfml_map_observer.cpp.obj.d -o CMakeFiles\Comp345_Groupe_project.dir\sfml_map_observer.cpp.obj -c C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\sfml_map_observer.cpp
+
+CMakeFiles/Comp345_Groupe_project.dir/sfml_map_observer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Comp345_Groupe_project.dir/sfml_map_observer.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\sfml_map_observer.cpp > CMakeFiles\Comp345_Groupe_project.dir\sfml_map_observer.cpp.i
+
+CMakeFiles/Comp345_Groupe_project.dir/sfml_map_observer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Comp345_Groupe_project.dir/sfml_map_observer.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\sfml_map_observer.cpp -o CMakeFiles\Comp345_Groupe_project.dir\sfml_map_observer.cpp.s
+
 # Object files for target Comp345_Groupe_project
 Comp345_Groupe_project_OBJECTS = \
 "CMakeFiles/Comp345_Groupe_project.dir/main.cpp.obj" \
@@ -264,7 +294,9 @@ Comp345_Groupe_project_OBJECTS = \
 "CMakeFiles/Comp345_Groupe_project.dir/TurretTower.cpp.obj" \
 "CMakeFiles/Comp345_Groupe_project.dir/Critter.cpp.obj" \
 "CMakeFiles/Comp345_Groupe_project.dir/Ogre_Critter.cpp.obj" \
-"CMakeFiles/Comp345_Groupe_project.dir/Goblin_Critter.cpp.obj"
+"CMakeFiles/Comp345_Groupe_project.dir/Goblin_Critter.cpp.obj" \
+"CMakeFiles/Comp345_Groupe_project.dir/map_observer.cpp.obj" \
+"CMakeFiles/Comp345_Groupe_project.dir/sfml_map_observer.cpp.obj"
 
 # External object files for target Comp345_Groupe_project
 Comp345_Groupe_project_EXTERNAL_OBJECTS =
@@ -281,6 +313,8 @@ bin/Comp345_Groupe_project.exe: CMakeFiles/Comp345_Groupe_project.dir/TurretTowe
 bin/Comp345_Groupe_project.exe: CMakeFiles/Comp345_Groupe_project.dir/Critter.cpp.obj
 bin/Comp345_Groupe_project.exe: CMakeFiles/Comp345_Groupe_project.dir/Ogre_Critter.cpp.obj
 bin/Comp345_Groupe_project.exe: CMakeFiles/Comp345_Groupe_project.dir/Goblin_Critter.cpp.obj
+bin/Comp345_Groupe_project.exe: CMakeFiles/Comp345_Groupe_project.dir/map_observer.cpp.obj
+bin/Comp345_Groupe_project.exe: CMakeFiles/Comp345_Groupe_project.dir/sfml_map_observer.cpp.obj
 bin/Comp345_Groupe_project.exe: CMakeFiles/Comp345_Groupe_project.dir/build.make
 bin/Comp345_Groupe_project.exe: _deps/sfml-build/lib/libsfml-graphics.a
 bin/Comp345_Groupe_project.exe: _deps/sfml-build/lib/libsfml-window.a
@@ -289,7 +323,7 @@ bin/Comp345_Groupe_project.exe: _deps/sfml-build/lib/libfreetype.a
 bin/Comp345_Groupe_project.exe: CMakeFiles/Comp345_Groupe_project.dir/linkLibs.rsp
 bin/Comp345_Groupe_project.exe: CMakeFiles/Comp345_Groupe_project.dir/objects1.rsp
 bin/Comp345_Groupe_project.exe: CMakeFiles/Comp345_Groupe_project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable bin\Comp345_Groupe_project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable bin\Comp345_Groupe_project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Comp345_Groupe_project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
