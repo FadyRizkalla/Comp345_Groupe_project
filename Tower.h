@@ -10,6 +10,8 @@
 
 class Critter;
 
+class TowerObserver;  //forward declaration
+
 class Tower
 {
 protected:
@@ -21,6 +23,8 @@ protected:
   int level;
   double upgradeCost;
   double refundValue;
+  std::vector<TowerObserver*> observers; //List of Observers
+
 
 public:
   Tower();
@@ -52,6 +56,13 @@ public:
   void setPower(int x);
   void setRateOfFire(int x);
   void setUpgradeCost(double x);
+
+
+  //observer methods
+  void addObserver(TowerObserver *observer); //add an observer
+  void removeObserver(TowerObserver *observer);  //removes the observer
+  void notifyObservers();
+
 };
 
 #endif

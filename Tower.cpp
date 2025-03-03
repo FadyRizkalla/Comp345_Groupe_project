@@ -3,13 +3,16 @@
 //
 
 #include "Tower.h"
+#include "TowerObserver.h"
 #include "Critter.h"
 #include <iostream>
 #include <cmath>
 #include "Map.h"
 #include "Player.h"
+#include <algorithm>
 
 using namespace std;
+
 
 
 // Default constructor. Makes an instance of a default tower.
@@ -60,7 +63,6 @@ Tower::Tower(const Tower& tower) {
 
 Tower::~Tower()= default;
 
-
 // method for upgrading a tower
 void Tower::upgrade(Player &player){
 
@@ -73,6 +75,8 @@ void Tower::upgrade(Player &player){
     rateOfFire += 5;
     upgradeCost += 50;
     refundValue = cost * 0.6;
+    notifyObservers();
+
     cout << "Tower upgraded to level " << level << "!" << endl;
 
   }
@@ -198,32 +202,61 @@ double Tower::getCost() const{
  // Setters (setting methods)
 
  void Tower::setRange(int Range){
+  range = Range;
+  notifyObservers();
 
-   range = Range;
- }
+}
 
  void Tower::setLevel(int Level){
    level = Level;
- }
+  notifyObservers();
+
+}
 
 
  void Tower::setCost(double Cost){
    cost = Cost;
- }
+  notifyObservers();
+
+}
 
  void Tower::setPower(int Power){
    power = Power;
+  notifyObservers();
+
  }
 
  void Tower::setRateOfFire(int RateOfFire){
    rateOfFire = RateOfFire;
+  notifyObservers();
+
  }
 
  void Tower::setUpgradeCost(double UpgradeCost){
    upgradeCost = UpgradeCost;
+    notifyObservers();
+
  }
 
 
+//observer methods
+
+void Tower::addObserver(TowerObserver *observer) {
+
+  observers.push_back(observer);
+
+}
+
+void Tower::removeObserver(TowerObserver *observer) {
+  observers.erase(std::remove(observers.begin(), observers.end(), observer), observers.end());
+}
+
+void Tower::notifyObservers() {
+
+  for (auto* observer : observers) {
+    observer->update();
+  }
+}
 
 
 
