@@ -1,16 +1,37 @@
-"C:\Program Files\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project -B C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\cmake-build-debug
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/msys64/mingw64/bin/cc.exe - skipped
--- Detecting C compile features
--- Detecting C compile features - done
+"C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\elele\CLionProjects\Comp345_Groupe_project -B C:\Users\elele\CLionProjects\Comp345_Groupe_project\cmake-build-debug
+-- The CXX compiler identification is GNU 13.1.0
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/msys64/mingw64/bin/c++.exe - skipped
+-- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2024.3.2/bin/mingw/bin/g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Configuring done (3.3s)
--- Generating done (0.1s)
--- Build files have been written to: C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/cmake-build-debug
+Cloning into 'sfml-src'...
+HEAD is now at 7f1162d Mark code as official release
+-- The C compiler identification is GNU 13.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/JetBrains/CLion 2024.3.2/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found OpenGL: opengl32  found components: OpenGL
+-- Looking for C++ include dinput.h
+-- Looking for C++ include dinput.h - found
+-- Performing Test ATOMIC_TEST
+-- Performing Test ATOMIC_TEST - Success
+CMake Error: The current CMakeCache.txt directory C:/Users/elele/CLionProjects/Comp345_Groupe_project/cmake-build-debug/_deps/freetype-subbuild/CMakeCache.txt is different than the directory c:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/cmake-build-debug/_deps/freetype-subbuild where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+
+CMake Error at C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/FetchContent.cmake:1906 (message):
+  CMake step for freetype failed: 1
+Call Stack (most recent call first):
+  C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/FetchContent.cmake:1609 (__FetchContent_populateSubbuild)
+  C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)
+  C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/FetchContent.cmake:2145 (cmake_language)
+  C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/share/cmake-3.30/Modules/FetchContent.cmake:2384 (__FetchContent_Populate)
+  cmake-build-debug/_deps/sfml-src/src/SFML/Graphics/CMakeLists.txt:137 (FetchContent_MakeAvailable)
+  cmake-build-debug/_deps/sfml-src/src/SFML/Graphics/CMakeLists.txt:153 (sfml_add_graphics_dependencies)
+
+
+-- Configuring incomplete, errors occurred!

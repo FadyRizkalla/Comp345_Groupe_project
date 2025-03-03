@@ -27,9 +27,9 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 
 include(ExternalProject)
 ExternalProject_Add(freetype-populate
-                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/freetype/freetype.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "VER-2-13-2" "GIT_SHALLOW" "ON" "PATCH_COMMAND" "C:/Program Files/JetBrains/CLion 2024.3.4/bin/cmake/win/x64/bin/cmake.exe" "-DFREETYPE_DIR=C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/cmake-build-debug/_deps/freetype-src" "-P" "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/cmake-build-debug/_deps/sfml-src/tools/freetype/PatchFreetype.cmake"
-                    SOURCE_DIR          "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/cmake-build-debug/_deps/freetype-src"
-                    BINARY_DIR          "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/cmake-build-debug/_deps/freetype-build"
+                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/freetype/freetype.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "VER-2-13-2" "GIT_SHALLOW" "ON" "PATCH_COMMAND" "C:/Program Files/JetBrains/CLion 2024.3.2/bin/cmake/win/x64/bin/cmake.exe" "-DFREETYPE_DIR=C:/Users/elele/CLionProjects/Comp345_Groupe_project/cmake-build-debug/_deps/freetype-src" "-P" "C:/Users/elele/CLionProjects/Comp345_Groupe_project/cmake-build-debug/_deps/sfml-src/tools/freetype/PatchFreetype.cmake"
+                    SOURCE_DIR          "C:/Users/elele/CLionProjects/Comp345_Groupe_project/cmake-build-debug/_deps/freetype-src"
+                    BINARY_DIR          "C:/Users/elele/CLionProjects/Comp345_Groupe_project/cmake-build-debug/_deps/freetype-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""
