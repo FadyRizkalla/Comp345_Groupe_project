@@ -2,7 +2,10 @@
 #define CRITTER_H
 
 #include <iostream>
+#include <vector>
 using namespace std;
+
+class CritterObserver;
 
 class Critter {
 private:
@@ -11,6 +14,7 @@ private:
     int strength;
     int speed;
     int level;
+    std::vector<CritterObserver *> observers; //List of Observers for critters
 
 
 public:
@@ -44,6 +48,11 @@ public:
     // Check if the critter is dead
     bool isDead() const;
     std::pair<int, int> getPosition() const;
+
+    //observer methods
+    void addObserver(CritterObserver *observer);
+    void removeObserver(CritterObserver *observer);
+    void notifyObservers();
 };
 
 #endif // CRITTER_H
