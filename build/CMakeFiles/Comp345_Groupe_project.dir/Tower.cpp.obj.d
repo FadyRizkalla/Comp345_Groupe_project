@@ -154,6 +154,7 @@ CMakeFiles/Comp345_Groupe_project.dir/Tower.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_multiset.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/erase_if.h \
  C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Critter.h \
+ C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\TowerObserver.h \
  C:/msys64/mingw64/include/c++/14.2.0/cmath \
  C:/msys64/mingw64/include/math.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/specfun.h \
@@ -169,4 +170,12 @@ CMakeFiles/Comp345_Groupe_project.dir/Tower.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
  C:/msys64/mingw64/include/c++/14.2.0/tr1/poly_hermite.tcc \
  C:/msys64/mingw64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
- C:/msys64/mingw64/include/c++/14.2.0/tr1/riemann_zeta.tcc
+ C:/msys64/mingw64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
+ C:/msys64/mingw64/include/c++/14.2.0/algorithm \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algo.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/algorithmfwd.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_heap.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/uniform_int_dist.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tempbuf.h \
+ C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
+ C:/msys64/mingw64/include/c++/14.2.0/pstl/execution_defs.h

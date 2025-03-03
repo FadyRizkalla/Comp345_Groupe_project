@@ -6,16 +6,20 @@
 #include <optional>
 #include "map.h"
 #include "sfml_map_observer.h"
+#include "Player.h"
+
 
 // Enum for tracking game state
 enum class GameState {
     MENU,
     MAP_INPUT,
-    DISPLAY_GRID
+    DISPLAY_GRID,
+    MAP_VIEW
 };
 
+
 int main() {
-    sf::RenderWindow window(sf::VideoMode({800, 600}), "Tower Defense");
+    sf::RenderWindow window(sf::VideoMode({1000, 800}), "Tower Defense");
 
     sf::Font font;
     if (!font.openFromFile("arial.ttf")) {
@@ -100,6 +104,26 @@ int main() {
     instructionText.setFillColor(sf::Color::White);
     instructionText.setPosition({100.f, 20.f});
 
+    // ✅ Player Funds UI
+    sf::Text playerFundsText(font, "Gold: 500", 24);
+    playerFundsText.setFillColor(sf::Color::Yellow);
+    playerFundsText.setPosition({800.f, 20.f}); // Top right corner
+
+
+    // Next Button (Hidden until the map is valid)
+    sf::RectangleShape nextButton({200.f, 50.f});
+    nextButton.setFillColor(sf::Color::White);
+    nextButton.setPosition({300.f, 620.f}); // Below Validate Button
+
+    sf::Text nextText(font, "Next", 30);
+    nextText.setFillColor(sf::Color::Black);
+    nextText.setPosition({375.f, 630.f});
+
+    bool isMapValid = false; // Track if the map is validated successfully
+    Player player;
+
+
+
     std::pair<int, int> entryPoint = {-1, -1};
     std::pair<int, int> exitPoint = {-1, -1};
 
@@ -153,43 +177,54 @@ int main() {
 
                 }
                 else if (gameState == GameState::DISPLAY_GRID) {
-    if (validateButton.getGlobalBounds().contains(mousePos)) {
-        if (gameMap) {
-            bool isValid = gameMap->validateMap();
-            validationResult.setString(isValid ? "Map is valid!" : "Map is NOT valid!");
-            validationResult.setFillColor(isValid ? sf::Color::Green : sf::Color::Red);
-        }
-    }
-
-    for (int i = 0; i < gridHeight; i++) {
-        for (int j = 0; j < gridWidth; j++) {
-            int index = i * gridWidth + j;
-            if (gridCells[index].getGlobalBounds().contains(mousePos)) {
-                if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::E)) { // Entry point
-                    if (entryPoint.first != -1) {
-                        gameMap->setCell(entryPoint.first, entryPoint.second, CellType::SCENERY);
+                    // ✅ Handle "Validate" button click
+                    if (validateButton.getGlobalBounds().contains(mousePos)) {
+                        if (gameMap) {
+                            isMapValid = gameMap->validateMap(); // Store validation result
+                            validationResult.setString(isMapValid ? "Map is valid!" : "Map is NOT valid!");
+                            validationResult.setFillColor(isMapValid ? sf::Color::Green : sf::Color::Red);
+                        }
                     }
-                    gameMap->setCell(i, j, CellType::ENTRY);
-                    entryPoint = {i, j};
-                }
-                else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::X)) { // Exit point
-                    if (exitPoint.first != -1) {
-                        gameMap->setCell(exitPoint.first, exitPoint.second, CellType::SCENERY);
+
+                    if (isMapValid && nextButton.getGlobalBounds().contains(mousePos)) {
+                        std::cout << "Next button clicked! Switching to MAP VIEW mode..." << std::endl;
+
+                        // ✅ Initialize the player with 500 gold
+                        player.setPlayerFunds(500);
+
+                        gameState = GameState::MAP_VIEW;
                     }
-                    gameMap->setCell(i, j, CellType::EXIT);
-                    exitPoint = {i, j};
+
+
+
+                    // ✅ Handle grid cell clicks
+                    for (int i = 0; i < gridHeight; i++) {
+                        for (int j = 0; j < gridWidth; j++) {
+                            int index = i * gridWidth + j;
+                            if (gridCells[index].getGlobalBounds().contains(mousePos)) {
+                                if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::E)) { // Entry point
+                                    if (entryPoint.first != -1) {
+                                        gameMap->setCell(entryPoint.first, entryPoint.second, CellType::SCENERY);
+                                    }
+                                    gameMap->setCell(i, j, CellType::ENTRY);
+                                    entryPoint = {i, j};
+                                }
+                                else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::X)) { // Exit point
+                                    if (exitPoint.first != -1) {
+                                        gameMap->setCell(exitPoint.first, exitPoint.second, CellType::SCENERY);
+                                    }
+                                    gameMap->setCell(i, j, CellType::EXIT);
+                                    exitPoint = {i, j};
+                                }
+                                else { // Path toggle
+                                    cellStates[i][j] = !cellStates[i][j];
+                                    gameMap->setCell(i, j, cellStates[i][j] ? CellType::PATH : CellType::SCENERY);
+                                }
+                            }
+                        }
+                    }
                 }
-                else { // Path toggle
-                    cellStates[i][j] = !cellStates[i][j];
-                    gameMap->setCell(i, j, cellStates[i][j] ? CellType::PATH : CellType::SCENERY);
-                }
 
-            }
-
-
-        }
-    }
-}
 
             }
 
@@ -240,7 +275,23 @@ int main() {
             window.draw(validateButton);
             window.draw(validateText);
             window.draw(validationResult); // Display validation result
+
+            if (isMapValid) { // Only show "Next" if the map is valid
+                window.draw(nextButton);
+                window.draw(nextText);
+            }
         }
+        else if (gameState == GameState::MAP_VIEW) {
+            for (const auto& cell : gridCells) {
+                window.draw(cell); // Only render the map
+            }
+
+            // ✅ Update player funds display
+            playerFundsText.setString("Gold: " + std::to_string(player.getPlayerFunds()));
+            window.draw(playerFundsText); // Show player's gold
+        }
+
+
 
 
         window.display();
