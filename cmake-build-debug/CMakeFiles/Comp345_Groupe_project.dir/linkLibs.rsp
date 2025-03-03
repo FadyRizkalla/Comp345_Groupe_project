@@ -1,0 +1,1 @@
+ "_deps/sfml-build/lib/libsfml-graphics-s-d.a" "_deps/sfml-build/lib/libsfml-window-s-d.a" "_deps/sfml-build/lib/libsfml-system-s-d.a" -lopengl32 -lwinmm -lgdi32 "_deps/sfml-build/lib/libfreetyped.a" -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

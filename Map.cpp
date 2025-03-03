@@ -1,10 +1,17 @@
 #include "map.h"
+#include "map_observer.h"
 #include <queue>
 #include <limits>
 
 Map::Map(int width, int height) : width(width), height(height)
 {
     grid.resize(height, std::vector<CellType>(width, CellType::SCENERY));
+}
+
+void Map::notifyObservers() {
+    for (auto* observer : observers) {
+        observer->update();
+    }
 }
 
 bool Map::isWithinBounds(int x, int y) const
@@ -22,34 +29,17 @@ CellType Map::getCellType(int x, int y) const
     return grid[x][y];
 }
 
-void Map::setCell(int x, int y, CellType type)
-{
-    if (!isWithinBounds(x, y))
-    {
-        std::cerr << "Invalid coordinates!\n";
-        return;
-    }
+void Map::setCell(int x, int y, CellType type) {
+    if (!isWithinBounds(x, y)) return;
 
-    if (type == CellType::ENTRY)
-    {
-        if (entryPoint.first != -1)
-        {
-            std::cerr << "Only one entry point is allowed!\n";
-            return;
-        }
+    if (type == CellType::ENTRY && entryPoint.first == -1) {
         entryPoint = {x, y};
-    }
-    else if (type == CellType::EXIT)
-    {
-        if (exitPoint.first != -1)
-        {
-            std::cerr << "Only one exit point is allowed!\n";
-            return;
-        }
+    } else if (type == CellType::EXIT && exitPoint.first == -1) {
         exitPoint = {x, y};
     }
 
     grid[x][y] = type;
+    notifyObservers(); // ✅ Notify observers of the change
 }
 
 bool Map::isPathConnected() const
@@ -136,24 +126,12 @@ void Map::displayMap() const
     }
 }
 
-void Map::userCustomizeMap()
-{
-    std::cout << "Enter coordinates (row col) and type (0: SCENERY, 1: PATH, 2: ENTRY, 3: EXIT). Enter -1 to stop.\n";
-    int x, y, type;
-    while (true)
-    {
-        std::cout << "Enter: ";
-        std::cin >> x;
-        if (x == -1)
-            break;
-        std::cin >> y >> type;
-        if (type < 0 || type > 3)
-        {
-            std::cout << "Invalid type. Try again.\n";
-            continue;
-        }
-        setCell(x, y, static_cast<CellType>(type));
-    }
+
+void Map::addObserver(MapObserver* observer) {
+    observers.insert(observer);
 }
 
+void Map::removeObserver(MapObserver* observer) {
+    observers.erase(observer);
+}
 
