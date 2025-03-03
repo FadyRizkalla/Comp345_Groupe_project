@@ -119,6 +119,32 @@ int main() {
     nextText.setFillColor(sf::Color::Black);
     nextText.setPosition({375.f, 630.f});
 
+    // ✅ Tower Types UI (Displayed under player funds)
+    sf::Text towerTypesText(font, "Towers:", 24);
+    towerTypesText.setFillColor(sf::Color::White);
+    towerTypesText.setPosition({800.f, 60.f}); // Below gold counter
+
+    sf::Text archerTowerText(font, "1. Archer Tower", 20);
+    archerTowerText.setFillColor(sf::Color::White);
+    archerTowerText.setPosition({800.f, 90.f});
+
+    sf::Text crossbowTowerText(font, "2. Crossbow Tower", 20);
+    crossbowTowerText.setFillColor(sf::Color::White);
+    crossbowTowerText.setPosition({800.f, 120.f});
+
+    sf::Text sniperTowerText(font, "3. Sniper Tower", 20);
+    sniperTowerText.setFillColor(sf::Color::White);
+    sniperTowerText.setPosition({800.f, 150.f});
+
+    sf::Text iceWallText(font, "4. Ice Wall", 20);
+    iceWallText.setFillColor(sf::Color::White);
+    iceWallText.setPosition({800.f, 180.f});
+
+    sf::Text turretTowerText(font, "5. Turret Tower", 20);
+    turretTowerText.setFillColor(sf::Color::White);
+    turretTowerText.setPosition({800.f, 210.f});
+
+
     bool isMapValid = false; // Track if the map is validated successfully
     Player player;
 
@@ -286,10 +312,19 @@ int main() {
                 window.draw(cell); // Only render the map
             }
 
-            // ✅ Update player funds display
+            // ✅ Update and render player funds
             playerFundsText.setString("Gold: " + std::to_string(player.getPlayerFunds()));
-            window.draw(playerFundsText); // Show player's gold
+            window.draw(playerFundsText);
+
+            // ✅ Render Tower Types
+            window.draw(towerTypesText);
+            window.draw(archerTowerText);
+            window.draw(crossbowTowerText);
+            window.draw(sniperTowerText);
+            window.draw(iceWallText);
+            window.draw(turretTowerText);
         }
+
 
 
 
