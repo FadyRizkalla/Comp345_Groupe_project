@@ -1,7 +1,9 @@
 #include "map.h"
 #include "map_observer.h"
 #include <queue>
+#include <map>
 #include <limits>
+#include <algorithm>
 
 Map::Map(int width, int height) : width(width), height(height)
 {
@@ -134,4 +136,58 @@ void Map::addObserver(MapObserver* observer) {
 void Map::removeObserver(MapObserver* observer) {
     observers.erase(observer);
 }
+
+std::vector<std::pair<int, int>> Map::getPath() const {
+    std::vector<std::pair<int, int>> path;
+
+    if (entryPoint.first == -1 || entryPoint.second == -1 || exitPoint.first == -1 || exitPoint.second == -1) {
+        std::cout << "Error: Entry or Exit point not set!" << std::endl;
+        return path; // Return empty path
+    }
+
+    std::queue<std::pair<int, int>> q;
+    std::map<std::pair<int, int>, std::pair<int, int>> parent; // Track previous cell
+    std::set<std::pair<int, int>> visited; // Track visited nodes
+
+    q.push(entryPoint);
+    parent[entryPoint] = {-1, -1}; // Mark start point
+    visited.insert(entryPoint);
+
+    int dx[] = {1, -1, 0, 0}; // Directions: Right, Left, Down, Up
+    int dy[] = {0, 0, 1, -1};
+
+    while (!q.empty()) {
+        auto [x, y] = q.front();
+        q.pop();
+
+        // ✅ If we reached the exit, stop and reconstruct the path
+        if (x == exitPoint.first && y == exitPoint.second) {
+            std::pair<int, int> current = {x, y};
+            while (current.first != -1) {
+                path.push_back(current);
+                current = parent[current];
+            }
+            std::reverse(path.begin(), path.end()); // Reverse to get correct order
+            return path;
+        }
+
+        // ✅ Explore all 4 directions
+        for (int i = 0; i < 4; i++) {
+            int nx = x + dx[i];
+            int ny = y + dy[i];
+
+            // ✅ Ensure the next cell is valid, is a PATH/EXIT, and is not visited
+            if (isWithinBounds(nx, ny) && (getCellType(nx, ny) == CellType::PATH || getCellType(nx, ny) == CellType::EXIT)
+                && visited.find({nx, ny}) == visited.end()) {
+                q.push({nx, ny});
+                parent[{nx, ny}] = {x, y}; // Store previous node
+                visited.insert({nx, ny});
+                }
+        }
+    }
+
+    std::cout << "Error: No valid path found from entry to exit!" << std::endl;
+    return path; // Return empty if no path found
+}
+
 

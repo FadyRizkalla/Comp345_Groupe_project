@@ -3,7 +3,8 @@
 
 #include <iostream>
 #include <vector>
-using namespace std;
+#include "CritterObserver.h"
+#include "map.h"
 
 class CritterObserver;
 
@@ -14,13 +15,15 @@ private:
     int strength;
     int speed;
     int level;
-    std::vector<CritterObserver *> observers; //List of Observers for critters
-
+    std::vector<CritterObserver *> observers;
+    std::vector<std::pair<int, int>> path;
+    int pathIndex = 0;
+    std::pair<int, int> exitCell;
 
 public:
-
     int x;
     int y;
+    int previousX, previousY;
 
     // Constructor
     Critter(int hp, int str, int spd, int lvl);
@@ -28,8 +31,10 @@ public:
     // Damage function
     void takeDamage(int damage);
 
-    // Movement function
-    void move();
+    void move(Map& gameMap);
+
+    // Set Path
+    void setPath(const std::vector<std::pair<int, int>>& p);
 
     // Getters
     int getHitPoints() const;
@@ -47,9 +52,19 @@ public:
 
     // Check if the critter is dead
     bool isDead() const;
-    std::pair<int, int> getPosition() const;
 
-    //observer methods
+    void setPosition(int newX, int newY) {
+        previousX = x = newX;
+        previousY = y = newY;
+    }
+    std::pair<int, int> getPosition() const { return {x, y}; }
+
+    void setExit(int exitX, int exitY) { exitCell = {exitX, exitY}; }
+
+    bool hasReachedExit() const;
+
+
+    // Observer methods
     void addObserver(CritterObserver *observer);
     void removeObserver(CritterObserver *observer);
     void notifyObservers();

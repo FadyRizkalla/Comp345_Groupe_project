@@ -1,23 +1,17 @@
-//
-// Created by Elisa on 2025-03-02.
-//
-
 #ifndef CRITTEROBSERVER_H
 #define CRITTEROBSERVER_H
 
-#include "Critter.h"
+// Forward declaration to avoid circular dependency
+class Critter;
 
 class CritterObserver {
-
-    protected:
+protected:
     Critter* critter;
 
-    public:
+public:
     CritterObserver(Critter* critter);
     virtual ~CritterObserver();
     virtual void update() = 0;
 };
 
-
-
-#endif //CRITTEROBSERVER_H
+#endif // CRITTEROBSERVER_H

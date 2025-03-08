@@ -7,6 +7,13 @@
 #include "map.h"
 #include "sfml_map_observer.h"
 #include "Player.h"
+#include "Tower.h"
+#include <vector>
+#include <cstdlib>
+#include <ctime>
+#include "Goblin_Critter.h"
+#include "Ogre_Critter.h"
+
 
 
 // Enum for tracking game state
@@ -19,7 +26,7 @@ enum class GameState {
 
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode({1000, 800}), "Tower Defense");
+    sf::RenderWindow window(sf::VideoMode({1200, 800}), "Tower Defense");
 
     sf::Font font;
     if (!font.openFromFile("arial.ttf")) {
@@ -78,16 +85,16 @@ int main() {
     // Validate Button
     sf::RectangleShape validateButton({200.f, 50.f});
     validateButton.setFillColor(sf::Color::White);
-    validateButton.setPosition({300.f, 520.f}); // Below the grid
+    validateButton.setPosition({300.f, 620.f}); // Below the grid
 
     sf::Text validateText(font, "Validate", 30);
     validateText.setFillColor(sf::Color::Black);
-    validateText.setPosition({355.f, 530.f}); // Centered on the button
+    validateText.setPosition({355.f, 630.f}); // Centered on the button
 
     // Validation Result Text
     sf::Text validationResult(font, "", 24);
     validationResult.setFillColor(sf::Color::White);
-    validationResult.setPosition({250.f, 580.f}); // Below the button
+    validationResult.setPosition({250.f, 680.f}); // Below the button
 
 
     bool typingLength = true;
@@ -113,11 +120,11 @@ int main() {
     // Next Button (Hidden until the map is valid)
     sf::RectangleShape nextButton({200.f, 50.f});
     nextButton.setFillColor(sf::Color::White);
-    nextButton.setPosition({300.f, 620.f}); // Below Validate Button
+    nextButton.setPosition({300.f, 720.f}); // Below Validate Button
 
     sf::Text nextText(font, "Next", 30);
     nextText.setFillColor(sf::Color::Black);
-    nextText.setPosition({375.f, 630.f});
+    nextText.setPosition({375.f, 730.f});
 
     // ✅ Tower Types UI (Displayed under player funds)
     sf::Text towerTypesText(font, "Towers:", 24);
@@ -155,11 +162,56 @@ int main() {
 
     SFMLMapObserver* observer = nullptr;
 
+    int selectedTowerType = 0; // 0 = No tower selected, 1 = Archer, 2 = Crossbow, etc.
+
+    sf::Text selectedTowerText(font, "Selected: None", 24);
+    selectedTowerText.setFillColor(sf::Color::White);
+    selectedTowerText.setPosition({800.f, 240.f}); // Below tower list
+
+    sf::RectangleShape readyButton({200.f, 50.f});
+    readyButton.setFillColor(sf::Color::White);
+    readyButton.setPosition({800.f, 300.f}); // Below tower selection
+
+    sf::Text readyText(font, "Ready", 30);
+    readyText.setFillColor(sf::Color::Black);
+    readyText.setPosition({870.f, 310.f});
+
+    bool isReady = false;
+
+    std::vector<Critter*> critters;
+    std::srand(std::time(nullptr));
+
+    sf::Clock spawnTimer;
+    int critterSpawnIndex = 0;
+    float spawnDelay = 0.5f;
+
+
     while (window.isOpen()) {
         while (const std::optional<sf::Event> event = window.pollEvent()) {
             if (event->is<sf::Event::Closed>())
                 window.close();
 
+            if (auto keyEvent = event->getIf<sf::Event::KeyPressed>()) {
+                if (keyEvent->code == sf::Keyboard::Key::Num1) {
+                    selectedTowerType = 1;
+                    selectedTowerText.setString("Selected: Archer");
+                } else if (keyEvent->code == sf::Keyboard::Key::Num2) {
+                    selectedTowerType = 2;
+                    selectedTowerText.setString("Selected: Crossbow");
+                } else if (keyEvent->code == sf::Keyboard::Key::Num3) {
+                    selectedTowerType = 3;
+                    selectedTowerText.setString("Selected: Sniper");
+                } else if (keyEvent->code == sf::Keyboard::Key::Num4) {
+                    selectedTowerType = 4;
+                    selectedTowerText.setString("Selected: Ice Wall");
+                } else if (keyEvent->code == sf::Keyboard::Key::Num5) {
+                    selectedTowerType = 5;
+                    selectedTowerText.setString("Selected: Turret");
+                }
+            }
+
+
+            // ✅ Mouse Click Handling (AFTER Key Events)
             if (event->is<sf::Event::MouseButtonPressed>()) {
                 sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
 
@@ -168,6 +220,7 @@ int main() {
                         gameState = GameState::MAP_INPUT;
                     }
                 }
+
                 else if (gameState == GameState::MAP_INPUT) {
                     if (doneButton.getGlobalBounds().contains(mousePos) && !lengthStr.empty() && !widthStr.empty()) {
                         int length = std::stoi(lengthStr);
@@ -233,8 +286,9 @@ int main() {
                                         gameMap->setCell(entryPoint.first, entryPoint.second, CellType::SCENERY);
                                     }
                                     gameMap->setCell(i, j, CellType::ENTRY);
-                                    entryPoint = {i, j};
+                                    entryPoint = {i, j}; // ✅ Save entry position
                                 }
+
                                 else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::X)) { // Exit point
                                     if (exitPoint.first != -1) {
                                         gameMap->setCell(exitPoint.first, exitPoint.second, CellType::SCENERY);
@@ -248,8 +302,123 @@ int main() {
                                 }
                             }
                         }
+
                     }
-                }
+}
+                    else if (gameState == GameState::MAP_VIEW) {
+                        sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+
+
+                        if (readyButton.getGlobalBounds().contains(mousePos)) {
+                            isReady = true;
+                            std::cout << "Player is ready! Critters will spawn one by one.\n";
+
+                            // Log the entry point
+                            std::cout << "Entry Point: (" << entryPoint.first << ", " << entryPoint.second << ")\n";
+
+                            std::vector<std::pair<int, int>> path = gameMap->getPath();
+                            std::cout << "Full Path: ";
+                            for (const auto& step : path) {
+                                std::cout << "(" << step.first << ", " << step.second << ") ";
+                            }
+                            std::cout << std::endl;
+
+                            if (!path.empty()) {
+                                std::cout << "First Path Cell: (" << path.front().first << ", " << path.front().second << ")\n";
+                            } else {
+                                std::cout << "Error: No valid path found!\n";
+                            }
+
+                            if (entryPoint.first != -1 && entryPoint.second != -1) {
+                                // Ensure the first step in the path is the correct starting position
+                                if (!path.empty() && path.front() == entryPoint) {
+                                    std::cout << "Entry matches first path cell. Spawning correctly." << std::endl;
+                                } else {
+                                    std::cout << "Warning: Entry point (" << entryPoint.first << ", " << entryPoint.second
+                                              << ") does NOT match first path step (" << path.front().first << ", " << path.front().second << ")."
+                                              << " Adjusting entry position." << std::endl;
+                                    if (path.empty() || path.front() != entryPoint) {
+                                        std::cout << "Error: Path does not start from the correct entry!\n";
+                                    }
+
+                                }
+
+
+                                for (int i = 0; i < 3; i++) {
+                                    Critter* goblin = new Goblin_Critter();
+                                    goblin->setPosition(entryPoint.first, entryPoint.second); // ✅ Correct spawn position
+                                    goblin->setPath(path);
+                                    critters.push_back(goblin);
+                                }
+
+                                for (int i = 0; i < 2; i++) {
+                                    Critter* ogre = new Ogre_Critter();
+                                    ogre->setPosition(entryPoint.first, entryPoint.second); // ✅ Correct spawn position
+                                    ogre->setPath(path);
+                                    critters.push_back(ogre);
+                                }
+
+                                spawnTimer.restart();
+                                critterSpawnIndex = 0;
+                            } else {
+                                std::cout << "Error: No entry point set!\n";
+                            }
+                        }
+
+
+
+
+
+
+
+
+
+
+
+                        if (!isReady) {
+                        for (int i = 0; i < gridHeight; i++) {
+                            for (int j = 0; j < gridWidth; j++) {
+                                int index = i * gridWidth + j;
+                                if (gridCells[index].getGlobalBounds().contains(mousePos)) {
+
+                                    // ✅ Ensure a tower type is selected
+                                    if (selectedTowerType == 0) {
+                                        std::cout << "No tower selected!" << std::endl;
+                                        continue;
+                                    }
+
+                                    // ✅ Create a temporary tower for placement validation
+                                    Tower tempTower(j, i, 100, 5, 10, 2, 50, 1, 50); // Default cost is 100
+                                    std::vector<Tower*> placedTowers; // Simulate tower list (Replace with actual tower list)
+
+                                    // ✅ Check if placement is valid
+                                    if (tempTower.isValidPlacement(j, i, *gameMap, placedTowers)) {
+
+                                        // ✅ Deduct player funds if they have enough
+                                        double towerCost = tempTower.getCost();
+                                        if (player.hasEnoughFunds(towerCost)) {
+                                            player.subtractPlayerFunds(towerCost);
+                                            playerFundsText.setString("Gold: " + std::to_string(player.getPlayerFunds()));
+
+                                            // ✅ Update the grid to show the placed tower
+                                            gridCells[index].setFillColor(sf::Color::Blue); // Towers are marked blue
+
+                                            // ✅ Print confirmation
+                                            std::cout << "Tower placed at (" << j << ", " << i << ")" << std::endl;
+                                        } else {
+                                            std::cout << "Not enough gold to place this tower!" << std::endl;
+                                        }
+
+                                    } else {
+                                        std::cout << "Invalid tower placement!" << std::endl;
+                                    }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
 
 
             }
@@ -257,6 +426,8 @@ int main() {
             if (gameState == GameState::MAP_INPUT) {
                 if (auto textEvent = event->getIf<sf::Event::TextEntered>()) {
                     char inputChar = static_cast<char>(textEvent->unicode);
+
+
 
                     if (std::isdigit(inputChar)) {
                         if (typingLength && lengthStr.size() < 3) lengthStr += inputChar;
@@ -308,22 +479,73 @@ int main() {
             }
         }
         else if (gameState == GameState::MAP_VIEW) {
+            // ✅ Draw the grid (map)
             for (const auto& cell : gridCells) {
-                window.draw(cell); // Only render the map
+                window.draw(cell);
             }
 
-            // ✅ Update and render player funds
+            // ✅ If not ready, show Ready button
+            if (!isReady) {
+                window.draw(readyButton);
+                window.draw(readyText);
+            } else {
+                if (critterSpawnIndex < critters.size() && spawnTimer.getElapsedTime().asSeconds() > spawnDelay) {
+                    critterSpawnIndex++; // Enable the next critter
+                    spawnTimer.restart(); // Reset the timer for the next critter
+                }
+
+                // Move and render only active critters
+                static sf::Clock critterMoveClock;
+                if (critterMoveClock.getElapsedTime().asSeconds() > 0.6f) {
+                    for (int i = 0; i < critterSpawnIndex; i++) {
+                        critters[i]->move(*gameMap);
+                    }
+
+                    critterMoveClock.restart();
+                }
+
+
+                for (int i = 0; i < critterSpawnIndex; i++) {
+                    sf::CircleShape critterShape(10);
+                    critterShape.setFillColor(sf::Color::Red);
+
+                    // Convert grid position to SFML window position
+                    float cellSize = std::min(maxCellSize, std::min(600 / gridHeight, 800 / gridWidth));
+                    float startX = (800 - (gridWidth * cellSize)) / 2;
+                    float startY = (600 - (gridHeight * cellSize)) / 2 + 30;
+
+                    float critterOffset = (cellSize - 20) / 2;
+                    critterShape.setRadius(10);
+
+                    sf::Vector2f critterPosition(
+                        startX + critters[i]->getPosition().second * cellSize + critterOffset, // ✅ Correct X-axis mapping
+                        startY + critters[i]->getPosition().first * cellSize + critterOffset  // ✅ Correct Y-axis mapping
+                    );
+
+                    critterShape.setPosition(critterPosition);
+                    window.draw(critterShape);
+                }
+
+
+
+
+            }
+
+            // ✅ Update and display player funds
             playerFundsText.setString("Gold: " + std::to_string(player.getPlayerFunds()));
             window.draw(playerFundsText);
 
-            // ✅ Render Tower Types
+            // ✅ Render Tower Types UI
             window.draw(towerTypesText);
             window.draw(archerTowerText);
             window.draw(crossbowTowerText);
             window.draw(sniperTowerText);
             window.draw(iceWallText);
             window.draw(turretTowerText);
+            window.draw(selectedTowerText);
         }
+
+
 
 
 
@@ -332,7 +554,8 @@ int main() {
         window.display();
     }
 
-    delete gameMap;
-    delete observer;
+    if (gameMap) delete gameMap;
+    if (observer) delete observer;
+
     return 0;
 }
