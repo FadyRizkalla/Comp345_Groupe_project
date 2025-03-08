@@ -7,12 +7,6 @@
 #include "Tower.h"
 
 
-// This is the lowest tier of the towers. It is the basic level that the user is able to use.
-
-/* Archer Tower: Basic Level tower
- * Characteristics: Single damage to one enemy, Basic, Cost-effective
- * No special features against critters
-*/
 
 class ArcherTower : public Tower {
 

@@ -157,4 +157,5 @@ CMakeFiles/Comp345_Groupe_project.dir/CrossbowTower.cpp.obj: \
  C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Critter.h \
  C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\CritterObserver.h \
  C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\map.h \
+ C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\TowerObserver.h \
  C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\ArcherTower.h

@@ -156,4 +156,5 @@ CMakeFiles/Comp345_Groupe_project.dir/ArcherTower.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/erase_if.h \
  C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Critter.h \
  C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\CritterObserver.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\map.h
+ C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\map.h \
+ C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\TowerObserver.h

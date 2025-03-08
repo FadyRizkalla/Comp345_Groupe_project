@@ -410,6 +410,54 @@ Critter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/Critter.cpp.s
 .PHONY : Critter.cpp.s
 
+CritterObserver.obj: CritterObserver.cpp.obj
+.PHONY : CritterObserver.obj
+
+# target to build an object file
+CritterObserver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/CritterObserver.cpp.obj
+.PHONY : CritterObserver.cpp.obj
+
+CritterObserver.i: CritterObserver.cpp.i
+.PHONY : CritterObserver.i
+
+# target to preprocess a source file
+CritterObserver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/CritterObserver.cpp.i
+.PHONY : CritterObserver.cpp.i
+
+CritterObserver.s: CritterObserver.cpp.s
+.PHONY : CritterObserver.s
+
+# target to generate assembly for a file
+CritterObserver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/CritterObserver.cpp.s
+.PHONY : CritterObserver.cpp.s
+
+CritterView.obj: CritterView.cpp.obj
+.PHONY : CritterView.obj
+
+# target to build an object file
+CritterView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/CritterView.cpp.obj
+.PHONY : CritterView.cpp.obj
+
+CritterView.i: CritterView.cpp.i
+.PHONY : CritterView.i
+
+# target to preprocess a source file
+CritterView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/CritterView.cpp.i
+.PHONY : CritterView.cpp.i
+
+CritterView.s: CritterView.cpp.s
+.PHONY : CritterView.s
+
+# target to generate assembly for a file
+CritterView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/CritterView.cpp.s
+.PHONY : CritterView.cpp.s
+
 CrossbowTower.obj: CrossbowTower.cpp.obj
 .PHONY : CrossbowTower.obj
 
@@ -602,6 +650,30 @@ Tower.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/Tower.cpp.s
 .PHONY : Tower.cpp.s
 
+TowerObserver.obj: TowerObserver.cpp.obj
+.PHONY : TowerObserver.obj
+
+# target to build an object file
+TowerObserver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/TowerObserver.cpp.obj
+.PHONY : TowerObserver.cpp.obj
+
+TowerObserver.i: TowerObserver.cpp.i
+.PHONY : TowerObserver.i
+
+# target to preprocess a source file
+TowerObserver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/TowerObserver.cpp.i
+.PHONY : TowerObserver.cpp.i
+
+TowerObserver.s: TowerObserver.cpp.s
+.PHONY : TowerObserver.s
+
+# target to generate assembly for a file
+TowerObserver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/TowerObserver.cpp.s
+.PHONY : TowerObserver.cpp.s
+
 TurretTower.obj: TurretTower.cpp.obj
 .PHONY : TurretTower.obj
 
@@ -732,6 +804,12 @@ help:
 	@echo ... Critter.obj
 	@echo ... Critter.i
 	@echo ... Critter.s
+	@echo ... CritterObserver.obj
+	@echo ... CritterObserver.i
+	@echo ... CritterObserver.s
+	@echo ... CritterView.obj
+	@echo ... CritterView.i
+	@echo ... CritterView.s
 	@echo ... CrossbowTower.obj
 	@echo ... CrossbowTower.i
 	@echo ... CrossbowTower.s
@@ -756,6 +834,9 @@ help:
 	@echo ... Tower.obj
 	@echo ... Tower.i
 	@echo ... Tower.s
+	@echo ... TowerObserver.obj
+	@echo ... TowerObserver.i
+	@echo ... TowerObserver.s
 	@echo ... TurretTower.obj
 	@echo ... TurretTower.i
 	@echo ... TurretTower.s

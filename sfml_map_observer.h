@@ -13,7 +13,7 @@ private:
 
 public:
     SFMLMapObserver(Map* map, sf::RenderWindow& win, std::vector<sf::RectangleShape>& cells, int width, int height);
-    void update() override; // Handles map updates
+    void update() override;
 };
 
 #endif

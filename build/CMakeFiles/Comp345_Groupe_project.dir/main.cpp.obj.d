@@ -294,5 +294,8 @@ CMakeFiles/Comp345_Groupe_project.dir/main.cpp.obj: \
  C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Map.h \
  C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Critter.h \
  C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\CritterObserver.h \
+ C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\TowerObserver.h \
  C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Goblin_Critter.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Ogre_Critter.h
+ C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Ogre_Critter.h \
+ C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\TowerView.h \
+ C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\CritterView.h

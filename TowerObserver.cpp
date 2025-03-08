@@ -1,15 +1,10 @@
-//
-// Created by Elisa on 2025-03-02.
-//
-
 #include "TowerObserver.h"
+#include "Tower.h"
 
-
-TowerObserver::TowerObserver(Tower* tower): tower(tower) {
-
-      tower -> addObserver(this);
+TowerObserver::TowerObserver(Tower* tower) : tower(tower) {
+    tower->addObserver(this);
 }
 
 TowerObserver::~TowerObserver() {
-  tower -> removeObserver(this);
+    tower->removeObserver(this);
 }

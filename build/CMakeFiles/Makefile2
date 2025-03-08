@@ -432,16 +432,16 @@ _deps/vorbis-build/lib/clean: _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/c
 # All Build rule for target.
 CMakeFiles/Comp345_Groupe_project.dir/all: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all
 CMakeFiles/Comp345_Groupe_project.dir/all: _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/all
-CMakeFiles/Comp345_Groupe_project.dir/all: _deps/freetype-build/CMakeFiles/freetype.dir/all
 CMakeFiles/Comp345_Groupe_project.dir/all: _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
+CMakeFiles/Comp345_Groupe_project.dir/all: _deps/freetype-build/CMakeFiles/freetype.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Comp345_Groupe_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Comp345_Groupe_project"
 .PHONY : CMakeFiles/Comp345_Groupe_project.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Comp345_Groupe_project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles 54
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Comp345_Groupe_project.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles 0
 .PHONY : CMakeFiles/Comp345_Groupe_project.dir/rule
@@ -453,7 +453,7 @@ Comp345_Groupe_project: CMakeFiles/Comp345_Groupe_project.dir/rule
 # codegen rule for target.
 CMakeFiles/Comp345_Groupe_project.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Comp345_Groupe_project.dir\build.make CMakeFiles/Comp345_Groupe_project.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target Comp345_Groupe_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target Comp345_Groupe_project"
 .PHONY : CMakeFiles/Comp345_Groupe_project.dir/codegen
 
 # clean rule for target.
@@ -468,12 +468,12 @@ CMakeFiles/Comp345_Groupe_project.dir/clean:
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\System\CMakeFiles\sfml-system.dir\build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\System\CMakeFiles\sfml-system.dir\build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=73,74,75,76 "Built target sfml-system"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=73,74,75,76,77 "Built target sfml-system"
 .PHONY : _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles 0
 .PHONY : _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/rule
@@ -485,7 +485,7 @@ sfml-system: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/rule
 # codegen rule for target.
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\System\CMakeFiles\sfml-system.dir\build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=73,74,75,76 "Finished codegen for target sfml-system"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=73,74,75,76,77 "Finished codegen for target sfml-system"
 .PHONY : _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/codegen
 
 # clean rule for target.
@@ -532,7 +532,7 @@ _deps/sfml-build/src/SFML/Main/CMakeFiles/sfml-main.dir/clean:
 _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/all: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\Window\CMakeFiles\sfml-window.dir\build.make _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\Window\CMakeFiles\sfml-window.dir\build.make _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=77,78,79,80,81,82,83,84,85,86,87,88 "Built target sfml-window"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=78,79,80,81,82,83,84,85,86,87,88 "Built target sfml-window"
 .PHONY : _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/all
 
 # Build rule for subdir invocation for target.
@@ -549,7 +549,7 @@ sfml-window: _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/rule
 # codegen rule for target.
 _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\Window\CMakeFiles\sfml-window.dir\build.make _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=77,78,79,80,81,82,83,84,85,86,87,88 "Finished codegen for target sfml-window"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=78,79,80,81,82,83,84,85,86,87,88 "Finished codegen for target sfml-window"
 .PHONY : _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/codegen
 
 # clean rule for target.
@@ -569,7 +569,7 @@ _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/all: _deps/sfml-bu
 
 # Build rule for subdir invocation for target.
 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles 0
 .PHONY : _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/rule
@@ -630,7 +630,7 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/clean:
 _deps/freetype-build/CMakeFiles/freetype.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42 "Built target freetype"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43 "Built target freetype"
 .PHONY : _deps/freetype-build/CMakeFiles/freetype.dir/all
 
 # Build rule for subdir invocation for target.
@@ -647,7 +647,7 @@ freetype: _deps/freetype-build/CMakeFiles/freetype.dir/rule
 # codegen rule for target.
 _deps/freetype-build/CMakeFiles/freetype.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\freetype-build\CMakeFiles\freetype.dir\build.make _deps/freetype-build/CMakeFiles/freetype.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42 "Finished codegen for target freetype"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43 "Finished codegen for target freetype"
 .PHONY : _deps/freetype-build/CMakeFiles/freetype.dir/codegen
 
 # clean rule for target.
@@ -662,12 +662,12 @@ _deps/freetype-build/CMakeFiles/freetype.dir/clean:
 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/all
 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/ogg-build/CMakeFiles/ogg.dir/all
 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/all
-_deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/all
-_deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/all
 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/all
+_deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/all
+_deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all: _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\Audio\CMakeFiles\sfml-audio.dir\build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\Audio\CMakeFiles\sfml-audio.dir\build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=44,45,46,47,48,49,50,51,52,53,54 "Built target sfml-audio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=45,46,47,48,49,50,51,52,53,54 "Built target sfml-audio"
 .PHONY : _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/all
 
 # Build rule for subdir invocation for target.
@@ -684,7 +684,7 @@ sfml-audio: _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/rule
 # codegen rule for target.
 _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\sfml-build\src\SFML\Audio\CMakeFiles\sfml-audio.dir\build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=44,45,46,47,48,49,50,51,52,53,54 "Finished codegen for target sfml-audio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=45,46,47,48,49,50,51,52,53,54 "Finished codegen for target sfml-audio"
 .PHONY : _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/codegen
 
 # clean rule for target.
@@ -699,7 +699,7 @@ _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/clean:
 _deps/ogg-build/CMakeFiles/ogg.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps\ogg-build\CMakeFiles\ogg.dir\build.make _deps/ogg-build/CMakeFiles/ogg.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\ogg-build\CMakeFiles\ogg.dir\build.make _deps/ogg-build/CMakeFiles/ogg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=43 "Built target ogg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=44 "Built target ogg"
 .PHONY : _deps/ogg-build/CMakeFiles/ogg.dir/all
 
 # Build rule for subdir invocation for target.
@@ -716,7 +716,7 @@ ogg: _deps/ogg-build/CMakeFiles/ogg.dir/rule
 # codegen rule for target.
 _deps/ogg-build/CMakeFiles/ogg.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\ogg-build\CMakeFiles\ogg.dir\build.make _deps/ogg-build/CMakeFiles/ogg.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=43 "Finished codegen for target ogg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=44 "Finished codegen for target ogg"
 .PHONY : _deps/ogg-build/CMakeFiles/ogg.dir/codegen
 
 # clean rule for target.
@@ -731,7 +731,7 @@ _deps/ogg-build/CMakeFiles/ogg.dir/clean:
 _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/all: _deps/ogg-build/CMakeFiles/ogg.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps\flac-build\src\libFLAC\CMakeFiles\FLAC.dir\build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\flac-build\src\libFLAC\CMakeFiles\FLAC.dir\build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 "Built target FLAC"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 "Built target FLAC"
 .PHONY : _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/all
 
 # Build rule for subdir invocation for target.
@@ -748,7 +748,7 @@ FLAC: _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/rule
 # codegen rule for target.
 _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\flac-build\src\libFLAC\CMakeFiles\FLAC.dir\build.make _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 "Finished codegen for target FLAC"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 "Finished codegen for target FLAC"
 .PHONY : _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/codegen
 
 # clean rule for target.
@@ -764,7 +764,7 @@ _deps/flac-build/microbench/CMakeFiles/benchmark_residual.dir/all: _deps/ogg-bui
 _deps/flac-build/microbench/CMakeFiles/benchmark_residual.dir/all: _deps/flac-build/src/libFLAC/CMakeFiles/FLAC.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps\flac-build\microbench\CMakeFiles\benchmark_residual.dir\build.make _deps/flac-build/microbench/CMakeFiles/benchmark_residual.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\flac-build\microbench\CMakeFiles\benchmark_residual.dir\build.make _deps/flac-build/microbench/CMakeFiles/benchmark_residual.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=23 "Built target benchmark_residual"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=24 "Built target benchmark_residual"
 .PHONY : _deps/flac-build/microbench/CMakeFiles/benchmark_residual.dir/all
 
 # Build rule for subdir invocation for target.
@@ -781,7 +781,7 @@ benchmark_residual: _deps/flac-build/microbench/CMakeFiles/benchmark_residual.di
 # codegen rule for target.
 _deps/flac-build/microbench/CMakeFiles/benchmark_residual.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\flac-build\microbench\CMakeFiles\benchmark_residual.dir\build.make _deps/flac-build/microbench/CMakeFiles/benchmark_residual.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=23 "Finished codegen for target benchmark_residual"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles --progress-num=24 "Finished codegen for target benchmark_residual"
 .PHONY : _deps/flac-build/microbench/CMakeFiles/benchmark_residual.dir/codegen
 
 # clean rule for target.

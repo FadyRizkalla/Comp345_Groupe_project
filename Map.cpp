@@ -41,7 +41,7 @@ void Map::setCell(int x, int y, CellType type) {
     }
 
     grid[x][y] = type;
-    notifyObservers(); // ✅ Notify observers of the change
+    notifyObservers();
 }
 
 bool Map::isPathConnected() const
@@ -146,48 +146,45 @@ std::vector<std::pair<int, int>> Map::getPath() const {
     }
 
     std::queue<std::pair<int, int>> q;
-    std::map<std::pair<int, int>, std::pair<int, int>> parent; // Track previous cell
-    std::set<std::pair<int, int>> visited; // Track visited nodes
+    std::map<std::pair<int, int>, std::pair<int, int>> parent;
+    std::set<std::pair<int, int>> visited;
 
     q.push(entryPoint);
-    parent[entryPoint] = {-1, -1}; // Mark start point
+    parent[entryPoint] = {-1, -1};
     visited.insert(entryPoint);
 
-    int dx[] = {1, -1, 0, 0}; // Directions: Right, Left, Down, Up
+    int dx[] = {1, -1, 0, 0};
     int dy[] = {0, 0, 1, -1};
 
     while (!q.empty()) {
         auto [x, y] = q.front();
         q.pop();
 
-        // ✅ If we reached the exit, stop and reconstruct the path
         if (x == exitPoint.first && y == exitPoint.second) {
             std::pair<int, int> current = {x, y};
             while (current.first != -1) {
                 path.push_back(current);
                 current = parent[current];
             }
-            std::reverse(path.begin(), path.end()); // Reverse to get correct order
+            std::reverse(path.begin(), path.end());
             return path;
         }
 
-        // ✅ Explore all 4 directions
         for (int i = 0; i < 4; i++) {
             int nx = x + dx[i];
             int ny = y + dy[i];
 
-            // ✅ Ensure the next cell is valid, is a PATH/EXIT, and is not visited
             if (isWithinBounds(nx, ny) && (getCellType(nx, ny) == CellType::PATH || getCellType(nx, ny) == CellType::EXIT)
                 && visited.find({nx, ny}) == visited.end()) {
                 q.push({nx, ny});
-                parent[{nx, ny}] = {x, y}; // Store previous node
+                parent[{nx, ny}] = {x, y};
                 visited.insert({nx, ny});
                 }
         }
     }
 
     std::cout << "Error: No valid path found from entry to exit!" << std::endl;
-    return path; // Return empty if no path found
+    return path;
 }
 
 

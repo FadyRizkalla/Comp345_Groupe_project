@@ -6,7 +6,6 @@
 class Ogre_Critter : public Critter
 {
 public:
-    // Constructor with default parameters for an Ogre
     Ogre_Critter();
 };
 
