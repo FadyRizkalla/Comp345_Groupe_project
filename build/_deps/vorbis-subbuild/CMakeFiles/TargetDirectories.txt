@@ -1,0 +1,3 @@
+C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/vorbis-subbuild/CMakeFiles/vorbis-populate.dir
+C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/vorbis-subbuild/CMakeFiles/edit_cache.dir
+C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/vorbis-subbuild/CMakeFiles/rebuild_cache.dir
