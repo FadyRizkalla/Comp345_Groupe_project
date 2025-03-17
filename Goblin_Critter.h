@@ -6,7 +6,6 @@
 class Goblin_Critter : public Critter
 {
 public:
-  // Constructor with default parameters for a Goblin
   Goblin_Critter();
 };
 

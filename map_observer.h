@@ -3,15 +3,14 @@
 
 #include "map.h"
 
-// Observer class
 class MapObserver {
 protected:
-    Map* subject; // Reference to the observed map
+    Map* subject;
 
 public:
     explicit MapObserver(Map* map);
     virtual ~MapObserver();
-    virtual void update() = 0; // Pure virtual function
+    virtual void update() = 0;
 };
 
 #endif

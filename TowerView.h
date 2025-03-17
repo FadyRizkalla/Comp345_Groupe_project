@@ -1,19 +1,17 @@
-//
-// Created by Elisa on 2025-03-02.
-//
-
-#ifndef TOWERVIEW_H
-#define TOWERVIEW_H
-
 #include "TowerObserver.h"
+#include "Tower.h"
+#include <iostream>
 
 class TowerView : public TowerObserver {
+public:
+    TowerView(Tower* tower) : TowerObserver(tower) {}
 
-  public:
-    TowerView(Tower* tower);
-    void update() override;
+    void update() override {
+        std::cout << "[Tower Observer] Update: Tower at ("
+                  << tower->getX() << ", " << tower->getY() << ")\n";
+        std::cout << "   -> Level: " << tower->getLevel()
+                  << " | Power: " << tower->getPower()
+                  << " | Range: " << tower->getRange()
+                  << " | Rate of Fire: " << tower->getRateOfFire() << "\n";
+    }
 };
-
-
-
-#endif //TOWERVIEW_H

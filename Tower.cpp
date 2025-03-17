@@ -15,7 +15,6 @@ using namespace std;
 
 
 
-// Default constructor. Makes an instance of a default tower.
 Tower::Tower() {
 
   x = 0;
@@ -30,7 +29,6 @@ Tower::Tower() {
 
 }
 
-// Parameterized constructor. It creates towers
 Tower::Tower(double coX, double coY, double Cost, int Range, int Power, int RateOfFire, double UpgradeCost, int Level, double RefundValue) {
 
   x = coX;
@@ -46,7 +44,6 @@ Tower::Tower(double coX, double coY, double Cost, int Range, int Power, int Rate
 
 }
 
-// initialize copy constructor. It makes an identical copy of an already made tower
 Tower::Tower(const Tower& tower) {
 
   x = tower.x;
@@ -63,11 +60,8 @@ Tower::Tower(const Tower& tower) {
 
 Tower::~Tower()= default;
 
-// method for upgrading a tower
 void Tower::upgrade(Player &player){
-
   if (player.getPlayerFunds() >= upgradeCost) {
-
     player.subtractPlayerFunds(upgradeCost);
     level++;
     power += 10;
@@ -75,19 +69,18 @@ void Tower::upgrade(Player &player){
     rateOfFire += 5;
     upgradeCost += 50;
     refundValue = cost * 0.6;
+
+    std::cout << "Tower upgraded to level " << level << "!\n";
+
     notifyObservers();
-
-    cout << "Tower upgraded to level " << level << "!" << endl;
-
   }
   else {
-    cout << "Tower upgrade failed! Not enough funds" << endl;
+    std::cout << "Tower upgrade failed! Not enough funds.\n";
   }
-
 }
 
 
-// you can sell an item for approx. the same amount as the refund value.
+
 double Tower::sell(Player &player){
 
   double sellValue = refundValue + (level * 10.4 );
@@ -96,7 +89,6 @@ double Tower::sell(Player &player){
   return sellValue;
 }
 
-//towers attack critters
 void Tower::attack(Critter* critter) {
 
   for (int i = 0; i < rateOfFire; i++) {
@@ -111,14 +103,12 @@ void Tower::attack(Critter* critter) {
 
 }
 
-//search for critters in range
 bool Tower::isTargetInRange(const Critter* critter) const {
   double distance = sqrt(pow(critter->x - x , 2) + pow(critter->y - y , 2));
   return distance <= range;
 
 }
 
-//Get critters in range and attack them
 void Tower::acquireTarget(std::vector<Critter*>& targets) {
 
   for (Critter* critter : targets) {
@@ -129,7 +119,6 @@ void Tower::acquireTarget(std::vector<Critter*>& targets) {
 
 }
 
-//place a tower on the map
 
 bool Tower::isValidPlacement(int coX, int coY, const Map &map, const std::vector<Tower *> &towers) const
 {
@@ -157,7 +146,6 @@ bool Tower::isValidPlacement(int coX, int coY, const Map &map, const std::vector
   return true;
 }
 
-// Place the tower on the map
 void Tower::placeTower(Map &map)
 {
   if (map.getCellType(x, y) == CellType::SCENERY)
@@ -167,7 +155,6 @@ void Tower::placeTower(Map &map)
   }
 }
 
-// Getter (accessor methods)
 
 int Tower::getRange() const{
   cout << "Tower's range of " << range << "!" << endl;
@@ -199,47 +186,14 @@ double Tower::getCost() const{
    cout << "Tower's upgrade cost " << upgradeCost << " gold!" << endl;
    return upgradeCost;
  }
- // Setters (setting methods)
-
- void Tower::setRange(int Range){
-  range = Range;
-  notifyObservers();
-
-}
-
- void Tower::setLevel(int Level){
-   level = Level;
-  notifyObservers();
-
-}
+void Tower::setRange(int Range) { range = Range; notifyObservers(); }
+void Tower::setLevel(int Level) { level = Level; notifyObservers(); }
+void Tower::setCost(double Cost) { cost = Cost; notifyObservers(); }
+void Tower::setPower(int Power) { power = Power; notifyObservers(); }
+void Tower::setRateOfFire(int RateOfFire) { rateOfFire = RateOfFire; notifyObservers(); }
+void Tower::setUpgradeCost(double UpgradeCost) { upgradeCost = UpgradeCost; notifyObservers(); }
 
 
- void Tower::setCost(double Cost){
-   cost = Cost;
-  notifyObservers();
-
-}
-
- void Tower::setPower(int Power){
-   power = Power;
-  notifyObservers();
-
- }
-
- void Tower::setRateOfFire(int RateOfFire){
-   rateOfFire = RateOfFire;
-  notifyObservers();
-
- }
-
- void Tower::setUpgradeCost(double UpgradeCost){
-   upgradeCost = UpgradeCost;
-    notifyObservers();
-
- }
-
-
-//observer methods
 
 void Tower::addObserver(TowerObserver *observer) {
 

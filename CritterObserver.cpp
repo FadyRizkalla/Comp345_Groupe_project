@@ -3,7 +3,7 @@
 //
 
 #include "CritterObserver.h"
-
+#include "Critter.h"
 CritterObserver::CritterObserver(Critter* critter): critter(critter) {
 
   critter->addObserver(this);

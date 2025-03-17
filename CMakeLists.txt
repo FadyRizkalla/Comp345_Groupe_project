@@ -3,11 +3,9 @@ project(Comp345_Groupe_project LANGUAGES CXX)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-# Ensure C++17 for SFML 3.0
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Fetch SFML via Git
 include(FetchContent)
 FetchContent_Declare(SFML
         GIT_REPOSITORY https://github.com/SFML/SFML.git
@@ -17,7 +15,6 @@ FetchContent_Declare(SFML
         SYSTEM)
 FetchContent_MakeAvailable(SFML)
 
-# Define source files
 set(SOURCES
         main.cpp
         Map.cpp
@@ -31,8 +28,11 @@ set(SOURCES
         Critter.cpp
         Ogre_Critter.cpp
         Goblin_Critter.cpp
-        map_observer.cpp            # ✅ Added missing observer source file
-        sfml_map_observer.cpp       # ✅ Added SFML observer implementation
+        map_observer.cpp
+        sfml_map_observer.cpp
+        TowerObserver.cpp
+        CritterObserver.cpp
+        CritterView.cpp
 )
 
 set(HEADERS
@@ -47,15 +47,15 @@ set(HEADERS
         Critter.h
         Ogre_Critter.h
         Goblin_Critter.h
-        map_observer.h              # ✅ Added missing observer header
-        sfml_map_observer.h         # ✅ Added SFML observer header
+        map_observer.h
+        sfml_map_observer.h
+        TowerObserver.h
+        CritterObserver.h
+        CritterView.h
 )
 
-# Create a single executable
 add_executable(Comp345_Groupe_project ${SOURCES} ${HEADERS})
 
-# Link SFML to the executable
 target_link_libraries(Comp345_Groupe_project PRIVATE SFML::Graphics)
 
-# Include current directory for headers
 target_include_directories(Comp345_Groupe_project PRIVATE .)

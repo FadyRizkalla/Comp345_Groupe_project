@@ -5,7 +5,6 @@
 #include <iostream>
 #include <set>
 
-// Forward declare observer class
 class MapObserver;
 
 enum class CellType {
@@ -23,10 +22,10 @@ private:
     std::pair<int, int> entryPoint{-1, -1};
     std::pair<int, int> exitPoint{-1, -1};
 
-    std::set<MapObserver*> observers; // ✅ List of observers
+    std::set<MapObserver*> observers;
 
     bool isPathConnected() const;
-    void notifyObservers(); // ✅ Notify observers
+    void notifyObservers();
 
 public:
     Map(int width, int height);
@@ -36,8 +35,10 @@ public:
     void displayMap() const;
     bool isWithinBounds(int x, int y) const;
     CellType getCellType(int x, int y) const;
+    std::vector<std::pair<int, int>> getPath() const;
+    int getHeight() const { return height; }
+    int getWidth() const { return width; }
 
-    // ✅ Observer pattern methods
     void addObserver(MapObserver* observer);
     void removeObserver(MapObserver* observer);
 };

@@ -5,12 +5,12 @@
 #include <vector>
 #include "Map.h"
 #include "Critter.h"
-
+#include "TowerObserver.h"
 
 
 class Critter;
 
-class TowerObserver;  //forward declaration
+class TowerObserver;
 
 class Tower
 {
@@ -23,7 +23,7 @@ protected:
   int level;
   double upgradeCost;
   double refundValue;
-  std::vector<TowerObserver*> observers; //List of Observers
+  std::vector<TowerObserver*> observers;
 
 
 public:
@@ -41,7 +41,7 @@ public:
   void acquireTarget(std::vector<Critter *> &targets);
 
   bool isValidPlacement(int coX, int coY, const Map &map, const std::vector<Tower *> &towers) const;
-  void placeTower(Map &map); // New method to update the map
+  void placeTower(Map &map);
 
   int getRange() const;
   int getLevel() const;
@@ -49,6 +49,8 @@ public:
   int getPower() const;
   int getRateOfFire() const;
   double getUpgradeCost() const;
+  int getX() const { return x; }
+  int getY() const { return y; }
 
   void setRange(int x);
   void setLevel(int x);
@@ -58,9 +60,8 @@ public:
   void setUpgradeCost(double x);
 
 
-  //observer methods
-  void addObserver(TowerObserver *observer); //add an observer
-  void removeObserver(TowerObserver *observer);  //removes the observer
+  void addObserver(TowerObserver *observer);
+  void removeObserver(TowerObserver *observer);
   void notifyObservers();
 
 };
