@@ -26,6 +26,7 @@ Tower::Tower() {
   rateOfFire = 0;
   upgradeCost = 0;
   refundValue = 0;
+  targetingStrategy = new NearestToTowerStrategy(); //default strategy
 
 }
 
@@ -40,6 +41,7 @@ Tower::Tower(double coX, double coY, double Cost, int Range, int Power, int Rate
   upgradeCost = UpgradeCost;
   level = Level;
   refundValue = RefundValue;
+  targetingStrategy = new NearestToTowerStrategy();
 
 
 }
@@ -55,10 +57,13 @@ Tower::Tower(const Tower& tower) {
   upgradeCost = tower.upgradeCost;
   level = tower.level;
   refundValue = tower.refundValue;
+  targetingStrategy = tower.targetingStrategy->clone(); //copy tower strategy
 
 }
 
-Tower::~Tower()= default;
+Tower::~Tower() {
+  delete targetingStrategy;
+}
 
 void Tower::upgrade(Player &player){
   if (player.getPlayerFunds() >= upgradeCost) {
@@ -109,15 +114,18 @@ bool Tower::isTargetInRange(const Critter* critter) const {
 
 }
 
-void Tower::acquireTarget(std::vector<Critter*>& targets) {
-
-  for (Critter* critter : targets) {
-    if(isTargetInRange(critter)) {
-      attack(critter);
-    }
-  }
-
+void Tower::setTargetingStrategy(TargetingStrategy* strategy) {
+  delete targetingStrategy;
+  targetingStrategy = strategy;
 }
+
+void Tower::acquireTarget(std::vector<Critter*>& targets) {
+  if (Critter* target = targetingStrategy->selectTarget(this, targets)) {
+    attack(target);
+  }
+}
+
+
 
 
 bool Tower::isValidPlacement(int coX, int coY, const Map &map, const std::vector<Tower *> &towers) const

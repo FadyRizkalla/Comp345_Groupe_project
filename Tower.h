@@ -6,6 +6,7 @@
 #include "Map.h"
 #include "Critter.h"
 #include "TowerObserver.h"
+#include "TargetingStrategy.h"
 
 
 class Critter;
@@ -24,7 +25,7 @@ protected:
   double upgradeCost;
   double refundValue;
   std::vector<TowerObserver*> observers;
-
+  TargetingStrategy* targetingStrategy;
 
 public:
   Tower();
@@ -38,6 +39,7 @@ public:
   virtual void attack(Critter *critter);
 
   bool isTargetInRange(const Critter *Critter) const;
+  void setTargetingStrategy(TargetingStrategy* strategy);
   void acquireTarget(std::vector<Critter *> &targets);
 
   bool isValidPlacement(int coX, int coY, const Map &map, const std::vector<Tower *> &towers) const;
