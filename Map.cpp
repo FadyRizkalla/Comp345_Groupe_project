@@ -7,7 +7,7 @@
 
 Map::Map(int width, int height) : width(width), height(height)
 {
-    grid.resize(height, std::vector<CellType>(width, CellType::SCENERY));
+    grid.resize(height, std::vector<Cell>(width));  // Resize the grid to hold Cell objects
 }
 
 void Map::notifyObservers() {
@@ -21,26 +21,29 @@ bool Map::isWithinBounds(int x, int y) const
     return x >= 0 && x < height && y >= 0 && y < width;
 }
 
-CellType Map::getCellType(int x, int y) const
+CellState Map::getCellType(int x, int y) const
 {
     if (!isWithinBounds(x, y))
     {
         std::cerr << "Error: Coordinates out of bounds. Returning SCENERY as default.\n";
-        return CellType::SCENERY;
+        return CellState::SCENERY;
     }
-    return grid[x][y];
+    return grid[x][y].getStatus();  // Get the status of the Cell object
 }
 
-void Map::setCell(int x, int y, CellType type) {
+void Map::setCell(int x, int y,  Cell& newCell) {
     if (!isWithinBounds(x, y)) return;
 
-    if (type == CellType::ENTRY && entryPoint.first == -1) {
+    // Set the entire Cell object in the grid
+    grid[x][y] = newCell;
+
+    // Set the entry and exit points based on Cellstate
+    if (newCell.getStatus() == CellState::ENTRY && entryPoint.first == -1) {
         entryPoint = {x, y};
-    } else if (type == CellType::EXIT && exitPoint.first == -1) {
+    } else if (newCell.getStatus() == CellState::EXIT && exitPoint.first == -1) {
         exitPoint = {x, y};
     }
 
-    grid[x][y] = type;
     notifyObservers();
 }
 
@@ -74,7 +77,7 @@ bool Map::isPathConnected() const
             int nx = x + dx[i], ny = y + dy[i];
 
             if (isWithinBounds(nx, ny) && !visited[nx][ny] &&
-                (grid[nx][ny] == CellType::PATH || grid[nx][ny] == CellType::EXIT))
+                (grid[nx][ny].getStatus() == CellState::PATH || grid[nx][ny].getStatus() == CellState::EXIT))
             {
                 visited[nx][ny] = true;
                 q.push({nx, ny});
@@ -105,21 +108,21 @@ void Map::displayMap() const
     {
         for (int j = 0; j < width; j++)
         {
-            switch (grid[i][j])
+            switch (grid[i][j].getStatus())  // Use the status of each Cell
             {
-            case CellType::SCENERY:
+            case CellState::SCENERY:
                 std::cout << "S ";
                 break;
-            case CellType::PATH:
+            case CellState::PATH:
                 std::cout << "P ";
                 break;
-            case CellType::ENTRY:
+            case CellState::ENTRY:
                 std::cout << "E ";
                 break;
-            case CellType::EXIT:
+            case CellState::EXIT:
                 std::cout << "X ";
                 break;
-            case CellType::TOWER:
+            case CellState::TOWER:
                 std::cout << "T ";
                 break;
             }
@@ -127,7 +130,6 @@ void Map::displayMap() const
         std::cout << '\n';
     }
 }
-
 
 void Map::addObserver(MapObserver* observer) {
     observers.insert(observer);
@@ -174,17 +176,15 @@ std::vector<std::pair<int, int>> Map::getPath() const {
             int nx = x + dx[i];
             int ny = y + dy[i];
 
-            if (isWithinBounds(nx, ny) && (getCellType(nx, ny) == CellType::PATH || getCellType(nx, ny) == CellType::EXIT)
+            if (isWithinBounds(nx, ny) && (getCellType(nx, ny) == CellState::PATH || getCellType(nx, ny) == CellState::EXIT)
                 && visited.find({nx, ny}) == visited.end()) {
                 q.push({nx, ny});
                 parent[{nx, ny}] = {x, y};
                 visited.insert({nx, ny});
-                }
+            }
         }
     }
 
     std::cout << "Error: No valid path found from entry to exit!" << std::endl;
     return path;
 }
-
-

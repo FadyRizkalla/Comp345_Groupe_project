@@ -136,7 +136,7 @@ bool Tower::isValidPlacement(int coX, int coY, const Map &map, const std::vector
     return false;
   }
 
-  if (map.getCellType(coX, coY) != CellType::SCENERY)
+  if (map.getCellType(coX, coY) != CellState::SCENERY)
   {
     cout << "Invalid placement: Tower can only be placed on SCENERY cells!" << endl;
     return false;
@@ -156,9 +156,9 @@ bool Tower::isValidPlacement(int coX, int coY, const Map &map, const std::vector
 
 void Tower::placeTower(Map &map)
 {
-  if (map.getCellType(x, y) == CellType::SCENERY)
+  if (map.getCellType(x, y) == CellState::SCENERY)
   {
-    map.setCell(x, y, CellType::TOWER);
+    map.setCell(x, y, CellState::TOWER);
     cout << "Tower successfully placed at (" << x << ", " << y << ")" << endl;
   }
 }

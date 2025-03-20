@@ -271,22 +271,22 @@ int main() {
                             if (gridCells[index].getGlobalBounds().contains(mousePos)) {
                                 if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::E)) {
                                     if (entryPoint.first != -1) {
-                                        gameMap->setCell(entryPoint.first, entryPoint.second, CellType::SCENERY);
+                                        gameMap->setCell(entryPoint.first, entryPoint.second, CellState::SCENERY);
                                     }
-                                    gameMap->setCell(i, j, CellType::ENTRY);
+                                    gameMap->setCell(i, j, CellState::ENTRY);
                                     entryPoint = {i, j};
                                 }
 
                                 else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::X)) {
                                     if (exitPoint.first != -1) {
-                                        gameMap->setCell(exitPoint.first, exitPoint.second, CellType::SCENERY);
+                                        gameMap->setCell(exitPoint.first, exitPoint.second, CellState::SCENERY);
                                     }
-                                    gameMap->setCell(i, j, CellType::EXIT);
+                                    gameMap->setCell(i, j, CellState::EXIT);
                                     exitPoint = {i, j};
                                 }
                                 else {
                                     cellStates[i][j] = !cellStates[i][j];
-                                    gameMap->setCell(i, j, cellStates[i][j] ? CellType::PATH : CellType::SCENERY);
+                                    gameMap->setCell(i, j, cellStates[i][j] ? CellState::PATH : CellState::SCENERY);
                                 }
                             }
                         }

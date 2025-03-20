@@ -4,10 +4,10 @@
 #include <vector>
 #include <iostream>
 #include <set>
-
+#include"Cell.h"
 class MapObserver;
 
-enum class CellType {
+enum class CellState {
     SCENERY,
     PATH,
     ENTRY,
@@ -18,7 +18,7 @@ enum class CellType {
 class Map {
 private:
     int width, height;
-    std::vector<std::vector<CellType>> grid;
+    std::vector<std::vector<Cell>> grid;
     std::pair<int, int> entryPoint{-1, -1};
     std::pair<int, int> exitPoint{-1, -1};
 
@@ -30,11 +30,11 @@ private:
 public:
     Map(int width, int height);
 
-    void setCell(int x, int y, CellType type);
+    void setCell(int x, int y,Cell& cell);
     bool validateMap() const;
     void displayMap() const;
     bool isWithinBounds(int x, int y) const;
-    CellType getCellType(int x, int y) const;
+    CellState getCellType(int x, int y) const;
     std::vector<std::pair<int, int>> getPath() const;
     int getHeight() const { return height; }
     int getWidth() const { return width; }

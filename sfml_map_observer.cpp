@@ -10,19 +10,19 @@ void SFMLMapObserver::update() {
         for (int j = 0; j < gridWidth; j++) {
             int index = i * gridWidth + j;
             switch (subject->getCellType(i, j)) {
-                case CellType::SCENERY:
+                case CellState::SCENERY:
                     gridCells[index].setFillColor(sf::Color::Transparent);
                 break;
-                case CellType::PATH:
+                case CellState::PATH:
                     gridCells[index].setFillColor(sf::Color::White);
                 break;
-                case CellType::ENTRY:
+                case CellState::ENTRY:
                     gridCells[index].setFillColor(sf::Color::Green);
                 break;
-                case CellType::EXIT:
+                case CellState::EXIT:
                     gridCells[index].setFillColor(sf::Color::Red);
                 break;
-                case CellType::TOWER:
+                case CellState::TOWER:
                     gridCells[index].setFillColor(sf::Color::Blue);
                 break;
             }

@@ -35,7 +35,7 @@ void Critter::move(Map& gameMap) {
     if (pathIndex < path.size()) {
         std::pair<int, int> nextStep = path[pathIndex];
 
-        if (gameMap.getCellType(nextStep.first, nextStep.second) == CellType::EXIT) {
+        if (gameMap.getCellType(nextStep.first, nextStep.second) == CellState::EXIT) {
             x = nextStep.first;
             y = nextStep.second;
             pathIndex++; // Move to exit cell
