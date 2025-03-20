@@ -16,12 +16,45 @@ FetchContent_Declare(SFML
 FetchContent_MakeAvailable(SFML)
 
 set(SOURCES
-        main.cpp
+main.cpp
+Cell.cpp
+Map.cpp
+Player.cpp
+Tower.cpp
+ArcherTower.cpp
+CrossbowTower.cpp
+SniperTower.cpp
+IceWall.cpp
+TurretTower.cpp
+Critter.cpp
+Ogre_Critter.cpp
+Goblin_Critter.cpp
+map_observer.cpp
+sfml_map_observer.cpp
+TowerObserver.cpp
+CritterObserver.cpp
+CritterView.cpp
        
 )
 
 set(HEADERS
-       main.h
+Map.h
+Player.h
+Tower.h
+ArcherTower.h
+CrossbowTower.h
+SniperTower.h
+IceWall.h
+TurretTower.h
+Critter.h
+Ogre_Critter.h
+Goblin_Critter.h
+map_observer.h
+sfml_map_observer.h
+TowerObserver.h
+CritterObserver.h
+CritterView.h
+main.h
 )
 
 add_executable(Comp345_Groupe_project ${SOURCES} ${HEADERS})

@@ -7,14 +7,6 @@
 #include"Cell.h"
 class MapObserver;
 
-enum class CellState {
-    SCENERY,
-    PATH,
-    ENTRY,
-    EXIT,
-    TOWER
-};
-
 class Map {
 private:
     int width, height;
