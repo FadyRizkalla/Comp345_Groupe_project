@@ -148,6 +148,10 @@ int main() {
     turretTowerText.setFillColor(sf::Color::White);
     turretTowerText.setPosition({800.f, 210.f});
 
+    sf::Text upgradeText(font,"upgrade", 20);
+    upgradeText.setFillColor(sf::Color::White);
+    upgradeText.setPosition({800.f, 270.f});
+
 
     bool isMapValid = false;
     Player player;
@@ -210,6 +214,7 @@ int main() {
 
             if (event->is<sf::Event::MouseButtonPressed>()) {
                 sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+                auto mouseEvent = event->getIf<sf::Event::MouseButtonPressed>();
 
                 if (gameState == GameState::MENU) {
                     if (startButton.getGlobalBounds().contains(mousePos)) {
@@ -404,9 +409,12 @@ int main() {
                                             }
 
                                             // Add more decorators as desired (e.g., random upgrades)
+
                                             if (rand() % 2 == 0) { // 50% chance of burning effect
                                                 decoratedTower = new BurningDamageDecorator(decoratedTower);
                                             }
+
+
 
                                             // Apply Strategy Pattern for targeting
                                         switch (selectedTowerType) {
@@ -441,8 +449,35 @@ int main() {
                                         }
                                     } else {
                                         std::cout << "Invalid tower placement!" << std::endl;
+                                        delete baseTower;
                                     }
+                                        // UPGRADE TOWER POWER
 
+                                    } else if (mouseEvent->button == sf::Mouse::Button::Right) {
+
+                                        for (auto it = placedTowers.begin(); it != placedTowers.end(); it++) {
+                                            Tower* tower = *it;
+                                            if (tower->getX() == j && tower->getY() == i) {
+                                                double upgradeCost = tower->getCost();
+                                                if (player.hasEnoughFunds(upgradeCost)) {   //checks if the player has enough funds before upgrading
+                                                    player.subtractPlayerFunds(upgradeCost);
+                                                    playerFundsText.setString("Gold: " + std::to_string(player.getPlayerFunds()));
+
+                                                    Tower* upgradeTower = new LevelUpgradeDecorator(tower);
+                                                    TowerObserver* newObserver = new TowerView(upgradeTower);
+                                                    upgradeTower->addObserver(newObserver);
+
+                                                    *it = upgradeTower;
+                                                    delete tower;
+
+                                                    std::cout<< "Tower at (" << j << ", " << i << ") upgraded to Level " << upgradeTower->getLevel() << " !.\n";
+                                                    gridCells[index].setFillColor(sf::Color::Cyan);
+                                                    break;
+                                                } else {
+                                                    std::cout << "Not enough gold to upgrade this tower!" << std::endl;
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -516,12 +551,15 @@ int main() {
             if (!isReady) {
                 window.draw(readyButton);
                 window.draw(readyText);
+                window.draw(upgradeText);
             } else {
+                //critter spawns
                 if (critterSpawnIndex < critters.size() && spawnTimer.getElapsedTime().asSeconds() > spawnDelay) {
                     critterSpawnIndex++;
                     spawnTimer.restart();
                 }
 
+                //critters movement
                 static sf::Clock critterMoveClock;
                 if (critterMoveClock.getElapsedTime().asSeconds() > 0.6f) {
                     for (int i = 0; i < critterSpawnIndex; i++) {
@@ -534,7 +572,7 @@ int main() {
                 //tower attacks
 
                 static sf::Clock towerAttackClock;
-                if (towerAttackClock.getElapsedTime().asSeconds() > 0.5f) {
+                if (towerAttackClock.getElapsedTime().asSeconds() > 0.5f && !critters.empty()) {
                     std::cout << "Towers attempting to attack...\n";
                     for (Tower* tower : placedTowers) {
                         tower->acquireTarget(critters);
@@ -544,8 +582,8 @@ int main() {
                     critters.erase(
                         std::remove_if(critters.begin(), critters.end(),
                             [](Critter* c) {
-                                if (c->isDead()) {
-                                    std::cout << "Critter removed from game.\n";
+                                if (c->isDead() || c->hasReachedExit()) {
+                                    std::cout << "Critter removed from game (Dead or Exited Map).\n";
                                     delete c;
                                     return true;
                                 }
@@ -554,6 +592,9 @@ int main() {
                         critters.end()
                     );
                     towerAttackClock.restart();
+                } else if (critters.empty()) {
+                    std::cout << "All critters defeated or escaped!.\n";
+                    isReady = false;  // reset to allow new wave or game over
                 }
 
                 //critter drawing
@@ -593,6 +634,7 @@ int main() {
             window.draw(iceWallText);
             window.draw(turretTowerText);
             window.draw(selectedTowerText);
+
         }
 
 
