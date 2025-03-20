@@ -4,7 +4,8 @@
 #include "Critter.h"
 #include "CritterObserver.h"
 #include <algorithm>
-
+#include <limits>
+#include <cmath>
 
 Critter::Critter(int hp, int str, int spd, int lvl)
     : hit_point(hp), strength(str), speed(spd), level(lvl), x(0), y(0), previousX(-1), previousY(-1), exitCell(-1, -1) {}
@@ -87,5 +88,15 @@ void Critter::notifyObservers() {
         observer->update();
     }
 }
+
+
+//Implementation of the getDistanceToExit method. Finds the critters' distance to the exit
+double Critter::getDistanceToExit() const {
+    if (exitCell.first == -1 || exitCell.second == -1) {
+        return std::numeric_limits<double>::max();
+    }
+    return std::sqrt(std::pow(static_cast<double>(exitCell.first - x), 2) + std::pow(static_cast<double>(exitCell.second - y), 2));
+}
+
 
 

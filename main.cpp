@@ -15,7 +15,9 @@
 #include "Ogre_Critter.h"
 #include "TowerView.h"
 #include "CritterView.h"
-
+#include "TargetingStrategy.h"
+#include "TowerDecorator.h"
+#include <algorithm>
 
 
 enum class GameState {
@@ -27,6 +29,8 @@ enum class GameState {
 
 
 int main() {
+    std::vector<Tower*> placedTowers;
+
     sf::RenderWindow window(sf::VideoMode({1200, 800}), "Tower Defense");
 
     sf::Font font;
@@ -329,11 +333,11 @@ int main() {
 
                                 }
 
-
                                 for (int i = 0; i < 3; i++) {
                                     Critter* goblin = new Goblin_Critter();
                                     goblin->setPosition(entryPoint.first, entryPoint.second);
                                     goblin->setPath(path);
+                                    goblin->setExit(exitPoint.first, exitPoint.second); // Set exit for distance calc
                                     critters.push_back(goblin);
                                     CritterObserver* goblinObserver = new CritterView(goblin);
                                 }
@@ -342,26 +346,18 @@ int main() {
                                     Critter* ogre = new Ogre_Critter();
                                     ogre->setPosition(entryPoint.first, entryPoint.second);
                                     ogre->setPath(path);
+                                    ogre->setExit(exitPoint.first, exitPoint.second); // Set exit for distance calc
                                     critters.push_back(ogre);
                                     CritterObserver* ogreObserver = new CritterView(ogre);
                                 }
 
                                 spawnTimer.restart();
                                 critterSpawnIndex = 0;
+
                             } else {
                                 std::cout << "Error: No entry point set!\n";
                             }
                         }
-
-
-
-
-
-
-
-
-
-
 
                         if (!isReady) {
                         for (int i = 0; i < gridHeight; i++) {
@@ -374,20 +370,69 @@ int main() {
                                         continue;
                                     }
 
-                                    Tower* newTower = new Tower(j, i, 100, 5, 10, 2, 50, 1, 50);
-                                    std::vector<Tower*> placedTowers;
+                                    Tower* baseTower = nullptr;
+                                    switch (selectedTowerType) {
+                                        case 1: // Archer Tower
+                                            baseTower = new Tower(j, i, 100, 5, 10, 2, 50, 1, 50);
+                                        break;
+                                        case 2: // Crossbow Tower
+                                            baseTower = new Tower(j, i, 150, 6, 15, 3, 75, 1, 75);
+                                        break;
+                                        case 3: // Sniper Tower
+                                            baseTower = new Tower(j, i, 200, 8, 20, 1, 100, 1, 100);
+                                        break;
+                                        case 4: // Ice Wall
+                                            baseTower = new Tower(j, i, 120, 4, 5, 1, 60, 1, 60);
+                                        break;
+                                        case 5: // Turret Tower
+                                            baseTower = new Tower(j, i, 180, 5, 12, 4, 90, 1, 90);
+                                        break;
+                                    }
 
-                                    if (newTower->isValidPlacement(j, i, *gameMap, placedTowers)) {
-                                        double towerCost = newTower->getCost();
+                                    if ( baseTower && baseTower->isValidPlacement(j, i, *gameMap, placedTowers)) {
+                                        double towerCost = baseTower->getCost();
                                         if (player.hasEnoughFunds(towerCost)) {
                                             player.subtractPlayerFunds(towerCost);
                                             playerFundsText.setString("Gold: " + std::to_string(player.getPlayerFunds()));
 
-                                            TowerObserver* observer = new TowerView(newTower);
+                                            // Apply Decorator Pattern based on tower type or additional logic
+                                            Tower* decoratedTower = baseTower;
+                                            if (selectedTowerType == 4) { // Ice Wall gets Freezing effect
+                                                decoratedTower = new FreezingEffectDecorator(decoratedTower);
+                                            } else if (selectedTowerType == 5) { // Turret gets Splash damage
+                                                decoratedTower = new SplashDamageDecorator(decoratedTower);
+                                            }
 
-                                            observer->update();
+                                            // Add more decorators as desired (e.g., random upgrades)
+                                            if (rand() % 2 == 0) { // 50% chance of burning effect
+                                                decoratedTower = new BurningDamageDecorator(decoratedTower);
+                                            }
 
-                                            placedTowers.push_back(newTower);
+                                            // Apply Strategy Pattern for targeting
+                                        switch (selectedTowerType) {
+                                            case 1: // Archer: Nearest to Tower
+                                                decoratedTower->setTargetingStrategy(new NearestToTowerStrategy());
+                                                break;
+                                            case 2: // Crossbow: Strongest
+                                                decoratedTower->setTargetingStrategy(new StrongestCritterStrategy());
+                                                break;
+                                            case 3: // Sniper: Weakest
+                                                decoratedTower->setTargetingStrategy(new WeakestCritterStrategy());
+                                                break;
+                                            case 4: // Ice Wall: Nearest to Exit
+                                                decoratedTower->setTargetingStrategy(new NearestToExitStrategy());
+                                                break;
+                                            case 5: // Turret: Nearest to Tower
+                                                decoratedTower->setTargetingStrategy(new NearestToTowerStrategy());
+                                                break;
+                                        }
+
+                                            //Tower observers
+
+                                            TowerObserver* observer = new TowerView(decoratedTower);
+                                            decoratedTower->addObserver(observer);
+
+                                            placedTowers.push_back(decoratedTower);
                                             gridCells[index].setFillColor(sf::Color::Blue);
 
                                             std::cout << "Tower placed at (" << j << ", " << i << ") with Observer attached.\n";
@@ -486,6 +531,32 @@ int main() {
                     critterMoveClock.restart();
                 }
 
+                //tower attacks
+
+                static sf::Clock towerAttackClock;
+                if (towerAttackClock.getElapsedTime().asSeconds() > 0.5f) {
+                    std::cout << "Towers attempting to attack...\n";
+                    for (Tower* tower : placedTowers) {
+                        tower->acquireTarget(critters);
+                    }
+
+                    // Clean up dead critters
+                    critters.erase(
+                        std::remove_if(critters.begin(), critters.end(),
+                            [](Critter* c) {
+                                if (c->isDead()) {
+                                    std::cout << "Critter removed from game.\n";
+                                    delete c;
+                                    return true;
+                                }
+                                return false;
+                            }),
+                        critters.end()
+                    );
+                    towerAttackClock.restart();
+                }
+
+                //critter drawing
 
                 for (int i = 0; i < critterSpawnIndex; i++) {
                     sf::CircleShape critterShape(10);
@@ -535,6 +606,16 @@ int main() {
 
     if (gameMap) delete gameMap;
     if (observer) delete observer;
+
+    //prevent memory leaks by deleting towers and critters
+
+    for (Tower* tower : placedTowers) {
+        delete tower;
+    }
+
+    for (Critter* critter : critters) {
+        delete critter;
+    }
 
     return 0;
 }

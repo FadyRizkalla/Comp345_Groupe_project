@@ -95,18 +95,16 @@ double Tower::sell(Player &player){
 }
 
 void Tower::attack(Critter* critter) {
-
   for (int i = 0; i < rateOfFire; i++) {
-
     critter->takeDamage(power);
-    cout << "Tower attacking!" << "Critter just lost " << power << " health." << endl;
-    if(critter->getStrength() < 0) {
-      cout << "Critter died!" << endl;
+    std::cout << "Tower at (" << x << ", " << y << ") attacked! Critter lost " << power << " HP, now at " << critter->getHitPoints() << "\n";
+    if (critter->isDead()) {
+      std::cout << "Critter died!\n";
     }
-
   }
-
 }
+
+
 
 bool Tower::isTargetInRange(const Critter* critter) const {
   double distance = sqrt(pow(critter->x - x , 2) + pow(critter->y - y , 2));

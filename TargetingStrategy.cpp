@@ -1,6 +1,3 @@
-//
-// Created by Elisa on 2025-03-17.
-//
 #include "TargetingStrategy.h"
 #include "Tower.h"
 #include <cmath>
@@ -9,11 +6,10 @@
 Critter* NearestToTowerStrategy::selectTarget(const Tower* tower, std::vector<Critter*>& targets) {
     Critter* closest = nullptr;
     double minDistance = std::numeric_limits<double>::max();
-
     for (Critter* critter : targets) {
         if (tower->isTargetInRange(critter)) {
             double distance = std::sqrt(std::pow(critter->x - tower->getX(), 2) +
-                                      std::pow(critter->y - tower->getY(), 2));
+                                        std::pow(critter->y - tower->getY(), 2));
             if (distance < minDistance) {
                 minDistance = distance;
                 closest = critter;
@@ -23,14 +19,16 @@ Critter* NearestToTowerStrategy::selectTarget(const Tower* tower, std::vector<Cr
     return closest;
 }
 
+TargetingStrategy* NearestToTowerStrategy::clone() const {
+    return new NearestToTowerStrategy(*this);
+}
+
 Critter* NearestToExitStrategy::selectTarget(const Tower* tower, std::vector<Critter*>& targets) {
     Critter* nearestToExit = nullptr;
     double minDistanceToExit = std::numeric_limits<double>::max();
-
-    // Assuming Critter has a method getDistanceToExit() or similar
     for (Critter* critter : targets) {
         if (tower->isTargetInRange(critter)) {
-            double distanceToExit = critter->getDistanceToExit(); // Implement in Critter class
+            double distanceToExit = critter->getDistanceToExit();
             if (distanceToExit < minDistanceToExit) {
                 minDistanceToExit = distanceToExit;
                 nearestToExit = critter;
@@ -40,10 +38,13 @@ Critter* NearestToExitStrategy::selectTarget(const Tower* tower, std::vector<Cri
     return nearestToExit;
 }
 
+TargetingStrategy* NearestToExitStrategy::clone() const {
+    return new NearestToExitStrategy(*this);
+}
+
 Critter* StrongestCritterStrategy::selectTarget(const Tower* tower, std::vector<Critter*>& targets) {
     Critter* strongest = nullptr;
     int maxStrength = -1;
-
     for (Critter* critter : targets) {
         if (tower->isTargetInRange(critter)) {
             if (critter->getStrength() > maxStrength) {
@@ -55,10 +56,13 @@ Critter* StrongestCritterStrategy::selectTarget(const Tower* tower, std::vector<
     return strongest;
 }
 
+TargetingStrategy* StrongestCritterStrategy::clone() const {
+    return new StrongestCritterStrategy(*this);
+}
+
 Critter* WeakestCritterStrategy::selectTarget(const Tower* tower, std::vector<Critter*>& targets) {
     Critter* weakest = nullptr;
     int minStrength = std::numeric_limits<int>::max();
-
     for (Critter* critter : targets) {
         if (tower->isTargetInRange(critter)) {
             if (critter->getStrength() < minStrength) {
@@ -68,4 +72,8 @@ Critter* WeakestCritterStrategy::selectTarget(const Tower* tower, std::vector<Cr
         }
     }
     return weakest;
+}
+
+TargetingStrategy* WeakestCritterStrategy::clone() const {
+    return new WeakestCritterStrategy(*this);
 }

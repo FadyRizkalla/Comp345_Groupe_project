@@ -61,6 +61,9 @@ public:
     void addObserver(CritterObserver *observer);
     void removeObserver(CritterObserver *observer);
     void notifyObservers();
+
+    //new method for getting the distance of the critters closer to the exit
+    virtual double getDistanceToExit() const;
 };
 
 #endif
