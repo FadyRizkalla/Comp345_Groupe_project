@@ -1,6 +1,6 @@
 CMakeFiles/Comp345_Groupe_project.dir/Map.cpp.obj: \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Map.cpp \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\map.h \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\Map.cpp \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\map.h \
  C:/msys64/mingw64/include/c++/14.2.0/vector \
  C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -151,7 +151,7 @@ CMakeFiles/Comp345_Groupe_project.dir/Map.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_set.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_multiset.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/erase_if.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\map_observer.h \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\map_observer.h \
  C:/msys64/mingw64/include/c++/14.2.0/queue \
  C:/msys64/mingw64/include/c++/14.2.0/deque \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_deque.h \

@@ -1,9 +1,9 @@
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/MemoryInputStream.cpp.obj: \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\sfml-src\src\SFML\System\MemoryInputStream.cpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/MemoryInputStream.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Config.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Export.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/InputStream.hpp \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\sfml-src\src\SFML\System\MemoryInputStream.cpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/MemoryInputStream.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Config.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Export.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/InputStream.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/optional \
  C:/msys64/mingw64/include/c++/14.2.0/bits/version.h \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \

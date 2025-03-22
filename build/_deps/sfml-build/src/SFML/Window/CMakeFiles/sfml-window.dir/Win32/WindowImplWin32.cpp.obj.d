@@ -1,12 +1,12 @@
 _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/WindowImplWin32.cpp.obj: \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\sfml-src\src\SFML\Window\Win32\WindowImplWin32.cpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Window/JoystickImpl.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Config.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Joystick.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/String.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Export.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Utf.hpp \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\sfml-src\src\SFML\Window\Win32\WindowImplWin32.cpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Window/JoystickImpl.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Config.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Joystick.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/String.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Export.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Utf.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/array \
  C:/msys64/mingw64/include/c++/14.2.0/compare \
  C:/msys64/mingw64/include/c++/14.2.0/bits/version.h \
@@ -153,15 +153,15 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/WindowImplWin3
  C:/msys64/mingw64/include/c++/14.2.0/cstdint \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
  C:/msys64/mingw64/include/stdint.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Utf.inl \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/String.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Utf.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/String.inl \
  C:/msys64/mingw64/include/c++/14.2.0/iterator \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stream_iterator.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/System/EnumArray.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/System/EnumArray.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/cassert \
  C:/msys64/mingw64/include/assert.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Window/Win32/JoystickImpl.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/System/Win32/WindowsHeader.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Window/Win32/JoystickImpl.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/System/Win32/WindowsHeader.hpp \
  C:/msys64/mingw64/include/windows.h \
  C:/msys64/mingw64/include/sdkddkver.h C:/msys64/mingw64/include/excpt.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
@@ -362,19 +362,19 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/WindowImplWin3
  C:/msys64/mingw64/include/playsoundapi.h \
  C:/msys64/mingw64/include/mmeapi.h C:/msys64/mingw64/include/timeapi.h \
  C:/msys64/mingw64/include/joystickapi.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Window/Win32/WindowImplWin32.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Keyboard.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/WindowEnums.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Window/WindowImpl.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Window/CursorImpl.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Window/Win32/CursorImpl.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Cursor.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector2.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Angle.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Angle.inl \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Window/Win32/WindowImplWin32.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Keyboard.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/WindowEnums.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Window/WindowImpl.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Window/CursorImpl.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Window/Win32/CursorImpl.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Cursor.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector2.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Angle.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Angle.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
  C:/msys64/mingw64/include/c++/14.2.0/memory \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tempbuf.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \
@@ -394,29 +394,29 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Win32/WindowImplWin3
  C:/msys64/mingw64/include/c++/14.2.0/pstl/execution_defs.h \
  C:/msys64/mingw64/include/c++/14.2.0/optional \
  C:/msys64/mingw64/include/c++/14.2.0/bits/enable_special_members.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Event.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Mouse.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Sensor.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector3.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector3.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Event.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Mouse.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Sensor.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector3.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector3.inl \
  C:/msys64/mingw64/include/c++/14.2.0/variant \
  C:/msys64/mingw64/include/c++/14.2.0/bits/parse_numbers.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Event.inl \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Window/SensorImpl.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Window/Win32/SensorImpl.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/VideoMode.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Event.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Window/SensorImpl.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Window/Win32/SensorImpl.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/VideoMode.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/vector \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_vector.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Vulkan.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Vulkan.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/queue \
  C:/msys64/mingw64/include/c++/14.2.0/deque \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_deque.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/deque.tcc \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_heap.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_queue.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Err.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Err.hpp \
  C:/msys64/mingw64/include/dbt.h \
  C:/msys64/mingw64/include/c++/14.2.0/ostream \
  C:/msys64/mingw64/include/c++/14.2.0/ios \

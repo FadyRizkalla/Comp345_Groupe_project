@@ -1,9 +1,9 @@
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.obj: \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\sfml-src\src\SFML\Graphics\Texture.cpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Graphics/GLCheck.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Config.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Graphics/GLExtensions.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/extlibs/headers/glad/include/glad/gl.h \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\sfml-src\src\SFML\Graphics\Texture.cpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Graphics/GLCheck.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Config.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Graphics/GLExtensions.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/extlibs/headers/glad/include/glad/gl.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
  C:/msys64/mingw64/include/stdint.h C:/msys64/mingw64/include/crtdefs.h \
  C:/msys64/mingw64/include/corecrt.h C:/msys64/mingw64/include/_mingw.h \
@@ -13,8 +13,8 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.obj:
  C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
  C:/msys64/mingw64/include/stddef.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Err.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Export.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Err.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Export.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/iosfwd \
  C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -176,29 +176,29 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.obj:
  C:/msys64/mingw64/include/c++/14.2.0/ext/aligned_buffer.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_dir.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_ops.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Graphics/Image.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Graphics/Export.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Graphics/Color.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Graphics/Color.inl \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Graphics/Rect.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector2.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Angle.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Angle.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Graphics/Image.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Graphics/Export.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Graphics/Color.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Graphics/Color.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Graphics/Rect.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector2.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Angle.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Angle.inl \
  C:/msys64/mingw64/include/c++/14.2.0/cassert \
  C:/msys64/mingw64/include/assert.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
  C:/msys64/mingw64/include/c++/14.2.0/optional \
  C:/msys64/mingw64/include/c++/14.2.0/bits/enable_special_members.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Graphics/Rect.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Graphics/Rect.inl \
  C:/msys64/mingw64/include/c++/14.2.0/vector \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_vector.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Graphics/Texture.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/GlResource.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Graphics/Texture.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Graphics/CoordinateType.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/GlResource.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/memory \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tempbuf.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
@@ -209,39 +209,39 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Texture.cpp.obj:
  C:/msys64/mingw64/include/c++/14.2.0/backward/auto_ptr.h \
  C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h \
  C:/msys64/mingw64/include/c++/14.2.0/pstl/execution_defs.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Graphics/TextureSaver.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Context.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Window.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/WindowBase.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Vulkan.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/WindowEnums.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Time.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Graphics/TextureSaver.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Context.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Window.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/WindowBase.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Vulkan.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/WindowEnums.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Time.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/chrono \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Time.inl \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/WindowBase.inl \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Event.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Joystick.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/String.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Utf.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Time.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/WindowBase.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Event.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Joystick.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/String.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Utf.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/array \
  C:/msys64/mingw64/include/c++/14.2.0/compare \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Utf.inl \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/String.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Utf.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/String.inl \
  C:/msys64/mingw64/include/c++/14.2.0/iterator \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stream_iterator.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Keyboard.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Mouse.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Sensor.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector3.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector3.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Keyboard.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Mouse.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Sensor.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector3.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector3.inl \
  C:/msys64/mingw64/include/c++/14.2.0/variant \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Event.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Event.inl \
  C:/msys64/mingw64/include/c++/14.2.0/utility \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_relops.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Clock.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Exception.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Clock.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Exception.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/algorithm \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_algo.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/algorithmfwd.h \

@@ -207,6 +207,10 @@ int main() {
 
     int waveNumber = 1;
 
+    sf::Text crittersInEndZoneText(font, "Critters in End Zone: 0", 24);
+	crittersInEndZoneText.setFillColor(sf::Color::White);
+	crittersInEndZoneText.setPosition({10.f, 750.f});
+
     while (window.isOpen()) {
         while (const std::optional<sf::Event> event = window.pollEvent()) {
             if (event->is<sf::Event::Closed>())
@@ -473,19 +477,19 @@ int main() {
                                         Tower* baseTower = nullptr;
                                         switch (selectedTowerType) {
                                             case 1: // Archer Tower
-                                                baseTower = new Tower(j, i, 100, 2, 15, 2, 50, 1, 50);
+                                                baseTower = new Tower(j, i, 100, 3, 15, 2, 50, 1, 50);
                                                 break;
                                             case 2: // Crossbow Tower
-                                                baseTower = new Tower(j, i, 150, 3, 15, 3, 75, 1, 75);
+                                                baseTower = new Tower(j, i, 150, 4, 15, 3, 75, 1, 75);
                                                 break;
                                             case 3: // Sniper Tower
-                                                baseTower = new Tower(j, i, 200, 4, 20, 2, 100, 1, 100);
+                                                baseTower = new Tower(j, i, 200, 7, 20, 2, 100, 1, 100);
                                                 break;
                                             case 4: // Ice Wall
-                                                baseTower = new Tower(j, i, 120, 3, 5, 1, 60, 1, 60);
+                                                baseTower = new Tower(j, i, 120, 4, 5, 1, 60, 1, 60);
                                                 break;
                                             case 5: // Turret Tower
-                                                baseTower = new Tower(j, i, 180, 4, 12, 4, 90, 1, 90);
+                                                baseTower = new Tower(j, i, 180, 5, 12, 4, 90, 1, 90);
                                                 break;
                                         }
 
@@ -538,7 +542,7 @@ int main() {
                                                 placedTowers.push_back(decoratedTower);
                                                 gridCells[index].setFillColor(sf::Color::Blue);
 
-                                                std::cout << "Tower placed at (" << j << ", " << i << ") with Observer attached.\n";
+                                                std::cout << "Tower placed at (" << j << ", " << i << ") with range: " << decoratedTower->getRange() << ".\n";
                                             } else {
                                                 std::cout << "Not enough gold to place this tower!" << std::endl;
                                             }
@@ -636,9 +640,15 @@ int main() {
 
                 //critters movement
                 static sf::Clock critterMoveClock;
+                int crittersInEndZone = 0;
                 if (critterMoveClock.getElapsedTime().asSeconds() > 0.6f) {
                     for (int i = 0; i < critterSpawnIndex; i++) {
                         critters[i]->move(*gameMap);
+
+                        if (critters[i]->hasReachedExit()) {
+        crittersInEndZone++;
+        crittersInEndZoneText.setString("Critters in End Zone: " + std::to_string(crittersInEndZone));
+    }
                     }
 
                     critterMoveClock.restart();
@@ -650,6 +660,7 @@ int main() {
                 if (towerAttackClock.getElapsedTime().asSeconds() > 0.5f && !critters.empty()) {
                     std::cout << "Towers attempting to attack. Active towers: " << placedTowers.size() << "\n" <<  std::endl;
                     for (Tower* tower : placedTowers) {
+                      	std::cout << "Tower range : " << tower->getRange() << "\n" << std::endl;
                         tower->acquireTarget(critters);
                     }
 
@@ -670,6 +681,8 @@ int main() {
                 } else if (critters.empty()) {
                     std::cout << "All critters defeated or escaped!.\n";
                     isReady = false;  // reset to allow new wave or game over
+                    player.setPlayerFunds(player.getPlayerFunds() + 250);
+                    playerFundsText.setString("Gold: " + std::to_string(player.getPlayerFunds()));
                 }
 
                 //critter drawing
@@ -709,6 +722,7 @@ int main() {
             window.draw(iceWallText);
             window.draw(turretTowerText);
             window.draw(selectedTowerText);
+            window.draw(crittersInEndZoneText);
 
         }
 

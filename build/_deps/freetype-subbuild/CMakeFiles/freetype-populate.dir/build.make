@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-subbuild
+CMAKE_SOURCE_DIR = C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-subbuild
+CMAKE_BINARY_DIR = C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-subbuild
 
 # Utility rule file for freetype-populate.
 
@@ -76,60 +76,60 @@ CMakeFiles/freetype-populate-complete: freetype-populate-prefix/src/freetype-pop
 CMakeFiles/freetype-populate-complete: freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-build
 CMakeFiles/freetype-populate-complete: freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-install
 CMakeFiles/freetype-populate-complete: freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-test
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'freetype-populate'"
-	"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-subbuild/CMakeFiles
-	"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-subbuild/CMakeFiles/freetype-populate-complete
-	"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'freetype-populate'"
+	"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-subbuild/CMakeFiles
+	"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-subbuild/CMakeFiles/freetype-populate-complete
+	"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-done
 
 freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-update:
 .PHONY : freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-update
 
 freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-build: freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'freetype-populate'"
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-build && "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-build && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'freetype-populate'"
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-build && "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-build && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-build
 
 freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-configure: freetype-populate-prefix/tmp/freetype-populate-cfgcmd.txt
 freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-configure: freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'freetype-populate'"
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-build && "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-build && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'freetype-populate'"
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-build && "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-build && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-configure
 
 freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-download: freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-gitinfo.txt
 freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-download: freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'freetype-populate'"
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/tmp/freetype-populate-gitclone.cmake
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'freetype-populate'"
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps && "C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/tmp/freetype-populate-gitclone.cmake
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-download
 
 freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-install: freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'freetype-populate'"
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-build && "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-build && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'freetype-populate'"
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-build && "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-build && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-install
 
 freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'freetype-populate'"
-	"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir= -P C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/tmp/freetype-populate-mkdirs.cmake
-	"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'freetype-populate'"
+	"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir= -P C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/tmp/freetype-populate-mkdirs.cmake
+	"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-mkdir
 
 freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-patch: freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-patch-info.txt
 freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-patch: freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Performing patch step for 'freetype-populate'"
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-src && "C:\Program Files\CMake\bin\cmake.exe" -DFREETYPE_DIR=C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src -P C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/tools/freetype/PatchFreetype.cmake
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-src && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-patch
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Performing patch step for 'freetype-populate'"
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-src && "C:\Program Files\CMake\bin\cmake.exe" -DFREETYPE_DIR=C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src -P C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/tools/freetype/PatchFreetype.cmake
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-src && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-patch
 
 freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-update:
 .PHONY : freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-update
 
 freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-test: freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'freetype-populate'"
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-build && "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-build && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-test
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'freetype-populate'"
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-build && "C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-build && "C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-test
 
 freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-update: freetype-populate-prefix/tmp/freetype-populate-gitupdate.cmake
 freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-update: freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-update-info.txt
 freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-update: freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Performing update step for 'freetype-populate'"
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-src && "C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/tmp/freetype-populate-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Performing update step for 'freetype-populate'"
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-src && "C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-subbuild/freetype-populate-prefix/tmp/freetype-populate-gitupdate.cmake
 
 CMakeFiles/freetype-populate.dir/codegen:
 .PHONY : CMakeFiles/freetype-populate.dir/codegen
@@ -156,6 +156,6 @@ CMakeFiles/freetype-populate.dir/clean:
 .PHONY : CMakeFiles/freetype-populate.dir/clean
 
 CMakeFiles/freetype-populate.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-subbuild C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-subbuild C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-subbuild C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-subbuild C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles\freetype-populate.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-subbuild C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-subbuild C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-subbuild C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-subbuild C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-subbuild\CMakeFiles\freetype-populate.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/freetype-populate.dir/depend
 

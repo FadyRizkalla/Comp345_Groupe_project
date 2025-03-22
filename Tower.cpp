@@ -109,10 +109,25 @@ void Tower::attack(Critter* critter) {
 
 
 bool Tower::isTargetInRange(const Critter* critter) const {
-  double distance = sqrt(pow(critter->x - x , 2) + pow(critter->y - y , 2));
-  return distance <= range;
+    // Calculate the "Manhattan distance" or "Chebyshev distance" between the tower and the critter.
+    // This is done by taking the maximum of the absolute differences of the x and y coordinates.
 
+    int dx = std::abs(critter->x - x);
+    int dy = std::abs(critter->y - y);
+
+    // Check if the critter is within the tower's range in terms of grid cells.
+    bool isInRange = (std::max(dx, dy) <= range);
+
+    // Logging for debugging purposes
+    std::cout << "Tower at (" << x << ", " << y << ") checking target at ("
+              << critter->x << ", " << critter->y << "): dx = " << dx
+              << ", dy = " << dy << ", range = " << range << " -> In Range: "
+              << isInRange << std::endl;
+
+    return isInRange;
 }
+
+
 
 void Tower::setTargetingStrategy(TargetingStrategy* strategy) {
   if (targetingStrategy) {
@@ -123,6 +138,7 @@ void Tower::setTargetingStrategy(TargetingStrategy* strategy) {
 
 void Tower::acquireTarget(std::vector<Critter*>& targets) {
   if (Critter* target = targetingStrategy->selectTarget(this, targets)) {
+    std::cout << "Tower at (" << x << ", " <<  y <<  ") is attacking. \n";
     attack(target);
   }
   else {

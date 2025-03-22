@@ -1,9 +1,9 @@
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImplDefault.cpp.obj: \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\sfml-src\src\SFML\Graphics\RenderTextureImplDefault.cpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Graphics/GLCheck.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Config.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Graphics/GLExtensions.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/extlibs/headers/glad/include/glad/gl.h \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\sfml-src\src\SFML\Graphics\RenderTextureImplDefault.cpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Graphics/GLCheck.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Config.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Graphics/GLExtensions.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/extlibs/headers/glad/include/glad/gl.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
  C:/msys64/mingw64/include/stdint.h C:/msys64/mingw64/include/crtdefs.h \
  C:/msys64/mingw64/include/corecrt.h C:/msys64/mingw64/include/_mingw.h \
@@ -13,8 +13,8 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImp
  C:/msys64/mingw64/include/sdks/_mingw_ddk.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
  C:/msys64/mingw64/include/stddef.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Err.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Export.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Err.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Export.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/iosfwd \
  C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -176,16 +176,16 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImp
  C:/msys64/mingw64/include/c++/14.2.0/ext/aligned_buffer.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_dir.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/fs_ops.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Graphics/RenderTextureImplDefault.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Graphics/RenderTextureImpl.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector2.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Angle.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Angle.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Graphics/RenderTextureImplDefault.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Graphics/RenderTextureImpl.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector2.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Angle.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Angle.inl \
  C:/msys64/mingw64/include/c++/14.2.0/cassert \
  C:/msys64/mingw64/include/assert.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/GlResource.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/GlResource.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/memory \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tempbuf.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_uninitialized.h \
@@ -197,6 +197,6 @@ _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/RenderTextureImp
  C:/msys64/mingw64/include/c++/14.2.0/backward/auto_ptr.h \
  C:/msys64/mingw64/include/c++/14.2.0/pstl/glue_memory_defs.h \
  C:/msys64/mingw64/include/c++/14.2.0/pstl/execution_defs.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Graphics/TextureSaver.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Context.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/ContextSettings.hpp
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/Graphics/TextureSaver.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/Context.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Window/ContextSettings.hpp

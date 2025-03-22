@@ -1,8 +1,8 @@
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.obj: \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\sfml-src\src\SFML\System\FileInputStream.cpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Exception.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Export.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Config.hpp \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\sfml-src\src\SFML\System\FileInputStream.cpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Exception.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Export.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Config.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/stdexcept \
  C:/msys64/mingw64/include/c++/14.2.0/exception \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -105,8 +105,8 @@ _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/FileInputStream.cpp.
  C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h \
  C:/msys64/mingw64/include/c++/14.2.0/tuple \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/FileInputStream.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/InputStream.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/FileInputStream.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/InputStream.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/optional \
  C:/msys64/mingw64/include/c++/14.2.0/bits/enable_special_members.h \
  C:/msys64/mingw64/include/c++/14.2.0/cstdint \

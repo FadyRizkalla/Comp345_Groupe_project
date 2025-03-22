@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/flac-src/src/libFLAC
+# Install script for directory: C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/flac-src/src/libFLAC
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,12 +38,12 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-build/lib/libFLAC.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-build/lib/libFLAC.a")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/flac-build/src/libFLAC/install_local_manifest.txt"
+  file(WRITE "C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/flac-build/src/libFLAC/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

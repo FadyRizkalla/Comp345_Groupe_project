@@ -25,6 +25,8 @@ void Critter::setPath(const std::vector<std::pair<int, int>>& p) {
     }
 }
 
+
+
 bool Critter::hasReachedExit() const {
     return (x == exitCell.first && y == exitCell.second);
 }

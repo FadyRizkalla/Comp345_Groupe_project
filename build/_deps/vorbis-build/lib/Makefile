@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project
+CMAKE_SOURCE_DIR = C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build
+CMAKE_BINARY_DIR = C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -77,7 +77,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/CPackSourceConfig.cmake
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -151,14 +151,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\vorbis-build\lib\\CMakeFiles\progress.marks
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/vorbis-build/lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\CMakeFiles 0
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\CMakeFiles C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\vorbis-build\lib\\CMakeFiles\progress.marks
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/vorbis-build/lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/vorbis-build/lib/clean
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/vorbis-build/lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -167,22 +167,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/vorbis-build/lib/preinstall
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/vorbis-build/lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/vorbis-build/lib/preinstall
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/vorbis-build/lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/rule:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/rule
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/rule
 .PHONY : _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/rule
 
 # Convenience name for target.
@@ -191,12 +191,12 @@ vorbis: _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/rule
 
 # fast build rule for target.
 vorbis/fast:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/build
 .PHONY : vorbis/fast
 
 # Convenience name for target.
 _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/rule:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/rule
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/rule
 .PHONY : _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/rule
 
 # Convenience name for target.
@@ -205,12 +205,12 @@ vorbisenc: _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/rule
 
 # fast build rule for target.
 vorbisenc/fast:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisenc.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/build
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisenc.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/build
 .PHONY : vorbisenc/fast
 
 # Convenience name for target.
 _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/rule:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/rule
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/rule
 .PHONY : _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/rule
 
 # Convenience name for target.
@@ -219,7 +219,7 @@ vorbisfile: _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/rule
 
 # fast build rule for target.
 vorbisfile/fast:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisfile.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisfile.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/build
 .PHONY : vorbisfile/fast
 
 analysis.obj: analysis.c.obj
@@ -227,7 +227,7 @@ analysis.obj: analysis.c.obj
 
 # target to build an object file
 analysis.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/analysis.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/analysis.c.obj
 .PHONY : analysis.c.obj
 
 analysis.i: analysis.c.i
@@ -235,7 +235,7 @@ analysis.i: analysis.c.i
 
 # target to preprocess a source file
 analysis.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/analysis.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/analysis.c.i
 .PHONY : analysis.c.i
 
 analysis.s: analysis.c.s
@@ -243,7 +243,7 @@ analysis.s: analysis.c.s
 
 # target to generate assembly for a file
 analysis.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/analysis.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/analysis.c.s
 .PHONY : analysis.c.s
 
 bitrate.obj: bitrate.c.obj
@@ -251,7 +251,7 @@ bitrate.obj: bitrate.c.obj
 
 # target to build an object file
 bitrate.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/bitrate.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/bitrate.c.obj
 .PHONY : bitrate.c.obj
 
 bitrate.i: bitrate.c.i
@@ -259,7 +259,7 @@ bitrate.i: bitrate.c.i
 
 # target to preprocess a source file
 bitrate.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/bitrate.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/bitrate.c.i
 .PHONY : bitrate.c.i
 
 bitrate.s: bitrate.c.s
@@ -267,7 +267,7 @@ bitrate.s: bitrate.c.s
 
 # target to generate assembly for a file
 bitrate.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/bitrate.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/bitrate.c.s
 .PHONY : bitrate.c.s
 
 block.obj: block.c.obj
@@ -275,7 +275,7 @@ block.obj: block.c.obj
 
 # target to build an object file
 block.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/block.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/block.c.obj
 .PHONY : block.c.obj
 
 block.i: block.c.i
@@ -283,7 +283,7 @@ block.i: block.c.i
 
 # target to preprocess a source file
 block.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/block.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/block.c.i
 .PHONY : block.c.i
 
 block.s: block.c.s
@@ -291,7 +291,7 @@ block.s: block.c.s
 
 # target to generate assembly for a file
 block.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/block.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/block.c.s
 .PHONY : block.c.s
 
 codebook.obj: codebook.c.obj
@@ -299,7 +299,7 @@ codebook.obj: codebook.c.obj
 
 # target to build an object file
 codebook.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/codebook.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/codebook.c.obj
 .PHONY : codebook.c.obj
 
 codebook.i: codebook.c.i
@@ -307,7 +307,7 @@ codebook.i: codebook.c.i
 
 # target to preprocess a source file
 codebook.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/codebook.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/codebook.c.i
 .PHONY : codebook.c.i
 
 codebook.s: codebook.c.s
@@ -315,7 +315,7 @@ codebook.s: codebook.c.s
 
 # target to generate assembly for a file
 codebook.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/codebook.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/codebook.c.s
 .PHONY : codebook.c.s
 
 envelope.obj: envelope.c.obj
@@ -323,7 +323,7 @@ envelope.obj: envelope.c.obj
 
 # target to build an object file
 envelope.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/envelope.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/envelope.c.obj
 .PHONY : envelope.c.obj
 
 envelope.i: envelope.c.i
@@ -331,7 +331,7 @@ envelope.i: envelope.c.i
 
 # target to preprocess a source file
 envelope.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/envelope.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/envelope.c.i
 .PHONY : envelope.c.i
 
 envelope.s: envelope.c.s
@@ -339,7 +339,7 @@ envelope.s: envelope.c.s
 
 # target to generate assembly for a file
 envelope.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/envelope.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/envelope.c.s
 .PHONY : envelope.c.s
 
 floor0.obj: floor0.c.obj
@@ -347,7 +347,7 @@ floor0.obj: floor0.c.obj
 
 # target to build an object file
 floor0.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/floor0.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/floor0.c.obj
 .PHONY : floor0.c.obj
 
 floor0.i: floor0.c.i
@@ -355,7 +355,7 @@ floor0.i: floor0.c.i
 
 # target to preprocess a source file
 floor0.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/floor0.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/floor0.c.i
 .PHONY : floor0.c.i
 
 floor0.s: floor0.c.s
@@ -363,7 +363,7 @@ floor0.s: floor0.c.s
 
 # target to generate assembly for a file
 floor0.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/floor0.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/floor0.c.s
 .PHONY : floor0.c.s
 
 floor1.obj: floor1.c.obj
@@ -371,7 +371,7 @@ floor1.obj: floor1.c.obj
 
 # target to build an object file
 floor1.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/floor1.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/floor1.c.obj
 .PHONY : floor1.c.obj
 
 floor1.i: floor1.c.i
@@ -379,7 +379,7 @@ floor1.i: floor1.c.i
 
 # target to preprocess a source file
 floor1.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/floor1.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/floor1.c.i
 .PHONY : floor1.c.i
 
 floor1.s: floor1.c.s
@@ -387,7 +387,7 @@ floor1.s: floor1.c.s
 
 # target to generate assembly for a file
 floor1.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/floor1.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/floor1.c.s
 .PHONY : floor1.c.s
 
 info.obj: info.c.obj
@@ -395,7 +395,7 @@ info.obj: info.c.obj
 
 # target to build an object file
 info.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/info.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/info.c.obj
 .PHONY : info.c.obj
 
 info.i: info.c.i
@@ -403,7 +403,7 @@ info.i: info.c.i
 
 # target to preprocess a source file
 info.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/info.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/info.c.i
 .PHONY : info.c.i
 
 info.s: info.c.s
@@ -411,7 +411,7 @@ info.s: info.c.s
 
 # target to generate assembly for a file
 info.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/info.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/info.c.s
 .PHONY : info.c.s
 
 lookup.obj: lookup.c.obj
@@ -419,7 +419,7 @@ lookup.obj: lookup.c.obj
 
 # target to build an object file
 lookup.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lookup.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lookup.c.obj
 .PHONY : lookup.c.obj
 
 lookup.i: lookup.c.i
@@ -427,7 +427,7 @@ lookup.i: lookup.c.i
 
 # target to preprocess a source file
 lookup.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lookup.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lookup.c.i
 .PHONY : lookup.c.i
 
 lookup.s: lookup.c.s
@@ -435,7 +435,7 @@ lookup.s: lookup.c.s
 
 # target to generate assembly for a file
 lookup.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lookup.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lookup.c.s
 .PHONY : lookup.c.s
 
 lpc.obj: lpc.c.obj
@@ -443,7 +443,7 @@ lpc.obj: lpc.c.obj
 
 # target to build an object file
 lpc.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lpc.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lpc.c.obj
 .PHONY : lpc.c.obj
 
 lpc.i: lpc.c.i
@@ -451,7 +451,7 @@ lpc.i: lpc.c.i
 
 # target to preprocess a source file
 lpc.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lpc.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lpc.c.i
 .PHONY : lpc.c.i
 
 lpc.s: lpc.c.s
@@ -459,7 +459,7 @@ lpc.s: lpc.c.s
 
 # target to generate assembly for a file
 lpc.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lpc.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lpc.c.s
 .PHONY : lpc.c.s
 
 lsp.obj: lsp.c.obj
@@ -467,7 +467,7 @@ lsp.obj: lsp.c.obj
 
 # target to build an object file
 lsp.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lsp.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lsp.c.obj
 .PHONY : lsp.c.obj
 
 lsp.i: lsp.c.i
@@ -475,7 +475,7 @@ lsp.i: lsp.c.i
 
 # target to preprocess a source file
 lsp.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lsp.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lsp.c.i
 .PHONY : lsp.c.i
 
 lsp.s: lsp.c.s
@@ -483,7 +483,7 @@ lsp.s: lsp.c.s
 
 # target to generate assembly for a file
 lsp.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lsp.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/lsp.c.s
 .PHONY : lsp.c.s
 
 mapping0.obj: mapping0.c.obj
@@ -491,7 +491,7 @@ mapping0.obj: mapping0.c.obj
 
 # target to build an object file
 mapping0.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mapping0.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mapping0.c.obj
 .PHONY : mapping0.c.obj
 
 mapping0.i: mapping0.c.i
@@ -499,7 +499,7 @@ mapping0.i: mapping0.c.i
 
 # target to preprocess a source file
 mapping0.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mapping0.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mapping0.c.i
 .PHONY : mapping0.c.i
 
 mapping0.s: mapping0.c.s
@@ -507,7 +507,7 @@ mapping0.s: mapping0.c.s
 
 # target to generate assembly for a file
 mapping0.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mapping0.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mapping0.c.s
 .PHONY : mapping0.c.s
 
 mdct.obj: mdct.c.obj
@@ -515,7 +515,7 @@ mdct.obj: mdct.c.obj
 
 # target to build an object file
 mdct.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mdct.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mdct.c.obj
 .PHONY : mdct.c.obj
 
 mdct.i: mdct.c.i
@@ -523,7 +523,7 @@ mdct.i: mdct.c.i
 
 # target to preprocess a source file
 mdct.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mdct.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mdct.c.i
 .PHONY : mdct.c.i
 
 mdct.s: mdct.c.s
@@ -531,7 +531,7 @@ mdct.s: mdct.c.s
 
 # target to generate assembly for a file
 mdct.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mdct.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/mdct.c.s
 .PHONY : mdct.c.s
 
 psy.obj: psy.c.obj
@@ -539,7 +539,7 @@ psy.obj: psy.c.obj
 
 # target to build an object file
 psy.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/psy.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/psy.c.obj
 .PHONY : psy.c.obj
 
 psy.i: psy.c.i
@@ -547,7 +547,7 @@ psy.i: psy.c.i
 
 # target to preprocess a source file
 psy.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/psy.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/psy.c.i
 .PHONY : psy.c.i
 
 psy.s: psy.c.s
@@ -555,7 +555,7 @@ psy.s: psy.c.s
 
 # target to generate assembly for a file
 psy.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/psy.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/psy.c.s
 .PHONY : psy.c.s
 
 registry.obj: registry.c.obj
@@ -563,7 +563,7 @@ registry.obj: registry.c.obj
 
 # target to build an object file
 registry.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/registry.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/registry.c.obj
 .PHONY : registry.c.obj
 
 registry.i: registry.c.i
@@ -571,7 +571,7 @@ registry.i: registry.c.i
 
 # target to preprocess a source file
 registry.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/registry.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/registry.c.i
 .PHONY : registry.c.i
 
 registry.s: registry.c.s
@@ -579,7 +579,7 @@ registry.s: registry.c.s
 
 # target to generate assembly for a file
 registry.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/registry.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/registry.c.s
 .PHONY : registry.c.s
 
 res0.obj: res0.c.obj
@@ -587,7 +587,7 @@ res0.obj: res0.c.obj
 
 # target to build an object file
 res0.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/res0.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/res0.c.obj
 .PHONY : res0.c.obj
 
 res0.i: res0.c.i
@@ -595,7 +595,7 @@ res0.i: res0.c.i
 
 # target to preprocess a source file
 res0.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/res0.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/res0.c.i
 .PHONY : res0.c.i
 
 res0.s: res0.c.s
@@ -603,7 +603,7 @@ res0.s: res0.c.s
 
 # target to generate assembly for a file
 res0.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/res0.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/res0.c.s
 .PHONY : res0.c.s
 
 sharedbook.obj: sharedbook.c.obj
@@ -611,7 +611,7 @@ sharedbook.obj: sharedbook.c.obj
 
 # target to build an object file
 sharedbook.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/sharedbook.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/sharedbook.c.obj
 .PHONY : sharedbook.c.obj
 
 sharedbook.i: sharedbook.c.i
@@ -619,7 +619,7 @@ sharedbook.i: sharedbook.c.i
 
 # target to preprocess a source file
 sharedbook.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/sharedbook.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/sharedbook.c.i
 .PHONY : sharedbook.c.i
 
 sharedbook.s: sharedbook.c.s
@@ -627,7 +627,7 @@ sharedbook.s: sharedbook.c.s
 
 # target to generate assembly for a file
 sharedbook.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/sharedbook.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/sharedbook.c.s
 .PHONY : sharedbook.c.s
 
 smallft.obj: smallft.c.obj
@@ -635,7 +635,7 @@ smallft.obj: smallft.c.obj
 
 # target to build an object file
 smallft.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/smallft.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/smallft.c.obj
 .PHONY : smallft.c.obj
 
 smallft.i: smallft.c.i
@@ -643,7 +643,7 @@ smallft.i: smallft.c.i
 
 # target to preprocess a source file
 smallft.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/smallft.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/smallft.c.i
 .PHONY : smallft.c.i
 
 smallft.s: smallft.c.s
@@ -651,7 +651,7 @@ smallft.s: smallft.c.s
 
 # target to generate assembly for a file
 smallft.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/smallft.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/smallft.c.s
 .PHONY : smallft.c.s
 
 synthesis.obj: synthesis.c.obj
@@ -659,7 +659,7 @@ synthesis.obj: synthesis.c.obj
 
 # target to build an object file
 synthesis.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/synthesis.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/synthesis.c.obj
 .PHONY : synthesis.c.obj
 
 synthesis.i: synthesis.c.i
@@ -667,7 +667,7 @@ synthesis.i: synthesis.c.i
 
 # target to preprocess a source file
 synthesis.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/synthesis.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/synthesis.c.i
 .PHONY : synthesis.c.i
 
 synthesis.s: synthesis.c.s
@@ -675,7 +675,7 @@ synthesis.s: synthesis.c.s
 
 # target to generate assembly for a file
 synthesis.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/synthesis.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/synthesis.c.s
 .PHONY : synthesis.c.s
 
 vorbisenc.obj: vorbisenc.c.obj
@@ -683,8 +683,8 @@ vorbisenc.obj: vorbisenc.c.obj
 
 # target to build an object file
 vorbisenc.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/vorbisenc.c.obj
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisenc.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/vorbisenc.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisenc.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.obj
 .PHONY : vorbisenc.c.obj
 
 vorbisenc.i: vorbisenc.c.i
@@ -692,8 +692,8 @@ vorbisenc.i: vorbisenc.c.i
 
 # target to preprocess a source file
 vorbisenc.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/vorbisenc.c.i
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisenc.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/vorbisenc.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisenc.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.i
 .PHONY : vorbisenc.c.i
 
 vorbisenc.s: vorbisenc.c.s
@@ -701,8 +701,8 @@ vorbisenc.s: vorbisenc.c.s
 
 # target to generate assembly for a file
 vorbisenc.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/vorbisenc.c.s
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisenc.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/vorbisenc.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisenc.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisenc.dir/vorbisenc.c.s
 .PHONY : vorbisenc.c.s
 
 vorbisfile.obj: vorbisfile.c.obj
@@ -710,7 +710,7 @@ vorbisfile.obj: vorbisfile.c.obj
 
 # target to build an object file
 vorbisfile.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisfile.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisfile.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.obj
 .PHONY : vorbisfile.c.obj
 
 vorbisfile.i: vorbisfile.c.i
@@ -718,7 +718,7 @@ vorbisfile.i: vorbisfile.c.i
 
 # target to preprocess a source file
 vorbisfile.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisfile.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisfile.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.i
 .PHONY : vorbisfile.c.i
 
 vorbisfile.s: vorbisfile.c.s
@@ -726,7 +726,7 @@ vorbisfile.s: vorbisfile.c.s
 
 # target to generate assembly for a file
 vorbisfile.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisfile.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbisfile.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbisfile.dir/vorbisfile.c.s
 .PHONY : vorbisfile.c.s
 
 window.obj: window.c.obj
@@ -734,7 +734,7 @@ window.obj: window.c.obj
 
 # target to build an object file
 window.c.obj:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/window.c.obj
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/window.c.obj
 .PHONY : window.c.obj
 
 window.i: window.c.i
@@ -742,7 +742,7 @@ window.i: window.c.i
 
 # target to preprocess a source file
 window.c.i:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/window.c.i
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/window.c.i
 .PHONY : window.c.i
 
 window.s: window.c.s
@@ -750,7 +750,7 @@ window.s: window.c.s
 
 # target to generate assembly for a file
 window.c.s:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/window.c.s
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(MAKE) $(MAKESILENT) -f _deps\vorbis-build\lib\CMakeFiles\vorbis.dir\build.make _deps/vorbis-build/lib/CMakeFiles/vorbis.dir/window.c.s
 .PHONY : window.c.s
 
 # Help Target
@@ -847,6 +847,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

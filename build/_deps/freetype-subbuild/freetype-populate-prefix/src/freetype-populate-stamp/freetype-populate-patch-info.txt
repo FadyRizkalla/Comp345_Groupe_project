@@ -2,5 +2,5 @@
 # The update step will be re-executed if anything in this file changes.
 # No other meaning or use of this file is supported.
 
-command=C:/Program Files/CMake/bin/cmake.exe;-DFREETYPE_DIR=C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src;-P;C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/tools/freetype/PatchFreetype.cmake
-work_dir=C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src
+command=C:/Program Files/CMake/bin/cmake.exe;-DFREETYPE_DIR=C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src;-P;C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/tools/freetype/PatchFreetype.cmake
+work_dir=C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src

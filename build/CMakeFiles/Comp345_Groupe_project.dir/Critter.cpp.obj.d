@@ -1,6 +1,6 @@
 CMakeFiles/Comp345_Groupe_project.dir/Critter.cpp.obj: \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Critter.cpp \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Critter.h \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\Critter.cpp \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\Critter.h \
  C:/msys64/mingw64/include/c++/14.2.0/iostream \
  C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -144,8 +144,8 @@ CMakeFiles/Comp345_Groupe_project.dir/Critter.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_vector.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/vector.tcc \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\CritterObserver.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\map.h \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\CritterObserver.h \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\map.h \
  C:/msys64/mingw64/include/c++/14.2.0/set \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tree.h \
  C:/msys64/mingw64/include/c++/14.2.0/ext/aligned_buffer.h \

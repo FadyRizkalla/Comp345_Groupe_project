@@ -1,10 +1,10 @@
 _deps/freetype-build/CMakeFiles/freetype.dir/builds/windows/ftsystem.c.obj: \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-src\builds\windows\ftsystem.c \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/ft2build.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/config/ftheader.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-build/include/freetype/config/ftconfig.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-build/include/freetype/config/ftoption.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/config/ftstdlib.h \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-src\builds\windows\ftsystem.c \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/ft2build.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/config/ftheader.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-build/include/freetype/config/ftconfig.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-build/include/freetype/config/ftoption.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/config/ftstdlib.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
  C:/msys64/mingw64/include/stddef.h C:/msys64/mingw64/include/crtdefs.h \
  C:/msys64/mingw64/include/corecrt.h C:/msys64/mingw64/include/_mingw.h \
@@ -30,33 +30,33 @@ _deps/freetype-build/CMakeFiles/freetype.dir/builds/windows/ftsystem.c.obj: \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
  C:/msys64/mingw64/include/stdarg.h \
  C:/msys64/mingw64/include/_mingw_stdarg.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/config/integer-types.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/config/public-macros.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/config/mac-support.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/ftdebug.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/freetype.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/fttypes.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftsystem.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftimage.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/fterrors.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftmoderr.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/fterrdef.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/compiler-macros.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/ftstream.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/ftobjs.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftrender.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftmodapi.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftglyph.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftsizes.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftlcdfil.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftparams.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/ftmemory.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/ftgloadr.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/ftdrv.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/autohint.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/ftserv.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/ftcalc.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftincrem.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/config/integer-types.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/config/public-macros.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/config/mac-support.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/ftdebug.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/freetype.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/fttypes.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftsystem.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftimage.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/fterrors.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftmoderr.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/fterrdef.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/compiler-macros.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/ftstream.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/ftobjs.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftrender.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftmodapi.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftglyph.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftsizes.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftlcdfil.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftparams.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/ftmemory.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/ftgloadr.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/ftdrv.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/autohint.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/ftserv.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/internal/ftcalc.h \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/freetype-src/include/freetype/ftincrem.h \
  C:/msys64/mingw64/include/windows.h \
  C:/msys64/mingw64/include/sdkddkver.h C:/msys64/mingw64/include/excpt.h \
  C:/msys64/mingw64/include/windef.h \

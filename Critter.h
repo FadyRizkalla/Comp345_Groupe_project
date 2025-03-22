@@ -19,6 +19,7 @@ private:
     std::vector<std::pair<int, int>> path;
     int pathIndex = 0;
     std::pair<int, int> exitCell;
+    bool inEndZone = false;
 
 public:
     int x;
@@ -32,6 +33,14 @@ public:
     void move(Map& gameMap);
 
     void setPath(const std::vector<std::pair<int, int>>& p);
+
+    bool isInEndZone() const {
+        return inEndZone;
+    }
+
+    void setInEndZone(bool value) {
+        inEndZone = value;
+    }
 
     int getHitPoints() const;
     int getReward() const;

@@ -1,6 +1,6 @@
 CMakeFiles/Comp345_Groupe_project.dir/Player.cpp.obj: \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Player.cpp \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Player.h \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\Player.cpp \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\Player.h \
  C:/msys64/mingw64/include/c++/14.2.0/iostream \
  C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \

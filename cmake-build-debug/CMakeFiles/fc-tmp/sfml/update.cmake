@@ -4,6 +4,6 @@ message(VERBOSE "Executing update step for sfml")
 
 block(SCOPE_FOR VARIABLES)
 
-include("C:/Users/elele/CLionProjects/Comp345_Groupe_project/cmake-build-debug/CMakeFiles/fc-tmp/sfml/sfml-gitupdate.cmake")
+include("C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/cmake-build-debug/CMakeFiles/fc-tmp/sfml/sfml-gitupdate.cmake")
 
 endblock()

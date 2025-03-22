@@ -11,7 +11,7 @@ C_FLAGS = -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-ret
 
 RC_DEFINES = -DFLAC__NO_DLL -DHAVE_CONFIG_H -DNDEBUG -D_DARWIN_C_SOURCE -D_POSIX_PTHREAD_SEMANTICS -D_TANDEM_SOURCE -D__STDC_WANT_IEC_60559_BFP_EXT__ -D__STDC_WANT_IEC_60559_DFP_EXT__ -D__STDC_WANT_IEC_60559_FUNCS_EXT__ -D__STDC_WANT_IEC_60559_TYPES_EXT__ -D__STDC_WANT_LIB_EXT2__ -D__STDC_WANT_MATH_SPEC_FUNCS__
 
-RC_INCLUDES = -I C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\flac-src\include -I C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\flac-build -I C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\flac-src\src\libFLAC\include -I C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\ogg-src\include -I C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\ogg-build\include
+RC_INCLUDES = -I C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\flac-src\include -I C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\flac-build -I C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\flac-src\src\libFLAC\include -I C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\ogg-src\include -I C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\ogg-build\include
 
 RC_FLAGS = 
 

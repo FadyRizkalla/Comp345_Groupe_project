@@ -1,6 +1,6 @@
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/SleepImpl.cpp.obj: \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\sfml-src\src\SFML\System\Win32\SleepImpl.cpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Time.hpp \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\sfml-src\src\SFML\System\Win32\SleepImpl.cpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Time.hpp \
  C:/msys64/mingw64/include/c++/14.2.0/chrono \
  C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -31,7 +31,7 @@ _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/SleepImpl.cpp.
  C:/msys64/mingw64/include/c++/14.2.0/ext/numeric_traits.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/cpp_type_traits.h \
  C:/msys64/mingw64/include/c++/14.2.0/ext/type_traits.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Time.inl \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/System/Time.inl \
  C:/msys64/mingw64/include/c++/14.2.0/cassert \
  C:/msys64/mingw64/include/assert.h \
  C:/msys64/mingw64/include/c++/14.2.0/stdlib.h \
@@ -46,9 +46,9 @@ _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Win32/SleepImpl.cpp.
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
  C:/msys64/mingw64/include/errno.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/std_abs.h \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/System/Win32/SleepImpl.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Config.hpp \
- C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/System/Win32/WindowsHeader.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/System/Win32/SleepImpl.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/include/SFML/Config.hpp \
+ C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/src/SFML/System/Win32/WindowsHeader.hpp \
  C:/msys64/mingw64/include/windows.h \
  C:/msys64/mingw64/include/sdkddkver.h C:/msys64/mingw64/include/excpt.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \

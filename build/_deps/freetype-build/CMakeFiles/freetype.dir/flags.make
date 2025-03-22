@@ -11,7 +11,7 @@ C_FLAGS = -fvisibility=hidden
 
 RC_DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
 
-RC_INCLUDES = -I C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-build\include -I C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-src\include -I C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\build\_deps\freetype-build\include\freetype\config
+RC_INCLUDES = -I C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-build\include -I C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-src\include -I C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\build\_deps\freetype-build\include\freetype\config
 
 RC_FLAGS = 
 

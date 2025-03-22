@@ -15,6 +15,10 @@ public:
     TowerDecorator(Tower* tower) : wrappedTower(tower) {
         x = tower->getX(); //initialize base class coordinates from wrapped tower
         y =  tower->getY();
+        this->setPower(wrappedTower->getPower());
+        this->setRange(wrappedTower->getRange());
+        this->setLevel(wrappedTower->getLevel());
+        this->setCost(wrappedTower->getCost());
     }
     virtual ~TowerDecorator() { delete wrappedTower; }
 

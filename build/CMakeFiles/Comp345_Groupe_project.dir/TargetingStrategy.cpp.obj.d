@@ -1,6 +1,6 @@
 CMakeFiles/Comp345_Groupe_project.dir/TargetingStrategy.cpp.obj: \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\TargetingStrategy.cpp \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\TargetingStrategy.h \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\TargetingStrategy.cpp \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\TargetingStrategy.h \
  C:/msys64/mingw64/include/c++/14.2.0/vector \
  C:/msys64/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -61,7 +61,7 @@ CMakeFiles/Comp345_Groupe_project.dir/TargetingStrategy.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h \
  C:/msys64/mingw64/include/c++/14.2.0/tuple \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Critter.h \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\Critter.h \
  C:/msys64/mingw64/include/c++/14.2.0/iostream \
  C:/msys64/mingw64/include/c++/14.2.0/ostream \
  C:/msys64/mingw64/include/c++/14.2.0/ios \
@@ -145,8 +145,8 @@ CMakeFiles/Comp345_Groupe_project.dir/TargetingStrategy.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/ostream.tcc \
  C:/msys64/mingw64/include/c++/14.2.0/istream \
  C:/msys64/mingw64/include/c++/14.2.0/bits/istream.tcc \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\CritterObserver.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\map.h \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\CritterObserver.h \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\map.h \
  C:/msys64/mingw64/include/c++/14.2.0/set \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tree.h \
  C:/msys64/mingw64/include/c++/14.2.0/ext/aligned_buffer.h \
@@ -154,10 +154,10 @@ CMakeFiles/Comp345_Groupe_project.dir/TargetingStrategy.cpp.obj: \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_set.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/stl_multiset.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/erase_if.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Tower.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Player.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\Map.h \
- C:\Users\sdwor\Desktop\COMP345A1\Comp345_Groupe_project\TowerObserver.h \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\Tower.h \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\Player.h \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\Map.h \
+ C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\TowerObserver.h \
  C:/msys64/mingw64/include/c++/14.2.0/cmath \
  C:/msys64/mingw64/include/math.h \
  C:/msys64/mingw64/include/c++/14.2.0/bits/specfun.h \
