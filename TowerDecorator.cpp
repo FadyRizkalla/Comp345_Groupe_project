@@ -7,12 +7,11 @@ LevelUpgradeDecorator::LevelUpgradeDecorator(Tower* tower) : TowerDecorator(towe
     wrappedTower->setLevel(wrappedTower->getLevel() + 1);
     wrappedTower->setPower(wrappedTower->getPower() + 10);
     wrappedTower->setRange(wrappedTower->getRange() + 2);
-    wrappedTower->setUpgradeCost(wrappedTower->getUpgradeCost() + 50);
+    wrappedTower->setCost(wrappedTower->getCost() + 50);
+    wrappedTower->notifyObservers();
+
 }
 
-void LevelUpgradeDecorator::upgrade(Player& player) {
-    TowerDecorator::upgrade(player);
-}
 
 // SplashDamageDecorator
 SplashDamageDecorator::SplashDamageDecorator(Tower* tower) : TowerDecorator(tower) {}

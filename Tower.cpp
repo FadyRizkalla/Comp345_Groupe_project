@@ -43,7 +43,6 @@ Tower::Tower(double coX, double coY, double Cost, int Range, int Power, int Rate
   refundValue = RefundValue;
   targetingStrategy = new NearestToTowerStrategy();
 
-
 }
 
 Tower::Tower(const Tower& tower) {
@@ -63,6 +62,9 @@ Tower::Tower(const Tower& tower) {
 
 Tower::~Tower() {
   delete targetingStrategy;
+  for (TowerObserver* observer : observers) {
+    delete observer; //clear up observers
+  }
 }
 
 void Tower::upgrade(Player &player){
@@ -113,7 +115,9 @@ bool Tower::isTargetInRange(const Critter* critter) const {
 }
 
 void Tower::setTargetingStrategy(TargetingStrategy* strategy) {
-  delete targetingStrategy;
+  if (targetingStrategy) {
+    delete targetingStrategy; //clear targetting strategy
+  }
   targetingStrategy = strategy;
 }
 
@@ -121,6 +125,13 @@ void Tower::acquireTarget(std::vector<Critter*>& targets) {
   if (Critter* target = targetingStrategy->selectTarget(this, targets)) {
     attack(target);
   }
+  else {
+    std::cout << "Tower at (" << x << ", " <<  y <<  ") found no valid target. \n";
+  }
+}
+
+TargetingStrategy* Tower::getTargetingStrategy() const{
+  return targetingStrategy;  //return current targeting strategy
 }
 
 

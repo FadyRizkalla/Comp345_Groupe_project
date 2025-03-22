@@ -12,20 +12,25 @@ protected:
     Tower* wrappedTower;
 
 public:
-    TowerDecorator(Tower* tower) : wrappedTower(tower) {}
+    TowerDecorator(Tower* tower) : wrappedTower(tower) {
+        x = tower->getX(); //initialize base class coordinates from wrapped tower
+        y =  tower->getY();
+    }
     virtual ~TowerDecorator() { delete wrappedTower; }
 
     void upgrade(Player& player) override { wrappedTower->upgrade(player); }
     double sell(Player& player) override { return wrappedTower->sell(player); }
     void attack(Critter* critter) override { wrappedTower->attack(critter); }
+    int getX() const {return wrappedTower->getX();}
+    int getY() const {return wrappedTower->getY();}
 
 };
 
 class LevelUpgradeDecorator : public TowerDecorator {
 public:
-    LevelUpgradeDecorator(Tower* tower);
-    void upgrade(Player& player) override;
+     LevelUpgradeDecorator(Tower* tower);
 };
+
 
 class SplashDamageDecorator : public TowerDecorator {
 public:

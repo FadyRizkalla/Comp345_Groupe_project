@@ -41,6 +41,7 @@ public:
   bool isTargetInRange(const Critter *Critter) const;
   void setTargetingStrategy(TargetingStrategy* strategy);
   void acquireTarget(std::vector<Critter *> &targets);
+  TargetingStrategy* getTargetingStrategy() const;  //get the target strategy
 
   bool isValidPlacement(int coX, int coY, const Map &map, const std::vector<Tower *> &towers) const;
   void placeTower(Map &map);
@@ -65,6 +66,11 @@ public:
   void addObserver(TowerObserver *observer);
   void removeObserver(TowerObserver *observer);
   void notifyObservers();
+
+  void clearObservers() {
+    observers.clear();
+  }
+
 
 };
 

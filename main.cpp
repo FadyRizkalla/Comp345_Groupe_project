@@ -148,11 +148,6 @@ int main() {
     turretTowerText.setFillColor(sf::Color::White);
     turretTowerText.setPosition({800.f, 210.f});
 
-    sf::Text upgradeText(font,"upgrade", 20);
-    upgradeText.setFillColor(sf::Color::White);
-    upgradeText.setPosition({800.f, 270.f});
-
-
     bool isMapValid = false;
     Player player;
 
@@ -169,13 +164,32 @@ int main() {
     selectedTowerText.setFillColor(sf::Color::White);
     selectedTowerText.setPosition({800.f, 240.f});
 
+    //Tower Upgrade UI
+
+    sf::Text upgradeInfoText(font, "", 20); // Displays upgrade cost and description
+    upgradeInfoText.setFillColor(sf::Color::White);
+    upgradeInfoText.setPosition({800.f, 290.f});
+
+    sf::RectangleShape upgradeButton({200.f, 50.f});
+    upgradeButton.setFillColor(sf::Color::White);
+    upgradeButton.setPosition({800.f, 340.f});
+    upgradeButton.setOutlineThickness(2.f);
+    upgradeButton.setOutlineColor(sf::Color::Black);
+
+    sf::Text upgradeButtonText(font, "Upgrade", 30);
+    upgradeButtonText.setFillColor(sf::Color::Black);
+    upgradeButtonText.setPosition({870.f, 350.f});
+
+    //end of upgrade UI
+
+
     sf::RectangleShape readyButton({200.f, 50.f});
     readyButton.setFillColor(sf::Color::White);
-    readyButton.setPosition({800.f, 300.f});
+    readyButton.setPosition({800.f, 410.f});
 
     sf::Text readyText(font, "Ready", 30);
     readyText.setFillColor(sf::Color::Black);
-    readyText.setPosition({870.f, 310.f});
+    readyText.setPosition({870.f, 420.f});
 
     bool isReady = false;
 
@@ -186,6 +200,9 @@ int main() {
     int critterSpawnIndex = 0;
     float spawnDelay = 0.5f;
 
+    Tower* selectedTower = nullptr;  //track currently selected Tower
+    int selectedTowerIndex = -1;  //Index of placedTowers for the selected tower
+    bool isUpgrading = false;
 
     while (window.isOpen()) {
         while (const std::optional<sf::Event> event = window.pollEvent()) {
@@ -301,7 +318,8 @@ int main() {
                         }
 
                     }
-}
+
+                }
                     else if (gameState == GameState::MAP_VIEW) {
                         sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
 
@@ -365,119 +383,175 @@ int main() {
                         }
 
                         if (!isReady) {
+                            //check for upgrade button click
+
+                            if (selectedTower && upgradeButton.getGlobalBounds().contains(mousePos)) {
+                                if (selectedTowerIndex >= 0 && selectedTowerIndex < placedTowers.size()) {
+                                    double upgradeCost = selectedTower->getCost();
+                                    if (player.hasEnoughFunds(upgradeCost)) {  //checks if player has enough funds to afford upgrade
+                                        player.subtractPlayerFunds(upgradeCost);   //substracts the funds
+                                        playerFundsText.setString("Gold: " + std::to_string(player.getPlayerFunds()));
+
+                                        TargetingStrategy* strategy = selectedTower->getTargetingStrategy()->clone(); //Clone the current targeting strategy to preserve it.
+
+                                        Tower* upgradedTower = new LevelUpgradeDecorator(selectedTower); //create the upgraded tower with LevelUpgradeDecorator
+                                        upgradedTower->setTargetingStrategy(strategy); //set the cloned strategy
+
+                                        TowerObserver* newObserver = new TowerView(upgradedTower); //add a new observer of the upgraded tower
+                                        upgradedTower-> addObserver(newObserver);
+
+                                        //update the placedTowers vector
+                                        placedTowers[selectedTowerIndex] = upgradedTower; //replace old tower with upgraded one
+                                        selectedTower->clearObservers();  //clean observer
+                                        selectedTower = upgradedTower; //update selectedTower to point to upgraded tower
+
+                                        //update console and  tower map
+                                        std::cout << "Tower at (" << selectedTower->getX() << ", " << selectedTower->getY() << ") upgraded to Level " << upgradedTower->getLevel() << "!\n";
+                                        int index = selectedTower->getY() * gridWidth + selectedTower->getX();
+
+                                        //Update upgrade info
+                                        upgradeInfoText.setString("Level " + std::to_string(selectedTower->getLevel()) + ": Cost " + std::to_string((int)selectedTower->getCost()) + " gold\n+10 Power, +2 Range");
+                                    } else {
+                                        std::cout << "Not enough gold to upgrade this tower! Need " << upgradeCost << " gold! \n" << std::endl;
+                                    }
+                                }else {
+                                    std::cout << "Error: Invalid tower selected for upgrade! \n";
+                                    selectedTower = nullptr;
+                                    selectedTowerIndex = -1;
+                                    upgradeInfoText.setString("");
+                                }
+                            }
+
+                         bool clickedOnTower = false;
                         for (int i = 0; i < gridHeight; i++) {
                             for (int j = 0; j < gridWidth; j++) {
                                 int index = i * gridWidth + j;
                                 if (gridCells[index].getGlobalBounds().contains(mousePos)) {
+                                    //check if clicking in an existing tower
+                                    for (int t = 0; t < placedTowers.size(); t++) {
 
-                                    if (selectedTowerType == 0) {
-                                        std::cout << "No tower selected!" << std::endl;
-                                        continue;
-                                    }
+                                        Tower* tower = placedTowers[t];
+                                        if (tower->getX() == j && tower->getY() == i) {
+                                            selectedTower = tower;
+                                            selectedTowerIndex = t;
+                                            clickedOnTower = true;
 
-                                    Tower* baseTower = nullptr;
-                                    switch (selectedTowerType) {
-                                        case 1: // Archer Tower
-                                            baseTower = new Tower(j, i, 100, 5, 10, 2, 50, 1, 50);
-                                        break;
-                                        case 2: // Crossbow Tower
-                                            baseTower = new Tower(j, i, 150, 6, 15, 3, 75, 1, 75);
-                                        break;
-                                        case 3: // Sniper Tower
-                                            baseTower = new Tower(j, i, 200, 8, 20, 1, 100, 1, 100);
-                                        break;
-                                        case 4: // Ice Wall
-                                            baseTower = new Tower(j, i, 120, 4, 5, 1, 60, 1, 60);
-                                        break;
-                                        case 5: // Turret Tower
-                                            baseTower = new Tower(j, i, 180, 5, 12, 4, 90, 1, 90);
-                                        break;
-                                    }
+                                            //Reset all tower colors, highlight selected one
 
-                                    if ( baseTower && baseTower->isValidPlacement(j, i, *gameMap, placedTowers)) {
-                                        double towerCost = baseTower->getCost();
-                                        if (player.hasEnoughFunds(towerCost)) {
-                                            player.subtractPlayerFunds(towerCost);
-                                            playerFundsText.setString("Gold: " + std::to_string(player.getPlayerFunds()));
-
-                                            // Apply Decorator Pattern based on tower type or additional logic
-                                            Tower* decoratedTower = baseTower;
-                                            if (selectedTowerType == 4) { // Ice Wall gets Freezing effect
-                                                decoratedTower = new FreezingEffectDecorator(decoratedTower);
-                                            } else if (selectedTowerType == 5) { // Turret gets Splash damage
-                                                decoratedTower = new SplashDamageDecorator(decoratedTower);
-                                            }
-
-                                            // Add more decorators as desired (e.g., random upgrades)
-
-                                            if (rand() % 2 == 0) { // 50% chance of burning effect
-                                                decoratedTower = new BurningDamageDecorator(decoratedTower);
-                                            }
-
-
-
-                                            // Apply Strategy Pattern for targeting
-                                        switch (selectedTowerType) {
-                                            case 1: // Archer: Nearest to Tower
-                                                decoratedTower->setTargetingStrategy(new NearestToTowerStrategy());
-                                                break;
-                                            case 2: // Crossbow: Strongest
-                                                decoratedTower->setTargetingStrategy(new StrongestCritterStrategy());
-                                                break;
-                                            case 3: // Sniper: Weakest
-                                                decoratedTower->setTargetingStrategy(new WeakestCritterStrategy());
-                                                break;
-                                            case 4: // Ice Wall: Nearest to Exit
-                                                decoratedTower->setTargetingStrategy(new NearestToExitStrategy());
-                                                break;
-                                            case 5: // Turret: Nearest to Tower
-                                                decoratedTower->setTargetingStrategy(new NearestToTowerStrategy());
-                                                break;
-                                        }
-
-                                            //Tower observers
-
-                                            TowerObserver* observer = new TowerView(decoratedTower);
-                                            decoratedTower->addObserver(observer);
-
-                                            placedTowers.push_back(decoratedTower);
-                                            gridCells[index].setFillColor(sf::Color::Blue);
-
-                                            std::cout << "Tower placed at (" << j << ", " << i << ") with Observer attached.\n";
-                                        } else {
-                                            std::cout << "Not enough gold to place this tower!" << std::endl;
-                                        }
-                                    } else {
-                                        std::cout << "Invalid tower placement!" << std::endl;
-                                        delete baseTower;
-                                    }
-                                        // UPGRADE TOWER POWER
-
-                                    } else if (mouseEvent->button == sf::Mouse::Button::Right) {
-
-                                        for (auto it = placedTowers.begin(); it != placedTowers.end(); it++) {
-                                            Tower* tower = *it;
-                                            if (tower->getX() == j && tower->getY() == i) {
-                                                double upgradeCost = tower->getCost();
-                                                if (player.hasEnoughFunds(upgradeCost)) {   //checks if the player has enough funds before upgrading
-                                                    player.subtractPlayerFunds(upgradeCost);
-                                                    playerFundsText.setString("Gold: " + std::to_string(player.getPlayerFunds()));
-
-                                                    Tower* upgradeTower = new LevelUpgradeDecorator(tower);
-                                                    TowerObserver* newObserver = new TowerView(upgradeTower);
-                                                    upgradeTower->addObserver(newObserver);
-
-                                                    *it = upgradeTower;
-                                                    delete tower;
-
-                                                    std::cout<< "Tower at (" << j << ", " << i << ") upgraded to Level " << upgradeTower->getLevel() << " !.\n";
-                                                    gridCells[index].setFillColor(sf::Color::Cyan);
-                                                    break;
-                                                } else {
-                                                    std::cout << "Not enough gold to upgrade this tower!" << std::endl;
+                                            for (auto& cell : gridCells) {
+                                                if (cell.getFillColor() == sf::Color::Yellow) {
+                                                    cell.setFillColor(sf::Color::Blue);
                                                 }
                                             }
+                                            gridCells[index].setFillColor(sf::Color::Yellow);
+
+                                            // Display upgrade info
+                                            upgradeInfoText.setString("Level " + std::to_string(selectedTower->getLevel()) +
+                                                                      ": Cost " + std::to_string((int)selectedTower->getCost()) +
+                                                                      " gold\n+10 Power, +2 Range");
+                                            std::cout << "Selected tower at (" << j << ", " << i << ")\n";
+                                            break;
+
                                         }
+
+                                    }
+
+                                    //Deselect Tower if clicking on a non-tower cell
+                                    if (!clickedOnTower) {
+                                        selectedTower = nullptr;
+                                        selectedTowerIndex = -1;
+                                        upgradeInfoText.setString("");
+                                        isUpgrading = false;
+                                        for (auto& cell : gridCells) {
+                                            if (cell.getFillColor() == sf::Color::Yellow) {
+                                                cell.setFillColor(sf::Color::Blue);
+                                            }
+                                        }
+                                    }
+
+
+
+                                    if (!clickedOnTower && !isUpgrading &&  selectedTowerType != 0) {
+
+                                        Tower* baseTower = nullptr;
+                                        switch (selectedTowerType) {
+                                            case 1: // Archer Tower
+                                                baseTower = new Tower(j, i, 100, 5, 15, 2, 50, 1, 50);
+                                                break;
+                                            case 2: // Crossbow Tower
+                                                baseTower = new Tower(j, i, 150, 6, 15, 3, 75, 1, 75);
+                                                break;
+                                            case 3: // Sniper Tower
+                                                baseTower = new Tower(j, i, 200, 8, 20, 2, 100, 1, 100);
+                                                break;
+                                            case 4: // Ice Wall
+                                                baseTower = new Tower(j, i, 120, 4, 5, 1, 60, 1, 60);
+                                                break;
+                                            case 5: // Turret Tower
+                                                baseTower = new Tower(j, i, 180, 5, 12, 4, 90, 1, 90);
+                                                break;
+                                        }
+
+                                        if ( baseTower && baseTower->isValidPlacement(j, i, *gameMap, placedTowers)) {
+                                            double towerCost = baseTower->getCost();
+                                            if (player.hasEnoughFunds(towerCost)) {
+                                                player.subtractPlayerFunds(towerCost);
+                                                playerFundsText.setString("Gold: " + std::to_string(player.getPlayerFunds()));
+
+                                                // Apply Decorator Pattern based on tower type or additional logic
+                                                Tower* decoratedTower = baseTower;
+                                                if (selectedTowerType == 4) { // Ice Wall gets Freezing effect
+                                                    decoratedTower = new FreezingEffectDecorator(decoratedTower);
+                                                } else if (selectedTowerType == 5) { // Turret gets Splash damage
+                                                    decoratedTower = new SplashDamageDecorator(decoratedTower);
+                                                }
+
+                                                // Add more decorators as desired (e.g., random upgrades)
+
+                                                if (rand() % 2 == 0) { // 50% chance of burning effect
+                                                    decoratedTower = new BurningDamageDecorator(decoratedTower);
+                                                }
+
+
+
+                                                // Apply Strategy Pattern for targeting
+                                            switch (selectedTowerType) {
+                                                case 1: // Archer: Nearest to Tower
+                                                    decoratedTower->setTargetingStrategy(new NearestToTowerStrategy());
+                                                    break;
+                                                case 2: // Crossbow: Strongest
+                                                    decoratedTower->setTargetingStrategy(new WeakestCritterStrategy());
+                                                    break;
+                                                case 3: // Sniper: Weakest
+                                                    decoratedTower->setTargetingStrategy(new StrongestCritterStrategy());
+                                                    break;
+                                                case 4: // Ice Wall: Nearest to Exit
+                                                    decoratedTower->setTargetingStrategy(new NearestToExitStrategy());
+                                                    break;
+                                                case 5: // Turret: Nearest to Tower
+                                                    decoratedTower->setTargetingStrategy(new NearestToTowerStrategy());
+                                                    break;
+                                            }
+
+                                                //Tower observers
+
+                                                TowerObserver* observer = new TowerView(decoratedTower);
+                                                decoratedTower->addObserver(observer);
+
+                                                placedTowers.push_back(decoratedTower);
+                                                gridCells[index].setFillColor(sf::Color::Blue);
+
+                                                std::cout << "Tower placed at (" << j << ", " << i << ") with Observer attached.\n";
+                                            } else {
+                                                std::cout << "Not enough gold to place this tower!" << std::endl;
+                                            }
+                                        } else {
+                                            std::cout << "Invalid tower placement!" << std::endl;
+                                            delete baseTower;
+                                        }
+
+                                    }
+
                                     }
                                 }
                             }
@@ -551,7 +625,11 @@ int main() {
             if (!isReady) {
                 window.draw(readyButton);
                 window.draw(readyText);
-                window.draw(upgradeText);
+                if (selectedTower) {
+                    window.draw(upgradeButton);
+                    window.draw(upgradeButtonText);
+                }
+                window.draw(upgradeInfoText);
             } else {
                 //critter spawns
                 if (critterSpawnIndex < critters.size() && spawnTimer.getElapsedTime().asSeconds() > spawnDelay) {
@@ -573,7 +651,7 @@ int main() {
 
                 static sf::Clock towerAttackClock;
                 if (towerAttackClock.getElapsedTime().asSeconds() > 0.5f && !critters.empty()) {
-                    std::cout << "Towers attempting to attack...\n";
+                    std::cout << "Towers attempting to attack. Active towers: " << placedTowers.size() << "\n" <<  std::endl;
                     for (Tower* tower : placedTowers) {
                         tower->acquireTarget(critters);
                     }
@@ -583,7 +661,7 @@ int main() {
                         std::remove_if(critters.begin(), critters.end(),
                             [](Critter* c) {
                                 if (c->isDead() || c->hasReachedExit()) {
-                                    std::cout << "Critter removed from game (Dead or Exited Map).\n";
+                                    std::cout << "Critter removed from game.\n";
                                     delete c;
                                     return true;
                                 }
@@ -661,3 +739,4 @@ int main() {
 
     return 0;
 }
+
