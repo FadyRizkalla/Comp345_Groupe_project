@@ -37,6 +37,7 @@ set(SOURCES
         TowerDecorator.cpp
         Goblin_Critter.cpp
         Ogre_Critter.cpp
+        CritterFactory.cpp
 )
 
 set(HEADERS
@@ -60,6 +61,7 @@ set(HEADERS
         TowerDecorator.h
         Goblin_Critter.h
         Ogre_Critter.h
+        CritterFactory.h
 )
 
 add_executable(Comp345_Groupe_project ${SOURCES} ${HEADERS})

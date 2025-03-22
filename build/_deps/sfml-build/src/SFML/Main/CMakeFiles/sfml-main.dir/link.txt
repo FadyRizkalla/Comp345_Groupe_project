@@ -1,2 +1,2 @@
-C:\Users\elele\msys64\mingw64\bin\ar.exe qc ..\..\..\lib\libsfml-main.a "CMakeFiles/sfml-main.dir/MainWin32.cpp.obj"
-C:\Users\elele\msys64\mingw64\bin\ranlib.exe ..\..\..\lib\libsfml-main.a
+C:\msys64\mingw64\bin\ar.exe qc ..\..\..\lib\libsfml-main.a "CMakeFiles/sfml-main.dir/MainWin32.cpp.obj"
+C:\msys64\mingw64\bin\ranlib.exe ..\..\..\lib\libsfml-main.a

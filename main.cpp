@@ -18,6 +18,7 @@
 #include "TargetingStrategy.h"
 #include "TowerDecorator.h"
 #include <algorithm>
+#include "CritterFactory.h"
 
 
 enum class GameState {
@@ -204,6 +205,8 @@ int main() {
     int selectedTowerIndex = -1;  //Index of placedTowers for the selected tower
     bool isUpgrading = false;
 
+    int waveNumber = 1;
+
     while (window.isOpen()) {
         while (const std::optional<sf::Event> event = window.pollEvent()) {
             if (event->is<sf::Event::Closed>())
@@ -328,6 +331,8 @@ int main() {
                             isReady = true;
                             std::cout << "Player is ready! Critters will spawn one by one.\n";
 
+
+
                             std::cout << "Entry Point: (" << entryPoint.first << ", " << entryPoint.second << ")\n";
 
                             std::vector<std::pair<int, int>> path = gameMap->getPath();
@@ -356,22 +361,14 @@ int main() {
 
                                 }
 
-                                for (int i = 0; i < 3; i++) {
-                                    Critter* goblin = new Goblin_Critter();
-                                    goblin->setPosition(entryPoint.first, entryPoint.second);
-                                    goblin->setPath(path);
-                                    goblin->setExit(exitPoint.first, exitPoint.second); // Set exit for distance calc
-                                    critters.push_back(goblin);
-                                    CritterObserver* goblinObserver = new CritterView(goblin);
-                                }
+                                std::vector<Critter*> newCritters = CritterFactory::createCritters(waveNumber, entryPoint, exitPoint, path);
+                                critters.insert(critters.end(), newCritters.begin(), newCritters.end());
 
-                                for (int i = 0; i < 2; i++) {
-                                    Critter* ogre = new Ogre_Critter();
-                                    ogre->setPosition(entryPoint.first, entryPoint.second);
-                                    ogre->setPath(path);
-                                    ogre->setExit(exitPoint.first, exitPoint.second); // Set exit for distance calc
-                                    critters.push_back(ogre);
-                                    CritterObserver* ogreObserver = new CritterView(ogre);
+                                waveNumber++;
+
+                                // Observe the new critters
+                                for (Critter* critter : newCritters) {
+                                    CritterObserver* critterObserver = new CritterView(critter);
                                 }
 
                                 spawnTimer.restart();
@@ -476,19 +473,19 @@ int main() {
                                         Tower* baseTower = nullptr;
                                         switch (selectedTowerType) {
                                             case 1: // Archer Tower
-                                                baseTower = new Tower(j, i, 100, 5, 15, 2, 50, 1, 50);
+                                                baseTower = new Tower(j, i, 100, 2, 15, 2, 50, 1, 50);
                                                 break;
                                             case 2: // Crossbow Tower
-                                                baseTower = new Tower(j, i, 150, 6, 15, 3, 75, 1, 75);
+                                                baseTower = new Tower(j, i, 150, 3, 15, 3, 75, 1, 75);
                                                 break;
                                             case 3: // Sniper Tower
-                                                baseTower = new Tower(j, i, 200, 8, 20, 2, 100, 1, 100);
+                                                baseTower = new Tower(j, i, 200, 4, 20, 2, 100, 1, 100);
                                                 break;
                                             case 4: // Ice Wall
-                                                baseTower = new Tower(j, i, 120, 4, 5, 1, 60, 1, 60);
+                                                baseTower = new Tower(j, i, 120, 3, 5, 1, 60, 1, 60);
                                                 break;
                                             case 5: // Turret Tower
-                                                baseTower = new Tower(j, i, 180, 5, 12, 4, 90, 1, 90);
+                                                baseTower = new Tower(j, i, 180, 4, 12, 4, 90, 1, 90);
                                                 break;
                                         }
 

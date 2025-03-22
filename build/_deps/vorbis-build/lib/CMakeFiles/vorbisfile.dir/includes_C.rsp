@@ -1,1 +1,1 @@
--isystem "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/vorbis-src/include" -isystem "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/ogg-src/include" -isystem "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/ogg-build/include"
+-isystem "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/vorbis-src/include" -isystem "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/ogg-src/include" -isystem "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/ogg-build/include"

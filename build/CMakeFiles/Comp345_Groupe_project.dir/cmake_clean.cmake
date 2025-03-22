@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Comp345_Groupe_project.dir/ArcherTower.cpp.obj.d"
   "CMakeFiles/Comp345_Groupe_project.dir/Critter.cpp.obj"
   "CMakeFiles/Comp345_Groupe_project.dir/Critter.cpp.obj.d"
+  "CMakeFiles/Comp345_Groupe_project.dir/CritterFactory.cpp.obj"
+  "CMakeFiles/Comp345_Groupe_project.dir/CritterFactory.cpp.obj.d"
   "CMakeFiles/Comp345_Groupe_project.dir/CritterObserver.cpp.obj"
   "CMakeFiles/Comp345_Groupe_project.dir/CritterObserver.cpp.obj.d"
   "CMakeFiles/Comp345_Groupe_project.dir/CritterView.cpp.obj"

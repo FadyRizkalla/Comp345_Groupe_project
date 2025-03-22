@@ -1,27 +1,27 @@
 # Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
 # file Copyright.txt or https://cmake.org/licensing for details.
 
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 
 # If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
 # existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
 # would cause a fatal error, even though it would be a no-op.
-if(NOT EXISTS "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/flac-src")
-  file(MAKE_DIRECTORY "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/flac-src")
+if(NOT EXISTS "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/flac-src")
+  file(MAKE_DIRECTORY "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/flac-src")
 endif()
 file(MAKE_DIRECTORY
-  "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/flac-build"
-  "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/flac-subbuild/flac-populate-prefix"
-  "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/flac-subbuild/flac-populate-prefix/tmp"
-  "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp"
-  "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/flac-subbuild/flac-populate-prefix/src"
-  "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp"
+  "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/flac-build"
+  "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/flac-subbuild/flac-populate-prefix"
+  "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/flac-subbuild/flac-populate-prefix/tmp"
+  "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp"
+  "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/flac-subbuild/flac-populate-prefix/src"
+  "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Users/sdwor/Desktop/COMP345A1/Comp345_Groupe_project/build/_deps/flac-subbuild/flac-populate-prefix/src/flac-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

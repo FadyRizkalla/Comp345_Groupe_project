@@ -8,5 +8,11 @@
     <mapping directory="$PROJECT_DIR$/build/_deps/ogg-src" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/build/_deps/sfml-src" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/build/_deps/vorbis-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/flac-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/freetype-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/freetype-src/subprojects/dlg" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/ogg-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/sfml-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/vorbis-src" vcs="Git" />
   </component>
 </project>
