@@ -19,6 +19,7 @@
 #include "TowerDecorator.h"
 #include <algorithm>
 #include "CritterFactory.h"
+#include <fstream>
 
 
 enum class GameState {
@@ -289,7 +290,7 @@ int main() {
                     }
 
                     if (isMapValid && nextButton.getGlobalBounds().contains(mousePos)) {
-                        std::cout << "Next button clicked! Switching to MAP VIEW mode..." << std::endl;
+                        std::ofstream("Logs.txt", std::ios::app) << "Next button clicked! Switching to MAP VIEW mode..." << std::endl;
 
                         player.setPlayerFunds(500);
 
@@ -333,34 +334,39 @@ int main() {
 
                         if (readyButton.getGlobalBounds().contains(mousePos)) {
                             isReady = true;
-                            std::cout << "Player is ready! Critters will spawn one by one.\n";
+                            std::ofstream("Logs.txt", std::ios::app) << "Player is ready! Critters will spawn one by one.\n" << std::endl;
 
 
 
-                            std::cout << "Entry Point: (" << entryPoint.first << ", " << entryPoint.second << ")\n";
+
+                            std::ofstream("Logs.txt", std::ios::app) << "Entry Point: (" << entryPoint.first << ", " << entryPoint.second << ")\n" << std::endl;
+
 
                             std::vector<std::pair<int, int>> path = gameMap->getPath();
-                            std::cout << "Full Path: ";
+                            std::ofstream("Logs.txt", std::ios::app) << "Full Path: " << std::endl;
+
                             for (const auto& step : path) {
-                                std::cout << "(" << step.first << ", " << step.second << ") ";
+                                std::ofstream("Logs.txt", std::ios::app) << "(" << step.first << ", " << step.second << ") " << std::endl;
                             }
-                            std::cout << std::endl;
+                            std::ofstream("Logs.txt", std::ios::app) << "\n" << std::endl;
+
+
 
                             if (!path.empty()) {
-                                std::cout << "First Path Cell: (" << path.front().first << ", " << path.front().second << ")\n";
+                                std::ofstream("Logs.txt", std::ios::app) << "First Path Cell: (" << path.front().first << ", " << path.front().second << ")\n";
                             } else {
-                                std::cout << "Error: No valid path found!\n";
+                                std::ofstream("Logs.txt", std::ios::app) << "Error: No valid path found!\n";
                             }
 
                             if (entryPoint.first != -1 && entryPoint.second != -1) {
                                 if (!path.empty() && path.front() == entryPoint) {
-                                    std::cout << "Entry matches first path cell. Spawning correctly." << std::endl;
+                                    std::ofstream("Logs.txt", std::ios::app) << "Entry matches first path cell. Spawning correctly." << std::endl;
                                 } else {
-                                    std::cout << "Warning: Entry point (" << entryPoint.first << ", " << entryPoint.second
+                                    std::ofstream("Logs.txt", std::ios::app) << "Warning: Entry point (" << entryPoint.first << ", " << entryPoint.second
                                               << ") does NOT match first path step (" << path.front().first << ", " << path.front().second << ")."
                                               << " Adjusting entry position." << std::endl;
                                     if (path.empty() || path.front() != entryPoint) {
-                                        std::cout << "Error: Path does not start from the correct entry!\n";
+                                        std::ofstream("Logs.txt", std::ios::app) << "Error: Path does not start from the correct entry!\n";
                                     }
 
                                 }
@@ -379,7 +385,7 @@ int main() {
                                 critterSpawnIndex = 0;
 
                             } else {
-                                std::cout << "Error: No entry point set!\n";
+                                std::ofstream("Logs.txt", std::ios::app) << "Error: No entry point set!\n";
                             }
                         }
 
@@ -407,16 +413,16 @@ int main() {
                                         selectedTower = upgradedTower; //update selectedTower to point to upgraded tower
 
                                         //update console and  tower map
-                                        std::cout << "Tower at (" << selectedTower->getX() << ", " << selectedTower->getY() << ") upgraded to Level " << upgradedTower->getLevel() << "!\n";
+                                        std::ofstream("Logs.txt", std::ios::app) << "Tower at (" << selectedTower->getX() << ", " << selectedTower->getY() << ") upgraded to Level " << upgradedTower->getLevel() << "!\n";
                                         int index = selectedTower->getY() * gridWidth + selectedTower->getX();
 
                                         //Update upgrade info
                                         upgradeInfoText.setString("Level " + std::to_string(selectedTower->getLevel()) + ": Cost " + std::to_string((int)selectedTower->getCost()) + " gold\n+10 Power, +2 Range");
                                     } else {
-                                        std::cout << "Not enough gold to upgrade this tower! Need " << upgradeCost << " gold! \n" << std::endl;
+                                        std::ofstream("Logs.txt", std::ios::app) << "Not enough gold to upgrade this tower! Need " << upgradeCost << " gold! \n" << std::endl;
                                     }
                                 }else {
-                                    std::cout << "Error: Invalid tower selected for upgrade! \n";
+                                    std::ofstream("Logs.txt", std::ios::app) << "Error: Invalid tower selected for upgrade! \n";
                                     selectedTower = nullptr;
                                     selectedTowerIndex = -1;
                                     upgradeInfoText.setString("");
@@ -450,7 +456,7 @@ int main() {
                                             upgradeInfoText.setString("Level " + std::to_string(selectedTower->getLevel()) +
                                                                       ": Cost " + std::to_string((int)selectedTower->getCost()) +
                                                                       " gold\n+10 Power, +2 Range");
-                                            std::cout << "Selected tower at (" << j << ", " << i << ")\n";
+                                            std::ofstream("Logs.txt", std::ios::app) << "Selected tower at (" << j << ", " << i << ")\n";
                                             break;
 
                                         }
@@ -542,12 +548,12 @@ int main() {
                                                 placedTowers.push_back(decoratedTower);
                                                 gridCells[index].setFillColor(sf::Color::Blue);
 
-                                                std::cout << "Tower placed at (" << j << ", " << i << ") with range: " << decoratedTower->getRange() << ".\n";
+                                                std::ofstream("Logs.txt", std::ios::app) << "Tower placed at (" << j << ", " << i << ") with range: " << decoratedTower->getRange() << ".\n";
                                             } else {
-                                                std::cout << "Not enough gold to place this tower!" << std::endl;
+                                                std::ofstream("Logs.txt", std::ios::app) << "Not enough gold to place this tower!" << std::endl;
                                             }
                                         } else {
-                                            std::cout << "Invalid tower placement!" << std::endl;
+                                            std::ofstream("Logs.txt", std::ios::app) << "Invalid tower placement!" << std::endl;
                                             delete baseTower;
                                         }
 
@@ -658,9 +664,9 @@ int main() {
 
                 static sf::Clock towerAttackClock;
                 if (towerAttackClock.getElapsedTime().asSeconds() > 0.5f && !critters.empty()) {
-                    std::cout << "Towers attempting to attack. Active towers: " << placedTowers.size() << "\n" <<  std::endl;
+                    std::ofstream("Logs.txt", std::ios::app) << "Towers attempting to attack. Active towers: " << placedTowers.size() << "\n" <<  std::endl;
                     for (Tower* tower : placedTowers) {
-                      	std::cout << "Tower range : " << tower->getRange() << "\n" << std::endl;
+                      	std::ofstream("Logs.txt", std::ios::app) << "Tower range : " << tower->getRange() << "\n" << std::endl;
                         tower->acquireTarget(critters);
                     }
 
@@ -669,7 +675,7 @@ int main() {
                         std::remove_if(critters.begin(), critters.end(),
                             [](Critter* c) {
                                 if (c->isDead() || c->hasReachedExit()) {
-                                    std::cout << "Critter removed from game.\n";
+                                    std::ofstream("Logs.txt", std::ios::app) << "Critter removed from game.\n";
                                     delete c;
                                     return true;
                                 }
@@ -679,7 +685,7 @@ int main() {
                     );
                     towerAttackClock.restart();
                 } else if (critters.empty()) {
-                    std::cout << "All critters defeated or escaped!.\n";
+                    std::ofstream("Logs.txt", std::ios::app) << "All critters defeated or escaped!.\n";
                     isReady = false;  // reset to allow new wave or game over
                     player.setPlayerFunds(player.getPlayerFunds() + 250);
                     playerFundsText.setString("Gold: " + std::to_string(player.getPlayerFunds()));

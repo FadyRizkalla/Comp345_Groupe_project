@@ -6,6 +6,7 @@
 #include "Tower.h"
 #include "Player.h"
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 TurretTower::TurretTower(double x, double y) : Tower(x, y, 500, 50, 30, 60, 270 ,1, 350) {}
@@ -22,11 +23,11 @@ void TurretTower::upgrade(Player& player) {
         rateOfFire += 30;
         upgradeCost += 120;
         refundValue = cost * 0.70;
-        cout << "Crossbow Tower upgraded to level " << level << "!" << endl;
+        ofstream("Logs.txt", std::ios::app) << "Crossbow Tower upgraded to level " << level << "!" << endl;
 
     }
     else {
-        cout << "Tower upgrade failed! Not enough funds" << endl;
+        ofstream("Logs.txt", std::ios::app) << "Tower upgrade failed! Not enough funds" << endl;
     }
 
 }
@@ -34,7 +35,7 @@ void TurretTower::upgrade(Player& player) {
 double TurretTower::sell(Player& player) {
 
     double sellValue = refundValue + (level * 10.9);
-    cout << "Sniper tower sold for " << sellValue << " gold! Approx. " << cost - refundValue << " less than initial cost." << endl;
+    ofstream("Logs.txt", std::ios::app) << "Sniper tower sold for " << sellValue << " gold! Approx. " << cost - refundValue << " less than initial cost." << endl;
     player.subtractPlayerFunds(sellValue);
     return sellValue;
 }

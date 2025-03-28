@@ -2991,6 +2991,7 @@ CMakeFiles/Comp345_Groupe_project.dir/main.cpp.obj: C:/Users/sdwor/Desktop/COMP3
   C:/msys64/mingw64/include/c++/14.2.0/bits/fs_fwd.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/fs_ops.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/fs_path.h \
+  C:/msys64/mingw64/include/c++/14.2.0/bits/fstream.tcc \
   C:/msys64/mingw64/include/c++/14.2.0/bits/functexcept.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/functional_hash.h \
   C:/msys64/mingw64/include/c++/14.2.0/bits/hash_bytes.h \
@@ -3085,6 +3086,7 @@ CMakeFiles/Comp345_Groupe_project.dir/main.cpp.obj: C:/Users/sdwor/Desktop/COMP3
   C:/msys64/mingw64/include/c++/14.2.0/ext/string_conversions.h \
   C:/msys64/mingw64/include/c++/14.2.0/ext/type_traits.h \
   C:/msys64/mingw64/include/c++/14.2.0/filesystem \
+  C:/msys64/mingw64/include/c++/14.2.0/fstream \
   C:/msys64/mingw64/include/c++/14.2.0/initializer_list \
   C:/msys64/mingw64/include/c++/14.2.0/iomanip \
   C:/msys64/mingw64/include/c++/14.2.0/ios \
@@ -3119,8 +3121,10 @@ CMakeFiles/Comp345_Groupe_project.dir/main.cpp.obj: C:/Users/sdwor/Desktop/COMP3
   C:/msys64/mingw64/include/c++/14.2.0/variant \
   C:/msys64/mingw64/include/c++/14.2.0/vector \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
   C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
@@ -3812,6 +3816,8 @@ C:/msys64/mingw64/include/errno.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/stl_bvector.h:
 
+C:/msys64/mingw64/include/c++/14.2.0/fstream:
+
 _deps/sfml-src/include/SFML/Window/VideoMode.hpp:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/move.h:
@@ -4312,6 +4318,8 @@ C:/msys64/mingw64/include/c++/14.2.0/bits/allocated_ptr.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/atomic_lockfree_defines.h:
 
+C:/msys64/mingw64/include/c++/14.2.0/bits/fstream.tcc:
+
 C:/msys64/mingw64/include/c++/14.2.0/bits/hashtable_policy.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/bits/locale_conv.h:
@@ -4349,6 +4357,10 @@ C:/msys64/mingw64/include/c++/14.2.0/sstream:
 C:/msys64/mingw64/include/c++/14.2.0/unordered_map:
 
 C:/msys64/mingw64/include/c++/14.2.0/variant:
+
+C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h:
+
+C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h:
 
 C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h:
 

@@ -10,6 +10,7 @@
 #include "Map.h"
 #include "Player.h"
 #include <algorithm>
+#include <fstream>
 
 using namespace std;
 
@@ -77,12 +78,12 @@ void Tower::upgrade(Player &player){
     upgradeCost += 50;
     refundValue = cost * 0.6;
 
-    std::cout << "Tower upgraded to level " << level << "!\n";
+    std::ofstream("Logs.txt", std::ios::app) << "Tower upgraded to level " << level << "!\n";
 
     notifyObservers();
   }
   else {
-    std::cout << "Tower upgrade failed! Not enough funds.\n";
+    std::ofstream("Logs.txt", std::ios::app) << "Tower upgrade failed! Not enough funds.\n";
   }
 }
 
@@ -91,7 +92,7 @@ void Tower::upgrade(Player &player){
 double Tower::sell(Player &player){
 
   double sellValue = refundValue + (level * 10.4 );
-  cout << "Tower selling " << sellValue << " gold! Approx. " << cost - refundValue << " less than initial cost." << endl;
+  ofstream("Logs.txt", std::ios::app) << "Tower selling " << sellValue << " gold! Approx. " << cost - refundValue << " less than initial cost." << endl;
   player.subtractPlayerFunds(sellValue);
   return sellValue;
 }
@@ -99,9 +100,9 @@ double Tower::sell(Player &player){
 void Tower::attack(Critter* critter) {
   for (int i = 0; i < rateOfFire; i++) {
     critter->takeDamage(power);
-    std::cout << "Tower at (" << x << ", " << y << ") attacked! Critter lost " << power << " HP, now at " << critter->getHitPoints() << "\n";
+    std::ofstream("Logs.txt", std::ios::app) << "Tower at (" << x << ", " << y << ") attacked! Critter lost " << power << " HP, now at " << critter->getHitPoints() << "\n";
     if (critter->isDead()) {
-      std::cout << "Critter died!\n";
+      std::ofstream("Logs.txt", std::ios::app) << "Critter died!\n";
     }
   }
 }
@@ -119,7 +120,7 @@ bool Tower::isTargetInRange(const Critter* critter) const {
     bool isInRange = (std::max(dx, dy) <= range);
 
     // Logging for debugging purposes
-    std::cout << "Tower at (" << x << ", " << y << ") checking target at ("
+    std::ofstream("Logs.txt", std::ios::app) << "Tower at (" << x << ", " << y << ") checking target at ("
               << critter->x << ", " << critter->y << "): dx = " << dx
               << ", dy = " << dy << ", range = " << range << " -> In Range: "
               << isInRange << std::endl;
@@ -138,11 +139,11 @@ void Tower::setTargetingStrategy(TargetingStrategy* strategy) {
 
 void Tower::acquireTarget(std::vector<Critter*>& targets) {
   if (Critter* target = targetingStrategy->selectTarget(this, targets)) {
-    std::cout << "Tower at (" << x << ", " <<  y <<  ") is attacking. \n";
+    std::ofstream("Logs.txt", std::ios::app) << "Tower at (" << x << ", " <<  y <<  ") is attacking. \n";
     attack(target);
   }
   else {
-    std::cout << "Tower at (" << x << ", " <<  y <<  ") found no valid target. \n";
+    std::ofstream("Logs.txt", std::ios::app) << "Tower at (" << x << ", " <<  y <<  ") found no valid target. \n";
   }
 }
 
@@ -157,13 +158,13 @@ bool Tower::isValidPlacement(int coX, int coY, const Map &map, const std::vector
 {
   if (!map.isWithinBounds(coX, coY))
   {
-    cout << "Invalid placement: Tower is out of map bounds!" << endl;
+    ofstream("Logs.txt", std::ios::app) << "Invalid placement: Tower is out of map bounds!" << endl;
     return false;
   }
 
   if (map.getCellType(coX, coY) != CellType::SCENERY)
   {
-    cout << "Invalid placement: Tower can only be placed on SCENERY cells!" << endl;
+    ofstream("Logs.txt", std::ios::app) << "Invalid placement: Tower can only be placed on SCENERY cells!" << endl;
     return false;
   }
 
@@ -171,7 +172,7 @@ bool Tower::isValidPlacement(int coX, int coY, const Map &map, const std::vector
   {
     if (tower->x == coX && tower->y == coY)
     {
-      cout << "Invalid placement: There is already a tower here!" << endl;
+      ofstream("Logs.txt", std::ios::app) << "Invalid placement: There is already a tower here!" << endl;
       return false;
     }
   }
@@ -184,39 +185,39 @@ void Tower::placeTower(Map &map)
   if (map.getCellType(x, y) == CellType::SCENERY)
   {
     map.setCell(x, y, CellType::TOWER);
-    cout << "Tower successfully placed at (" << x << ", " << y << ")" << endl;
+    ofstream("Logs.txt", std::ios::app) << "Tower successfully placed at (" << x << ", " << y << ")" << endl;
   }
 }
 
 
 int Tower::getRange() const{
-  cout << "Tower's range of " << range << "!" << endl;
+  ofstream("Logs.txt", std::ios::app) << "Tower's range of " << range << "!" << endl;
   return range;
  }
 
 int Tower::getLevel() const{
-  cout << "Tower's level " << level << "!" << endl;
+  ofstream("Logs.txt", std::ios::app) << "Tower's level " << level << "!" << endl;
   return level;
 }
 
 double Tower::getCost() const{
-  cout << "Tower's cost " << cost << " gold!" << endl;
+  ofstream("Logs.txt", std::ios::app) << "Tower's cost " << cost << " gold!" << endl;
   return cost;
 
  }
 
  int Tower::getPower() const{
-   cout << "Tower's power " << power <<  endl;
+   ofstream("Logs.txt", std::ios::app) << "Tower's power " << power <<  endl;
    return power;
  }
 
  int Tower::getRateOfFire() const{
-   cout << "Tower's rate of fire " << rateOfFire << " projectiles per second" << endl;
+   ofstream("Logs.txt", std::ios::app) << "Tower's rate of fire " << rateOfFire << " projectiles per second" << endl;
    return rateOfFire;
  }
 
  double Tower::getUpgradeCost() const{
-   cout << "Tower's upgrade cost " << upgradeCost << " gold!" << endl;
+   ofstream("Logs.txt", std::ios::app) << "Tower's upgrade cost " << upgradeCost << " gold!" << endl;
    return upgradeCost;
  }
 void Tower::setRange(int Range) { range = Range; notifyObservers(); }

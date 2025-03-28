@@ -5,6 +5,7 @@
 
 #include "Player.h"
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 void Player::setPlayerFunds(double x){
@@ -17,7 +18,7 @@ double Player::getPlayerFunds(){
 
 
 void Player::displayPlayerFunds(){
-  cout << "Player has: " << playerFunds << " gold!" << endl;
+  ofstream("Logs.txt", std::ios::app) << "Player has: " << playerFunds << " gold!" << endl;
 }
 
 void Player::subtractPlayerFunds(double x){

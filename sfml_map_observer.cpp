@@ -1,10 +1,11 @@
 #include "sfml_map_observer.h"
+#include <fstream>
 
 SFMLMapObserver::SFMLMapObserver(Map* map, sf::RenderWindow& win, std::vector<sf::RectangleShape>& cells, int width, int height)
     : MapObserver(map), window(win), gridCells(cells), gridWidth(width), gridHeight(height) {}
 
 void SFMLMapObserver::update() {
-    std::cout << "Map updated! Redrawing grid...\n";
+    std::ofstream("Logs.txt", std::ios::app) << "Map updated! Redrawing grid...\n";
 
     for (int i = 0; i < gridHeight; i++) {
         for (int j = 0; j < gridWidth; j++) {

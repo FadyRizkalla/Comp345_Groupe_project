@@ -4,6 +4,7 @@
 #include <map>
 #include <limits>
 #include <algorithm>
+#include <fstream>
 
 Map::Map(int width, int height) : width(width), height(height)
 {
@@ -108,23 +109,23 @@ void Map::displayMap() const
             switch (grid[i][j])
             {
             case CellType::SCENERY:
-                std::cout << "S ";
+                std::ofstream("Logs.txt", std::ios::app) << "S ";
                 break;
             case CellType::PATH:
-                std::cout << "P ";
+                std::ofstream("Logs.txt", std::ios::app) << "P ";
                 break;
             case CellType::ENTRY:
-                std::cout << "E ";
+                std::ofstream("Logs.txt", std::ios::app) << "E ";
                 break;
             case CellType::EXIT:
-                std::cout << "X ";
+                std::ofstream("Logs.txt", std::ios::app) << "X ";
                 break;
             case CellType::TOWER:
-                std::cout << "T ";
+                std::ofstream("Logs.txt", std::ios::app) << "T ";
                 break;
             }
         }
-        std::cout << '\n';
+        std::ofstream("Logs.txt", std::ios::app) << '\n';
     }
 }
 
@@ -141,7 +142,7 @@ std::vector<std::pair<int, int>> Map::getPath() const {
     std::vector<std::pair<int, int>> path;
 
     if (entryPoint.first == -1 || entryPoint.second == -1 || exitPoint.first == -1 || exitPoint.second == -1) {
-        std::cout << "Error: Entry or Exit point not set!" << std::endl;
+        std::ofstream("Logs.txt", std::ios::app) << "Error: Entry or Exit point not set!" << std::endl;
         return path; // Return empty path
     }
 
@@ -183,7 +184,7 @@ std::vector<std::pair<int, int>> Map::getPath() const {
         }
     }
 
-    std::cout << "Error: No valid path found from entry to exit!" << std::endl;
+    std::ofstream("Logs.txt", std::ios::app) << "Error: No valid path found from entry to exit!" << std::endl;
     return path;
 }
 

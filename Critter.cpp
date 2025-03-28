@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <limits>
 #include <cmath>
+#include <fstream>
 
 Critter::Critter(int hp, int str, int spd, int lvl)
     : hit_point(hp), strength(str), speed(spd), level(lvl), x(0), y(0), previousX(-1), previousY(-1), exitCell(-1, -1) {}
@@ -42,7 +43,7 @@ void Critter::move(Map& gameMap) {
             x = nextStep.first;
             y = nextStep.second;
             pathIndex++; // Move to exit cell
-            std::cout << "Critter entered the exit at (" << x << ", " << y << ")!\n";
+            std::ofstream("Logs.txt", std::ios::app) << "Critter entered the exit at (" << x << ", " << y << ")!\n";
             notifyObservers();
             return;
         }

@@ -1,6 +1,6 @@
 #include "TowerDecorator.h"
 #include <iostream>
-
+#include <fstream>
 
 // LevelUpgradeDecorator
 LevelUpgradeDecorator::LevelUpgradeDecorator(Tower* tower) : TowerDecorator(tower) {
@@ -18,7 +18,7 @@ SplashDamageDecorator::SplashDamageDecorator(Tower* tower) : TowerDecorator(towe
 
 void SplashDamageDecorator::attack(Critter* critter) {
     wrappedTower->attack(critter);
-    std::cout << "Splash damage applied to nearby critters!\n";
+    std::ofstream("Logs.txt", std::ios::app) << "Splash damage applied to nearby critters!\n";
 }
 
 // BurningDamageDecorator
@@ -27,7 +27,7 @@ BurningDamageDecorator::BurningDamageDecorator(Tower* tower)
 
 void BurningDamageDecorator::attack(Critter* critter) {
     wrappedTower->attack(critter);
-    std::cout << "Burning effect applied: " << burnDamage << " damage for " << burnDuration << " seconds!\n";
+    std::ofstream("Logs.txt", std::ios::app) << "Burning effect applied: " << burnDamage << " damage for " << burnDuration << " seconds!\n";
 }
 
 // FreezingEffectDecorator
@@ -35,5 +35,5 @@ FreezingEffectDecorator::FreezingEffectDecorator(Tower* tower) : TowerDecorator(
 
 void FreezingEffectDecorator::attack(Critter* critter) {
     wrappedTower->attack(critter);
-    std::cout << "Freezing effect applied: Critter slowed!\n";
+    std::ofstream("Logs.txt", std::ios::app) << "Freezing effect applied: Critter slowed!\n";
 }

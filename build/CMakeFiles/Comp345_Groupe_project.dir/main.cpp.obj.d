@@ -299,6 +299,10 @@ CMakeFiles/Comp345_Groupe_project.dir/main.cpp.obj: \
  C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\Goblin_Critter.h \
  C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\Ogre_Critter.h \
  C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\TowerView.h \
+ C:/msys64/mingw64/include/c++/14.2.0/fstream \
+ C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h \
+ C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++io.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/fstream.tcc \
  C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\CritterView.h \
  C:\Users\sdwor\Desktop\COMP345\Comp345_Groupe_project\TowerDecorator.h \
  C:/msys64/mingw64/include/c++/14.2.0/algorithm \
