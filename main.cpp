@@ -31,6 +31,8 @@ enum class GameState {
 
 
 int main() {
+
+  	std::ofstream("Logs.txt");
     std::vector<Tower*> placedTowers;
 
     sf::RenderWindow window(sf::VideoMode({1200, 800}), "Tower Defense");
