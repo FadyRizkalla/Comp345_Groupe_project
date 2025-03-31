@@ -214,6 +214,24 @@ int main() {
 	crittersInEndZoneText.setFillColor(sf::Color::White);
 	crittersInEndZoneText.setPosition({10.f, 750.f});
 
+    sf::Texture sceneryTexture;
+if (!sceneryTexture.loadFromFile("scenery.png")) {
+    std::cerr << "Error loading scenery texture!" << std::endl;
+    return -1;
+}
+
+sf::Sprite scenerySprite(sceneryTexture);
+
+
+sf::Texture pathTexture;
+if (!pathTexture.loadFromFile("path.png")) {
+    std::cerr << "Error loading path texture!" << std::endl;
+    return -1;
+}
+
+sf::Sprite pathSprite(pathTexture);
+
+
     while (window.isOpen()) {
         while (const std::optional<sf::Event> event = window.pollEvent()) {
             if (event->is<sf::Event::Closed>())
@@ -615,7 +633,29 @@ int main() {
         }
         else if (gameState == GameState::DISPLAY_GRID) {
             window.draw(instructionText);
-            for (const auto& cell : gridCells) window.draw(cell);
+            float cellSize = std::min(maxCellSize, std::min(600 / gridHeight, 800 / gridWidth));
+
+scenerySprite.setScale(
+    sf::Vector2f(
+        static_cast<float>(cellSize) / static_cast<float>(sceneryTexture.getSize().x),
+        static_cast<float>(cellSize) / static_cast<float>(sceneryTexture.getSize().y)
+    )
+);
+
+
+            for (int i = 0; i < gridHeight; i++) {
+        for (int j = 0; j < gridWidth; j++) {
+            int index = i * gridWidth + j;
+
+            if (gameMap->getCellType(i, j) == CellType::SCENERY) {
+                sf::Vector2f position = gridCells[index].getPosition();
+                scenerySprite.setPosition(position);
+                window.draw(scenerySprite);
+            } else {
+                window.draw(gridCells[index]);
+            }
+        }
+    }
 
             window.draw(validateButton);
             window.draw(validateText);
@@ -627,9 +667,42 @@ int main() {
             }
         }
         else if (gameState == GameState::MAP_VIEW) {
-            for (const auto& cell : gridCells) {
-                window.draw(cell);
+            float cellSize = std::min(maxCellSize, std::min(600 / gridHeight, 800 / gridWidth));
+
+scenerySprite.setScale(
+    sf::Vector2f(
+        static_cast<float>(cellSize) / static_cast<float>(sceneryTexture.getSize().x),
+        static_cast<float>(cellSize) / static_cast<float>(sceneryTexture.getSize().y)
+    )
+);
+
+pathSprite.setScale(
+        sf::Vector2f(
+            static_cast<float>(cellSize) / static_cast<float>(pathTexture.getSize().x),
+            static_cast<float>(cellSize) / static_cast<float>(pathTexture.getSize().y)
+        )
+    );
+
+            for (int i = 0; i < gridHeight; i++) {
+        for (int j = 0; j < gridWidth; j++) {
+            int index = i * gridWidth + j;
+
+            if (gameMap->getCellType(i, j) == CellType::SCENERY) {
+                sf::Vector2f position = gridCells[index].getPosition();
+                scenerySprite.setPosition(position);
+                window.draw(scenerySprite);
             }
+            else if (gameMap->getCellType(i, j) == CellType::PATH) {
+                sf::Vector2f position = gridCells[index].getPosition();
+                pathSprite.setPosition(position);
+                window.draw(pathSprite);
+            }
+
+            else {
+                window.draw(gridCells[index]);
+            }
+        }
+    }
 
             if (!isReady) {
                 window.draw(readyButton);
@@ -699,7 +772,6 @@ int main() {
                     sf::CircleShape critterShape(10);
                     critterShape.setFillColor(sf::Color::Red);
 
-                    float cellSize = std::min(maxCellSize, std::min(600 / gridHeight, 800 / gridWidth));
                     float startX = (800 - (gridWidth * cellSize)) / 2;
                     float startY = (600 - (gridHeight * cellSize)) / 2 + 30;
 

@@ -17,6 +17,8 @@ void Map::notifyObservers() {
     }
 }
 
+
+
 bool Map::isWithinBounds(int x, int y) const
 {
     return x >= 0 && x < height && y >= 0 && y < width;
