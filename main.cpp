@@ -231,6 +231,14 @@ if (!pathTexture.loadFromFile("path.png")) {
 
 sf::Sprite pathSprite(pathTexture);
 
+sf::Texture ArcherTowerTexture;
+if (!ArcherTowerTexture.loadFromFile("ArcherTower.png")) {
+  std::cerr << "Error loading ArcherTower texture!" << std::endl;
+  return -1;
+}
+
+sf::Sprite ArcherTowerSprite(ArcherTowerTexture);
+
 
     while (window.isOpen()) {
         while (const std::optional<sf::Event> event = window.pollEvent()) {
@@ -288,7 +296,6 @@ sf::Sprite pathSprite(pathTexture);
                                 sf::RectangleShape cell(sf::Vector2f(cellSize, cellSize));
                                 cell.setFillColor(sf::Color::Transparent);
                                 cell.setOutlineThickness(2);
-                                cell.setOutlineColor(sf::Color::White);
                                 cell.setPosition(sf::Vector2f(startX + j * cellSize, startY + i * cellSize));
                                 gridCells.push_back(cell);
                             }
@@ -503,19 +510,19 @@ sf::Sprite pathSprite(pathTexture);
                                         Tower* baseTower = nullptr;
                                         switch (selectedTowerType) {
                                             case 1: // Archer Tower
-                                                baseTower = new Tower(j, i, 100, 3, 15, 2, 50, 1, 50);
+                                                baseTower = new Tower(j, i, 100, 3, 15, 2, 50, 1, 50, TowerType::ARCHER);
                                                 break;
                                             case 2: // Crossbow Tower
-                                                baseTower = new Tower(j, i, 150, 4, 15, 3, 75, 1, 75);
+                                                baseTower = new Tower(j, i, 150, 4, 15, 3, 75, 1, 75, TowerType::CROSSBOW);
                                                 break;
                                             case 3: // Sniper Tower
-                                                baseTower = new Tower(j, i, 200, 7, 20, 2, 100, 1, 100);
+                                                baseTower = new Tower(j, i, 200, 7, 20, 2, 100, 1, 100, TowerType::SNIPER);
                                                 break;
                                             case 4: // Ice Wall
-                                                baseTower = new Tower(j, i, 120, 4, 5, 1, 60, 1, 60);
+                                                baseTower = new Tower(j, i, 120, 4, 5, 1, 60, 1, 60, TowerType::ICE_WALL);
                                                 break;
                                             case 5: // Turret Tower
-                                                baseTower = new Tower(j, i, 180, 5, 12, 4, 90, 1, 90);
+                                                baseTower = new Tower(j, i, 180, 5, 12, 4, 90, 1, 90, TowerType::TURRET);
                                                 break;
                                         }
 
@@ -566,7 +573,25 @@ sf::Sprite pathSprite(pathTexture);
                                                 decoratedTower->addObserver(observer);
 
                                                 placedTowers.push_back(decoratedTower);
-                                                gridCells[index].setFillColor(sf::Color::Blue);
+                                                float cellSize = std::min(maxCellSize, std::min(600 / gridHeight, 800 / gridWidth));
+                                                sf::Vector2f position = gridCells[index].getPosition();
+                                                switch (selectedTowerType) {
+                                                  case 1:
+
+                                                    ArcherTowerSprite.setScale(
+                                                    sf::Vector2f(
+                                                        static_cast<float>(cellSize) / static_cast<float>(ArcherTowerTexture.getSize().x),
+                                                        static_cast<float>(cellSize) / static_cast<float>(ArcherTowerTexture.getSize().y)
+                                                        )
+                                                    );
+
+                                                    ArcherTowerSprite.setPosition(position);
+                                                    window.draw(ArcherTowerSprite);
+                                                    break;
+                                                  default:
+                                                    gridCells[index].setFillColor(sf::Color::Blue);
+                                                    break;
+                                                }
 
                                                 std::ofstream("Logs.txt", std::ios::app) << "Tower placed at (" << j << ", " << i << ") with range: " << decoratedTower->getRange() << ".\n";
                                             } else {
@@ -686,19 +711,46 @@ pathSprite.setScale(
             for (int i = 0; i < gridHeight; i++) {
         for (int j = 0; j < gridWidth; j++) {
             int index = i * gridWidth + j;
+            bool towerPlaced = false;
+            bool verify = false;
 
             if (gameMap->getCellType(i, j) == CellType::SCENERY) {
                 sf::Vector2f position = gridCells[index].getPosition();
                 scenerySprite.setPosition(position);
                 window.draw(scenerySprite);
+                verify = true;
             }
             else if (gameMap->getCellType(i, j) == CellType::PATH) {
                 sf::Vector2f position = gridCells[index].getPosition();
                 pathSprite.setPosition(position);
                 window.draw(pathSprite);
+                verify = true;
             }
 
-            else {
+
+            for (Tower* tower : placedTowers) {
+                if (tower->getX() == j && tower->getY() == i) {
+                    sf::Sprite* towerSprite = nullptr;
+
+                    // Set the sprite for the selected tower type
+                    switch (tower->getType()) {
+                        case TowerType::ARCHER:
+                            towerSprite = &ArcherTowerSprite;
+                            break;
+                    }
+
+                    // If the tower sprite is valid, draw it
+                    if (towerSprite) {
+                        towerSprite->setPosition(gridCells[index].getPosition());
+                        window.draw(*towerSprite);
+                    }
+                    towerPlaced = true;
+                    break;
+                }
+            }
+
+            // Draw default cell if no tower was placed (this happens if there was no match)
+            if (!towerPlaced && !verify) {
                 window.draw(gridCells[index]);
             }
         }

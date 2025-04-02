@@ -9,6 +9,16 @@
 #include "TargetingStrategy.h"
 
 
+
+enum class TowerType {
+    ARCHER,
+    CROSSBOW,
+    SNIPER,
+    ICE_WALL,
+    TURRET
+};
+
+
 class Critter;
 
 class TowerObserver;
@@ -26,11 +36,14 @@ protected:
   double refundValue;
   std::vector<TowerObserver*> observers;
   TargetingStrategy* targetingStrategy;
+  TowerType type;
 
 public:
   Tower();
   Tower(double x, double y, double cost, int range, int power, int rateOfFire, double upgradeCost, int level, double refundValue);
   Tower(const Tower &tower);
+  Tower(double x, double y, double cost, int range, int power, int rateOfFire, double upgradeCost, int level, double refundValue, TowerType type)
+        : x(x), y(y), cost(cost), range(range), power(power), rateOfFire(rateOfFire), upgradeCost(upgradeCost), level(level), refundValue(refundValue), type(type) {}
 
   virtual ~Tower();
 
@@ -54,6 +67,9 @@ public:
   double getUpgradeCost() const;
   int getX() const { return x; }
   int getY() const { return y; }
+  TowerType getType() const {
+        return type;
+    }
 
   void setRange(int x);
   void setLevel(int x);
