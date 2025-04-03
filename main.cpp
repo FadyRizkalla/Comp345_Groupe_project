@@ -231,6 +231,14 @@ if (!pathTexture.loadFromFile("path.png")) {
 
 sf::Sprite pathSprite(pathTexture);
 
+sf::Texture towerTexture;
+if (!towerTexture.loadFromFile("tower.png")) {
+    std::cerr << "Error loading tower texture!" << std::endl;
+    return -1;
+}
+sf::Sprite towerSprite(towerTexture);
+
+
 
     while (window.isOpen()) {
         while (const std::optional<sf::Event> event = window.pollEvent()) {
@@ -503,19 +511,19 @@ sf::Sprite pathSprite(pathTexture);
                                         Tower* baseTower = nullptr;
                                         switch (selectedTowerType) {
                                             case 1: // Archer Tower
-                                                baseTower = new Tower(j, i, 100, 3, 15, 2, 50, 1, 50);
+                                                baseTower = new Tower(i, j, 100, 3, 15, 2, 50, 1, 50);
                                                 break;
                                             case 2: // Crossbow Tower
-                                                baseTower = new Tower(j, i, 150, 4, 15, 3, 75, 1, 75);
+                                                baseTower = new Tower(i, j, 150, 4, 15, 3, 75, 1, 75);
                                                 break;
                                             case 3: // Sniper Tower
-                                                baseTower = new Tower(j, i, 200, 7, 20, 2, 100, 1, 100);
+                                                baseTower = new Tower(i, j, 200, 7, 20, 2, 100, 1, 100);
                                                 break;
                                             case 4: // Ice Wall
-                                                baseTower = new Tower(j, i, 120, 4, 5, 1, 60, 1, 60);
+                                                baseTower = new Tower(i, j, 120, 4, 5, 1, 60, 1, 60);
                                                 break;
                                             case 5: // Turret Tower
-                                                baseTower = new Tower(j, i, 180, 5, 12, 4, 90, 1, 90);
+                                                baseTower = new Tower(i, j, 180, 5, 12, 4, 90, 1, 90);
                                                 break;
                                         }
 
@@ -566,7 +574,7 @@ sf::Sprite pathSprite(pathTexture);
                                                 decoratedTower->addObserver(observer);
 
                                                 placedTowers.push_back(decoratedTower);
-                                                gridCells[index].setFillColor(sf::Color::Blue);
+                                                decoratedTower->placeTower(*gameMap);
 
                                                 std::ofstream("Logs.txt", std::ios::app) << "Tower placed at (" << j << ", " << i << ") with range: " << decoratedTower->getRange() << ".\n";
                                             } else {
@@ -683,9 +691,30 @@ pathSprite.setScale(
         )
     );
 
+towerSprite.setScale(
+        sf::Vector2f(
+            static_cast<float>(cellSize) / static_cast<float>(pathTexture.getSize().x),
+            static_cast<float>(cellSize) / static_cast<float>(pathTexture.getSize().y)
+        )
+    );
+
+
+
             for (int i = 0; i < gridHeight; i++) {
         for (int j = 0; j < gridWidth; j++) {
             int index = i * gridWidth + j;
+            int towerIndex = j * gridWidth + i;
+
+             bool towerPlaced = false;
+            for (Tower* tower : placedTowers) {
+                if (tower->getX() == j && tower->getY() == i) {
+                  	sf::Vector2f position = gridCells[towerIndex].getPosition();
+                    towerSprite.setPosition(position);
+					window.draw(towerSprite);
+                    towerPlaced = true;
+                    break;
+                }
+            }
 
             if (gameMap->getCellType(i, j) == CellType::SCENERY) {
                 sf::Vector2f position = gridCells[index].getPosition();
@@ -699,7 +728,9 @@ pathSprite.setScale(
             }
 
             else {
-                window.draw(gridCells[index]);
+              if(!towerPlaced){
+                	window.draw(gridCells[index]);
+                }
             }
         }
     }

@@ -1,0 +1,49 @@
+Map updated! Redrawing grid...
+Map updated! Redrawing grid...
+Map updated! Redrawing grid...
+Map updated! Redrawing grid...
+Map updated! Redrawing grid...
+Map updated! Redrawing grid...
+Map updated! Redrawing grid...
+Map updated! Redrawing grid...
+Map updated! Redrawing grid...
+Map updated! Redrawing grid...
+Next button clicked! Switching to MAP VIEW mode...
+Tower's cost 100 gold!
+Map updated! Redrawing grid...
+Tower successfully placed at (6, 3)
+Tower's range of 3!
+Tower placed at (3, 6) with range: 3.
+Tower's cost 120 gold!
+Tower's power 5
+Tower's range of 4!
+Tower's level 1!
+Tower's cost 120 gold!
+Map updated! Redrawing grid...
+Tower successfully placed at (8, 5)
+Tower's range of 4!
+Tower placed at (5, 8) with range: 4.
+Tower's cost 120 gold!
+Tower's power 5
+Tower's range of 4!
+Tower's level 1!
+Tower's cost 120 gold!
+Map updated! Redrawing grid...
+Tower successfully placed at (6, 6)
+Tower's range of 4!
+Tower placed at (6, 6) with range: 4.
+Invalid placement: Tower can only be placed on SCENERY cells!
+Invalid tower placement!
+Tower's cost 120 gold!
+Tower's power 5
+Tower's range of 4!
+Tower's level 1!
+Tower's cost 120 gold!
+Tower's power 5
+Tower's range of 4!
+Tower's level 1!
+Tower's cost 120 gold!
+Map updated! Redrawing grid...
+Tower successfully placed at (8, 2)
+Tower's range of 4!
+Tower placed at (2, 8) with range: 4.

@@ -23,9 +23,6 @@ void SFMLMapObserver::update() {
                 case CellType::EXIT:
                     gridCells[index].setFillColor(sf::Color::Red);
                 break;
-                case CellType::TOWER:
-                    gridCells[index].setFillColor(sf::Color::Blue);
-                break;
             }
         }
     }
