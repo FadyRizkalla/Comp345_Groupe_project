@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
+cmake_minimum_required(VERSION 3.29)
 
 message(VERBOSE "Executing patch step for sfml")
 

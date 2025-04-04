@@ -238,6 +238,20 @@ if (!towerTexture.loadFromFile("tower.png")) {
 }
 sf::Sprite towerSprite(towerTexture);
 
+    // Load the Critter textures
+sf::Texture ogreTexture;
+    if (!ogreTexture.loadFromFile("ogre.png")) {
+        std::cerr << "Error loading ogre texture!" << std::endl;
+        return -1;
+    }
+sf::Sprite ogreSprite(ogreTexture);
+
+sf::Texture goblinTexture;
+    if (!goblinTexture.loadFromFile("goblin.png")) {
+        std::cerr << "Error loading goblin texture!" << std::endl;
+        return -1;
+    }
+sf::Sprite goblinSprite(goblinTexture);
 
 
     while (window.isOpen()) {
@@ -698,6 +712,19 @@ towerSprite.setScale(
         )
     );
 
+ogreSprite.setScale(
+    sf::Vector2f(
+        static_cast<float>(cellSize) / static_cast<float>(ogreTexture.getSize().x),
+        static_cast<float>(cellSize) / static_cast<float>(ogreTexture.getSize().y)
+        )
+);
+
+goblinSprite.setScale(
+    sf::Vector2f(
+        static_cast<float>(cellSize) / static_cast<float>(goblinTexture.getSize().x),
+        static_cast<float>(cellSize) / static_cast<float>(goblinTexture.getSize().y)
+    )
+);
 
 
             for (int i = 0; i < gridHeight; i++) {
@@ -799,28 +826,26 @@ towerSprite.setScale(
 
                 //critter drawing
 
+                float startX = (800 - (gridWidth * cellSize)) / 2;
+                float startY = (800 - (gridHeight * cellSize)) / 2 + 30;
+
                 for (int i = 0; i < critterSpawnIndex; i++) {
-                    sf::CircleShape critterShape(10);
-                    critterShape.setFillColor(sf::Color::Red);
-
-                    float startX = (800 - (gridWidth * cellSize)) / 2;
-                    float startY = (600 - (gridHeight * cellSize)) / 2 + 30;
-
-                    float critterOffset = (cellSize - 20) / 2;
-                    critterShape.setRadius(10);
 
                     sf::Vector2f critterPosition(
-                        startX + critters[i]->getPosition().second * cellSize + critterOffset,
-                        startY + critters[i]->getPosition().first * cellSize + critterOffset
+                        startX + critters[i]->getPosition().second * cellSize,
+                        startY + critters[i]->getPosition().first * cellSize
+
                     );
 
-                    critterShape.setPosition(critterPosition);
-                    window.draw(critterShape);
+                    //Check critter type and draw the appropriate sprite
+                    if (dynamic_cast<Ogre_Critter*>(critters[i])) {
+                        ogreSprite.setPosition(critterPosition);
+                        window.draw(ogreSprite);
+                    }else if (dynamic_cast<Goblin_Critter*>(critters[i])) {
+                        goblinSprite.setPosition(critterPosition);
+                        window.draw(goblinSprite);
+                    }
                 }
-
-
-
-
             }
 
             playerFundsText.setString("Gold: " + std::to_string(player.getPlayerFunds()));

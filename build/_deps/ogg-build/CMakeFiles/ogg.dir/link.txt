@@ -1,2 +1,2 @@
-C:\msys64\mingw64\bin\ar.exe qc ..\sfml-build\lib\libogg.a CMakeFiles/ogg.dir/src/bitwise.c.obj CMakeFiles/ogg.dir/src/framing.c.obj
-C:\msys64\mingw64\bin\ranlib.exe ..\sfml-build\lib\libogg.a
+C:\Users\elele\msys64\mingw64\bin\ar.exe qc ..\sfml-build\lib\libogg.a CMakeFiles/ogg.dir/src/bitwise.c.obj CMakeFiles/ogg.dir/src/framing.c.obj
+C:\Users\elele\msys64\mingw64\bin\ranlib.exe ..\sfml-build\lib\libogg.a

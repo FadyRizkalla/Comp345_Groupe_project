@@ -1,7 +1,7 @@
 # Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
 # file Copyright.txt or https://cmake.org/licensing for details.
 
-cmake_minimum_required(VERSION 3.31.6)
+cmake_minimum_required(VERSION 3.30.4)
 
 # Reject any attempt to use a toolchain file. We must not use one because
 # we could be downloading it here. If the CMAKE_TOOLCHAIN_FILE environment
@@ -27,9 +27,9 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 
 include(ExternalProject)
 ExternalProject_Add(vorbis-populate
-                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/xiph/vorbis.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "v1.3.7" "GIT_SHALLOW" "ON" "PATCH_COMMAND" "C:/Program Files/CMake/bin/cmake.exe" "-DVORBIS_DIR=C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/vorbis-src" "-P" "C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/tools/vorbis/PatchVorbis.cmake"
-                    SOURCE_DIR          "C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/vorbis-src"
-                    BINARY_DIR          "C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/vorbis-build"
+                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/xiph/vorbis.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "v1.3.7" "GIT_SHALLOW" "ON" "PATCH_COMMAND" "C:/Program Files/CMake/bin/cmake.exe" "-DVORBIS_DIR=C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/vorbis-src" "-P" "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/sfml-src/tools/vorbis/PatchVorbis.cmake"
+                    SOURCE_DIR          "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/vorbis-src"
+                    BINARY_DIR          "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/vorbis-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

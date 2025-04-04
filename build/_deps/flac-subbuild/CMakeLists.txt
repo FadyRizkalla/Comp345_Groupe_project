@@ -1,7 +1,7 @@
 # Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
 # file Copyright.txt or https://cmake.org/licensing for details.
 
-cmake_minimum_required(VERSION 3.31.6)
+cmake_minimum_required(VERSION 3.30.4)
 
 # Reject any attempt to use a toolchain file. We must not use one because
 # we could be downloading it here. If the CMAKE_TOOLCHAIN_FILE environment
@@ -27,9 +27,9 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 
 include(ExternalProject)
 ExternalProject_Add(flac-populate
-                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/xiph/flac.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "1.4.3" "GIT_SHALLOW" "ON" "PATCH_COMMAND" "C:/Program Files/CMake/bin/cmake.exe" "-DFLAC_DIR=C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/flac-src" "-P" "C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src/tools/flac/PatchFLAC.cmake"
-                    SOURCE_DIR          "C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/flac-src"
-                    BINARY_DIR          "C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/flac-build"
+                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/xiph/flac.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "1.4.3" "GIT_SHALLOW" "ON" "PATCH_COMMAND" "C:/Program Files/CMake/bin/cmake.exe" "-DFLAC_DIR=C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/flac-src" "-P" "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/sfml-src/tools/flac/PatchFLAC.cmake"
+                    SOURCE_DIR          "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/flac-src"
+                    BINARY_DIR          "C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/flac-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""
