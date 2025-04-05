@@ -253,6 +253,10 @@ sf::Texture goblinTexture;
     }
 sf::Sprite goblinSprite(goblinTexture);
 
+    sf::Text critterHealthText(font, "Critter Health: N/A", 24);
+    critterHealthText.setFillColor(sf::Color::White);
+    critterHealthText.setPosition({800.f, 370.f});
+
 
     while (window.isOpen()) {
         while (const std::optional<sf::Event> event = window.pollEvent()) {
@@ -798,9 +802,19 @@ goblinSprite.setScale(
                 static sf::Clock towerAttackClock;
                 if (towerAttackClock.getElapsedTime().asSeconds() > 0.5f && !critters.empty()) {
                     std::ofstream("Logs.txt", std::ios::app) << "Towers attempting to attack. Active towers: " << placedTowers.size() << "\n" <<  std::endl;
+
+                    int totalHealth = 0;
+                    for (Critter* critter : critters) {
+                        totalHealth += critter->getHitPoints();
+                    }
+
+                    critterHealthText.setString("Total Critter Health: " + std::to_string(totalHealth));
+
                     for (Tower* tower : placedTowers) {
                       	std::ofstream("Logs.txt", std::ios::app) << "Tower range : " << tower->getRange() << "\n" << std::endl;
                         tower->acquireTarget(critters);
+                        critterHealthText.setString("Total Critter Health: " + std::to_string(totalHealth));
+
                     }
 
                     // Clean up dead critters
@@ -819,6 +833,7 @@ goblinSprite.setScale(
                     towerAttackClock.restart();
                 } else if (critters.empty()) {
                     std::ofstream("Logs.txt", std::ios::app) << "All critters defeated or escaped!.\n";
+                    critterHealthText.setString("Total Critter Health: " + std::to_string(0));
                     isReady = false;  // reset to allow new wave or game over
                     player.setPlayerFunds(player.getPlayerFunds() + 250);
                     playerFundsText.setString("Gold: " + std::to_string(player.getPlayerFunds()));
@@ -862,6 +877,7 @@ goblinSprite.setScale(
             window.draw(turretTowerText);
             window.draw(selectedTowerText);
             window.draw(crittersInEndZoneText);
+            window.draw(critterHealthText);
 
         }
 

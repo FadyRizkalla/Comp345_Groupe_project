@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=git
-command=C:/Program Files/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/CMakeFiles/fc-tmp/sfml/sfml-gitclone.cmake
-source_dir=C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps/sfml-src
-work_dir=C:/Users/elele/CLionProjects/Comp345_Groupe_project/build/_deps
+command=C:/Program Files/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/CMakeFiles/fc-tmp/sfml/sfml-gitclone.cmake
+source_dir=C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps/sfml-src
+work_dir=C:/Users/sdwor/Desktop/COMP345/Comp345_Groupe_project/build/_deps
 repository=https://github.com/SFML/SFML.git
 remote=origin
 init_submodules=TRUE

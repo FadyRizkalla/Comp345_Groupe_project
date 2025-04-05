@@ -1,2 +1,2 @@
-C:\Users\elele\msys64\mingw64\bin\ar.exe qc ..\..\sfml-build\lib\libvorbisenc.a CMakeFiles/vorbisenc.dir/vorbisenc.c.obj
-C:\Users\elele\msys64\mingw64\bin\ranlib.exe ..\..\sfml-build\lib\libvorbisenc.a
+C:\msys64\mingw64\bin\ar.exe qc ..\..\sfml-build\lib\libvorbisenc.a CMakeFiles/vorbisenc.dir/vorbisenc.c.obj
+C:\msys64\mingw64\bin\ranlib.exe ..\..\sfml-build\lib\libvorbisenc.a

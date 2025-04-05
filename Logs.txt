@@ -17,80 +17,115 @@ Map updated! Redrawing grid...
 Map updated! Redrawing grid...
 Map updated! Redrawing grid...
 Map updated! Redrawing grid...
+Map updated! Redrawing grid...
+Map updated! Redrawing grid...
+Map updated! Redrawing grid...
 Next button clicked! Switching to MAP VIEW mode...
 Player is ready! Critters will spawn one by one.
 
-Entry Point: (5, 0)
+Entry Point: (4, 0)
 
 Full Path: 
-(5, 0) 
-(5, 1) 
+(4, 0) 
+(4, 1) 
+(4, 2) 
 (5, 2) 
-(5, 3) 
-(4, 3) 
-(3, 3) 
-(3, 4) 
-(3, 5) 
+(6, 2) 
+(6, 3) 
+(6, 4) 
+(5, 4) 
+(4, 4) 
+(4, 5) 
+(4, 6) 
 (3, 6) 
 (3, 7) 
 (3, 8) 
+(4, 8) 
+(5, 8) 
+(5, 9) 
 
 
-First Path Cell: (5, 0)
+First Path Cell: (4, 0)
 Entry matches first path cell. Spawning correctly.
 Towers attempting to attack. Active towers: 0
 
-[Critter Observer] Update: Critter at (5, 0), HP: 165
+[Critter Observer] Update: Critter at (4, 0), HP: 165
 Towers attempting to attack. Active towers: 0
 
-[Critter Observer] Update: Critter at (5, 1), HP: 165
-[Critter Observer] Update: Critter at (5, 0), HP: 110
+[Critter Observer] Update: Critter at (4, 1), HP: 165
+[Critter Observer] Update: Critter at (4, 0), HP: 165
+Towers attempting to attack. Active towers: 0
+
+[Critter Observer] Update: Critter at (4, 2), HP: 165
+[Critter Observer] Update: Critter at (4, 1), HP: 165
 Towers attempting to attack. Active towers: 0
 
 [Critter Observer] Update: Critter at (5, 2), HP: 165
-[Critter Observer] Update: Critter at (5, 1), HP: 110
-Towers attempting to attack. Active towers: 0
-
-[Critter Observer] Update: Critter at (5, 3), HP: 165
-[Critter Observer] Update: Critter at (5, 2), HP: 110
-Towers attempting to attack. Active towers: 0
-
-[Critter Observer] Update: Critter at (4, 3), HP: 165
-[Critter Observer] Update: Critter at (5, 3), HP: 110
+[Critter Observer] Update: Critter at (4, 2), HP: 165
 Towers attempting to attack. Active towers: 0
 
 Towers attempting to attack. Active towers: 0
 
-[Critter Observer] Update: Critter at (3, 3), HP: 165
-[Critter Observer] Update: Critter at (4, 3), HP: 110
+[Critter Observer] Update: Critter at (6, 2), HP: 165
+[Critter Observer] Update: Critter at (5, 2), HP: 165
 Towers attempting to attack. Active towers: 0
 
-[Critter Observer] Update: Critter at (3, 4), HP: 165
-[Critter Observer] Update: Critter at (3, 3), HP: 110
+[Critter Observer] Update: Critter at (6, 3), HP: 165
+[Critter Observer] Update: Critter at (6, 2), HP: 165
 Towers attempting to attack. Active towers: 0
 
-[Critter Observer] Update: Critter at (3, 5), HP: 165
-[Critter Observer] Update: Critter at (3, 4), HP: 110
+[Critter Observer] Update: Critter at (6, 4), HP: 165
+[Critter Observer] Update: Critter at (6, 3), HP: 165
+Towers attempting to attack. Active towers: 0
+
+[Critter Observer] Update: Critter at (5, 4), HP: 165
+[Critter Observer] Update: Critter at (6, 4), HP: 165
+Towers attempting to attack. Active towers: 0
+
+[Critter Observer] Update: Critter at (4, 4), HP: 165
+[Critter Observer] Update: Critter at (5, 4), HP: 165
+Towers attempting to attack. Active towers: 0
+
+Towers attempting to attack. Active towers: 0
+
+[Critter Observer] Update: Critter at (4, 5), HP: 165
+[Critter Observer] Update: Critter at (4, 4), HP: 165
+Towers attempting to attack. Active towers: 0
+
+[Critter Observer] Update: Critter at (4, 6), HP: 165
+[Critter Observer] Update: Critter at (4, 5), HP: 165
 Towers attempting to attack. Active towers: 0
 
 [Critter Observer] Update: Critter at (3, 6), HP: 165
-[Critter Observer] Update: Critter at (3, 5), HP: 110
+[Critter Observer] Update: Critter at (4, 6), HP: 165
 Towers attempting to attack. Active towers: 0
 
 [Critter Observer] Update: Critter at (3, 7), HP: 165
-[Critter Observer] Update: Critter at (3, 6), HP: 110
+[Critter Observer] Update: Critter at (3, 6), HP: 165
 Towers attempting to attack. Active towers: 0
 
-Towers attempting to attack. Active towers: 0
-
-Critter entered the exit at (3, 8)!
 [Critter Observer] Update: Critter at (3, 8), HP: 165
-[Critter Observer] Update: Critter at (3, 7), HP: 110
+[Critter Observer] Update: Critter at (3, 7), HP: 165
+Towers attempting to attack. Active towers: 0
+
+Towers attempting to attack. Active towers: 0
+
+[Critter Observer] Update: Critter at (4, 8), HP: 165
+[Critter Observer] Update: Critter at (3, 8), HP: 165
+Towers attempting to attack. Active towers: 0
+
+[Critter Observer] Update: Critter at (5, 8), HP: 165
+[Critter Observer] Update: Critter at (4, 8), HP: 165
+Towers attempting to attack. Active towers: 0
+
+Critter entered the exit at (5, 9)!
+[Critter Observer] Update: Critter at (5, 9), HP: 165
+[Critter Observer] Update: Critter at (5, 8), HP: 165
 Towers attempting to attack. Active towers: 0
 
 Critter removed from game.
-Critter entered the exit at (3, 8)!
-[Critter Observer] Update: Critter at (3, 8), HP: 110
+Critter entered the exit at (5, 9)!
+[Critter Observer] Update: Critter at (5, 9), HP: 165
 Towers attempting to attack. Active towers: 0
 
 Critter removed from game.
@@ -101,1677 +136,1678 @@ Tower's range of 3!
 Tower's level 1!
 Tower's cost 100 gold!
 Map updated! Redrawing grid...
-Tower successfully placed at (4, 6)
+Tower successfully placed at (3, 4)
 Tower's range of 3!
-Tower placed at (6, 4) with range: 3.
+Tower placed at (4, 3) with range: 3.
+Tower's cost 100 gold!
+Tower's power 15
+Tower's range of 3!
+Tower's level 1!
 Tower's cost 100 gold!
 Map updated! Redrawing grid...
-Tower successfully placed at (4, 1)
+Tower successfully placed at (3, 2)
 Tower's range of 3!
-Tower placed at (1, 4) with range: 3.
+Tower placed at (2, 3) with range: 3.
+Tower's cost 100 gold!
+Map updated! Redrawing grid...
+Tower successfully placed at (6, 1)
+Tower's range of 3!
+Tower placed at (1, 6) with range: 3.
 Player is ready! Critters will spawn one by one.
 
-Entry Point: (5, 0)
+Entry Point: (4, 0)
 
 Full Path: 
-(5, 0) 
-(5, 1) 
+(4, 0) 
+(4, 1) 
+(4, 2) 
 (5, 2) 
-(5, 3) 
-(4, 3) 
-(3, 3) 
-(3, 4) 
-(3, 5) 
+(6, 2) 
+(6, 3) 
+(6, 4) 
+(5, 4) 
+(4, 4) 
+(4, 5) 
+(4, 6) 
 (3, 6) 
 (3, 7) 
 (3, 8) 
+(4, 8) 
+(5, 8) 
+(5, 9) 
 
 
-First Path Cell: (5, 0)
+First Path Cell: (4, 0)
 Entry matches first path cell. Spawning correctly.
-Towers attempting to attack. Active towers: 2
+Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) found no valid target. 
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) found no valid target. 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 105
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 90
-Towers attempting to attack. Active towers: 2
-
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 165
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 150
+Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) found no valid target. 
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 75
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 60
-[Critter Observer] Update: Critter at (5, 0), HP: 60
-Towers attempting to attack. Active towers: 2
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 135
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 120
+Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) found no valid target. 
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) found no valid target. 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 45
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 30
-[Critter Observer] Update: Critter at (5, 1), HP: 30
-[Critter Observer] Update: Critter at (5, 0), HP: 120
-Towers attempting to attack. Active towers: 2
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 105
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 90
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 75
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 60
+[Critter Observer] Update: Critter at (4, 0), HP: 60
+Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (5, 1): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) found no valid target. 
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) found no valid target. 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (5, 1): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 15
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 0
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 45
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 30
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 15
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 0
 Critter died!
 Critter removed from game.
-[Critter Observer] Update: Critter at (5, 1), HP: 120
-[Critter Observer] Update: Critter at (5, 0), HP: 120
-[Critter Observer] Update: Critter at (5, 0), HP: 180
-Towers attempting to attack. Active towers: 2
+[Critter Observer] Update: Critter at (4, 0), HP: 180
+[Critter Observer] Update: Critter at (4, 0), HP: 180
+Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (5, 1): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) found no valid target. 
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) found no valid target. 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (5, 1): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 105
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 90
-[Critter Observer] Update: Critter at (5, 2), HP: 90
-[Critter Observer] Update: Critter at (5, 1), HP: 120
-[Critter Observer] Update: Critter at (5, 1), HP: 180
-Towers attempting to attack. Active towers: 2
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 165
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 150
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 135
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 120
+[Critter Observer] Update: Critter at (4, 1), HP: 120
+[Critter Observer] Update: Critter at (4, 1), HP: 180
+[Critter Observer] Update: Critter at (4, 0), HP: 180
+Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (5, 2): dx = 1, dy = 4, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 1): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 1): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 6) found no valid target. 
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 105
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 90
+Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 1): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 1): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 105
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 90
-[Critter Observer] Update: Critter at (5, 3), HP: 90
-[Critter Observer] Update: Critter at (5, 2), HP: 90
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 75
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 60
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 45
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 30
+[Critter Observer] Update: Critter at (4, 2), HP: 30
+[Critter Observer] Update: Critter at (4, 2), HP: 180
+[Critter Observer] Update: Critter at (4, 1), HP: 180
+Towers attempting to attack. Active towers: 3
+
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 4) checking target at (4, 2): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 2): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 15
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (4, 2): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 2): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (4, 2): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 2): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 165
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 150
+Critter removed from game.
 [Critter Observer] Update: Critter at (5, 2), HP: 180
-Towers attempting to attack. Active towers: 2
+[Critter Observer] Update: Critter at (4, 2), HP: 150
+[Critter Observer] Update: Critter at (5, 2), HP: 150
+Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (5, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 2): dx = 1, dy = 4, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 2): dx = 1, dy = 4, range = 3 -> In Range: 0
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 75
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 60
+Tower at (3, 4) checking target at (5, 2): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (5, 2): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 165
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 150
 Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (5, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 75
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 60
-Towers attempting to attack. Active towers: 2
-
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 6) checking target at (5, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 2): dx = 1, dy = 4, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 2): dx = 1, dy = 4, range = 3 -> In Range: 0
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 45
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 30
+Tower at (3, 2) checking target at (5, 2): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (5, 2): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 135
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 120
 Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (5, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 45
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 30
-[Critter Observer] Update: Critter at (4, 3), HP: 30
-[Critter Observer] Update: Critter at (5, 3), HP: 30
-[Critter Observer] Update: Critter at (5, 3), HP: 180
-Towers attempting to attack. Active towers: 2
+Tower at (6, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 105
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 90
+Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (4, 3): dx = 0, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 15
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 0
-Critter died!
+Tower at (3, 4) checking target at (5, 2): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (5, 2): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 75
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 60
 Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (4, 3): dx = 0, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 0
-Critter died!
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 0
+Tower at (3, 2) checking target at (5, 2): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (5, 2): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 45
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 30
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 15
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 0
 Critter died!
 Critter removed from game.
-[Critter Observer] Update: Critter at (4, 3), HP: 30
-[Critter Observer] Update: Critter at (4, 3), HP: 180
-[Critter Observer] Update: Critter at (3, 3), HP: 180
-Towers attempting to attack. Active towers: 2
+[Critter Observer] Update: Critter at (6, 2), HP: 150
+[Critter Observer] Update: Critter at (6, 3), HP: 150
+[Critter Observer] Update: Critter at (6, 4), HP: 150
+Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (4, 3): dx = 0, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (3, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 15
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 0
+Tower at (3, 4) checking target at (6, 4): dx = 3, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 135
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 120
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (6, 4): dx = 3, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 105
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 90
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (6, 4): dx = 0, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 75
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 60
+[Critter Observer] Update: Critter at (5, 4), HP: 60
+[Critter Observer] Update: Critter at (4, 4), HP: 60
+[Critter Observer] Update: Critter at (4, 5), HP: 60
+Towers attempting to attack. Active towers: 3
+
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 4) checking target at (4, 5): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 45
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 30
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (4, 5): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 15
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 0
 Critter died!
 Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (4, 3): dx = 0, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (3, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 0
-Critter died!
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 0
-Critter died!
-Critter removed from game.
-[Critter Observer] Update: Critter at (3, 4), HP: 180
-[Critter Observer] Update: Critter at (3, 5), HP: 180
-[Critter Observer] Update: Critter at (3, 6), HP: 180
-Towers attempting to attack. Active towers: 2
-
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 6) checking target at (3, 6): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 165
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 150
-Burning effect applied: 5 damage for 3 seconds!
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 1) checking target at (3, 6): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 1) found no valid target. 
-[Critter Observer] Update: Critter at (3, 7), HP: 150
-Critter entered the exit at (3, 8)!
-[Critter Observer] Update: Critter at (3, 8), HP: 150
-Towers attempting to attack. Active towers: 2
-
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 6) checking target at (3, 8): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 135
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 120
-Burning effect applied: 5 damage for 3 seconds!
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 1) checking target at (3, 8): dx = 1, dy = 7, range = 3 -> In Range: 0
-Tower at (4, 1) found no valid target. 
+Tower at (6, 1) checking target at (4, 5): dx = 2, dy = 4, range = 3 -> In Range: 0
+Tower at (6, 1) found no valid target. 
 Critter removed from game.
 All critters defeated or escaped!.
-Invalid placement: Tower can only be placed on SCENERY cells!
-Invalid tower placement!
-Tower's cost 150 gold!
-Map updated! Redrawing grid...
-Tower successfully placed at (2, 7)
-Tower's range of 4!
-Tower placed at (7, 2) with range: 4.
 Player is ready! Critters will spawn one by one.
 
-Entry Point: (5, 0)
+Entry Point: (4, 0)
 
 Full Path: 
-(5, 0) 
-(5, 1) 
+(4, 0) 
+(4, 1) 
+(4, 2) 
 (5, 2) 
-(5, 3) 
-(4, 3) 
-(3, 3) 
-(3, 4) 
-(3, 5) 
+(6, 2) 
+(6, 3) 
+(6, 4) 
+(5, 4) 
+(4, 4) 
+(4, 5) 
+(4, 6) 
 (3, 6) 
 (3, 7) 
 (3, 8) 
+(4, 8) 
+(5, 8) 
+(5, 9) 
 
 
-First Path Cell: (5, 0)
+First Path Cell: (4, 0)
 Entry matches first path cell. Spawning correctly.
 Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) found no valid target. 
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) found no valid target. 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 180
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 165
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) found no valid target. 
-Towers attempting to attack. Active towers: 3
-
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) found no valid target. 
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 150
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 135
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) found no valid target. 
-[Critter Observer] Update: Critter at (5, 0), HP: 135
-Towers attempting to attack. Active towers: 3
-
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) found no valid target. 
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 120
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 105
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) found no valid target. 
-[Critter Observer] Update: Critter at (5, 1), HP: 105
-[Critter Observer] Update: Critter at (5, 0), HP: 130
-Towers attempting to attack. Active towers: 3
-
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 6) checking target at (5, 1): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) found no valid target. 
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 1) checking target at (5, 1): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 90
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 75
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (5, 1): dx = 3, dy = 6, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) found no valid target. 
-[Critter Observer] Update: Critter at (5, 2), HP: 75
-[Critter Observer] Update: Critter at (5, 1), HP: 130
-[Critter Observer] Update: Critter at (5, 0), HP: 195
-Towers attempting to attack. Active towers: 3
-
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 6) checking target at (5, 2): dx = 1, dy = 4, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 1): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) found no valid target. 
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 1): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 115
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 100
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (5, 2): dx = 3, dy = 5, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 1): dx = 3, dy = 6, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) found no valid target. 
-[Critter Observer] Update: Critter at (5, 3), HP: 75
-[Critter Observer] Update: Critter at (5, 2), HP: 100
-[Critter Observer] Update: Critter at (5, 1), HP: 195
-[Critter Observer] Update: Critter at (5, 0), HP: 195
-Towers attempting to attack. Active towers: 3
-
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 6) checking target at (5, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 2): dx = 1, dy = 4, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 1): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 60
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 45
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 115
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 100
 Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (5, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 1): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 180
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 165
-Tower's range of 4!
-Tower range : 4
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 85
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 70
+Towers attempting to attack. Active towers: 3
 
-Tower at (2, 7) checking target at (5, 3): dx = 3, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (5, 2): dx = 3, dy = 5, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 1): dx = 3, dy = 6, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) is attacking. 
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 30
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 15
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) found no valid target. 
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 55
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 40
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 25
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 10
+[Critter Observer] Update: Critter at (4, 0), HP: 10
+Towers attempting to attack. Active towers: 3
+
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) found no valid target. 
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 0
 Critter died!
 Critter removed from game.
-[Critter Observer] Update: Critter at (5, 3), HP: 100
-[Critter Observer] Update: Critter at (5, 2), HP: 165
-[Critter Observer] Update: Critter at (5, 1), HP: 195
-[Critter Observer] Update: Critter at (5, 0), HP: 195
-[Critter Observer] Update: Critter at (5, 0), HP: 195
+[Critter Observer] Update: Critter at (4, 0), HP: 130
+[Critter Observer] Update: Critter at (4, 0), HP: 195
 Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (5, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 2): dx = 1, dy = 4, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 1): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 85
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 70
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) found no valid target. 
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 115
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 100
 Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (5, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 1): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 180
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 165
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (5, 3): dx = 3, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (5, 2): dx = 3, dy = 5, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 1): dx = 3, dy = 6, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) is attacking. 
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 55
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 40
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 25
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 85
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 70
+[Critter Observer] Update: Critter at (4, 1), HP: 70
+[Critter Observer] Update: Critter at (4, 1), HP: 195
+[Critter Observer] Update: Critter at (4, 0), HP: 195
 Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (5, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 2): dx = 1, dy = 4, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 1): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 10
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 0
-Critter died!
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 55
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 40
 Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (5, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 1): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 150
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 135
-Tower's range of 4!
-Tower range : 4
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 25
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 10
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
 
-Tower at (2, 7) checking target at (5, 3): dx = 3, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (5, 2): dx = 3, dy = 5, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 1): dx = 3, dy = 6, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) is attacking. 
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 0
 Critter died!
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
-Critter died!
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 0
 Critter died!
 Critter removed from game.
-[Critter Observer] Update: Critter at (5, 3), HP: 165
+[Critter Observer] Update: Critter at (4, 2), HP: 195
+[Critter Observer] Update: Critter at (4, 1), HP: 195
+[Critter Observer] Update: Critter at (4, 0), HP: 130
+[Critter Observer] Update: Critter at (4, 0), HP: 130
+Towers attempting to attack. Active towers: 3
+
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 4) checking target at (4, 2): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 180
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 165
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (4, 2): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 150
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 135
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (4, 2): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 180
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 165
 [Critter Observer] Update: Critter at (5, 2), HP: 135
-[Critter Observer] Update: Critter at (5, 1), HP: 195
-[Critter Observer] Update: Critter at (5, 1), HP: 195
-[Critter Observer] Update: Critter at (5, 2), HP: 195
+[Critter Observer] Update: Critter at (4, 2), HP: 165
+[Critter Observer] Update: Critter at (4, 1), HP: 130
+[Critter Observer] Update: Critter at (4, 1), HP: 130
 Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (5, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 2): dx = 1, dy = 4, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 1): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 2): dx = 1, dy = 4, range = 3 -> In Range: 0
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 150
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 135
+Tower at (3, 4) checking target at (5, 2): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 2): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 150
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 135
 Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (5, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 1): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 180
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 165
-Tower's range of 4!
-Tower range : 4
+Tower at (3, 2) checking target at (5, 2): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 2): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 120
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 105
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
 
-Tower at (2, 7) checking target at (5, 3): dx = 3, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (5, 2): dx = 3, dy = 5, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 1): dx = 3, dy = 6, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 2): dx = 3, dy = 5, range = 4 -> In Range: 0
-Tower at (2, 7) is attacking. 
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 120
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 105
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 90
-[Critter Observer] Update: Critter at (4, 3), HP: 90
-[Critter Observer] Update: Critter at (5, 3), HP: 135
-[Critter Observer] Update: Critter at (5, 2), HP: 165
-[Critter Observer] Update: Critter at (5, 3), HP: 195
-[Critter Observer] Update: Critter at (4, 3), HP: 195
+Tower at (6, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 2): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 120
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 105
+[Critter Observer] Update: Critter at (6, 2), HP: 105
+[Critter Observer] Update: Critter at (5, 2), HP: 105
+[Critter Observer] Update: Critter at (4, 2), HP: 130
+[Critter Observer] Update: Critter at (4, 2), HP: 130
 Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (4, 3): dx = 0, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 2): dx = 1, dy = 4, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (4, 3): dx = 0, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 75
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 60
+Tower at (3, 4) checking target at (6, 2): dx = 3, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (5, 2): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 2): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 2): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 115
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 100
 Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (4, 3): dx = 0, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (4, 3): dx = 0, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 150
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 135
-Tower's range of 4!
-Tower range : 4
+Tower at (3, 2) checking target at (6, 2): dx = 3, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (5, 2): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 2): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 2): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 85
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 70
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
 
-Tower at (2, 7) checking target at (4, 3): dx = 2, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (5, 3): dx = 3, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (5, 2): dx = 3, dy = 5, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (4, 3): dx = 2, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) is attacking. 
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 45
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 30
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 15
-[Critter Observer] Update: Critter at (3, 3), HP: 15
-[Critter Observer] Update: Critter at (4, 3), HP: 135
-[Critter Observer] Update: Critter at (5, 3), HP: 135
-[Critter Observer] Update: Critter at (3, 3), HP: 195
-[Critter Observer] Update: Critter at (3, 4), HP: 195
+Tower at (6, 1) checking target at (6, 2): dx = 0, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 2): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 2): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 90
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 75
+[Critter Observer] Update: Critter at (6, 3), HP: 75
+[Critter Observer] Update: Critter at (6, 2), HP: 105
+[Critter Observer] Update: Critter at (5, 2), HP: 70
+[Critter Observer] Update: Critter at (5, 2), HP: 130
 Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (3, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (4, 3): dx = 0, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (3, 4): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 180
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 165
+Tower at (3, 4) checking target at (6, 3): dx = 3, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (6, 2): dx = 3, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (5, 2): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (5, 2): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 55
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 40
 Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (3, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (4, 3): dx = 0, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (3, 4): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 120
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 105
-Tower's range of 4!
-Tower range : 4
+Tower at (3, 2) checking target at (6, 3): dx = 3, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (6, 2): dx = 3, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (5, 2): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (5, 2): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 25
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 10
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
 
-Tower at (2, 7) checking target at (3, 3): dx = 1, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (4, 3): dx = 2, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (5, 3): dx = 3, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (3, 4): dx = 1, dy = 3, range = 4 -> In Range: 1
-Tower at (2, 7) is attacking. 
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
+Tower at (6, 1) checking target at (6, 3): dx = 0, dy = 2, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (6, 2): dx = 0, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 90
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 75
+Towers attempting to attack. Active towers: 3
+
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 4) checking target at (6, 3): dx = 3, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (6, 2): dx = 3, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (5, 2): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (5, 2): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 0
 Critter died!
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 0
 Critter died!
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (6, 3): dx = 3, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (6, 2): dx = 3, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (5, 2): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (5, 2): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (6, 3): dx = 0, dy = 2, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (6, 2): dx = 0, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 60
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 45
+Critter removed from game.
+[Critter Observer] Update: Critter at (6, 4), HP: 75
+[Critter Observer] Update: Critter at (6, 3), HP: 45
+[Critter Observer] Update: Critter at (6, 2), HP: 130
+[Critter Observer] Update: Critter at (6, 3), HP: 130
+Towers attempting to attack. Active towers: 3
+
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 4) checking target at (6, 4): dx = 3, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (6, 3): dx = 3, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (6, 3): dx = 3, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 60
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 45
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (6, 4): dx = 3, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (6, 3): dx = 3, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (6, 3): dx = 3, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 30
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 15
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (6, 4): dx = 0, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (6, 3): dx = 0, dy = 2, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (6, 3): dx = 0, dy = 2, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 0
 Critter died!
 Critter removed from game.
-[Critter Observer] Update: Critter at (3, 3), HP: 105
-[Critter Observer] Update: Critter at (4, 3), HP: 135
-[Critter Observer] Update: Critter at (3, 5), HP: 165
-[Critter Observer] Update: Critter at (3, 6), HP: 165
-[Critter Observer] Update: Critter at (3, 7), HP: 165
+[Critter Observer] Update: Critter at (5, 4), HP: 45
+[Critter Observer] Update: Critter at (6, 4), HP: 130
+[Critter Observer] Update: Critter at (5, 4), HP: 130
+[Critter Observer] Update: Critter at (4, 4), HP: 130
 Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (3, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (4, 3): dx = 0, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (3, 7): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 150
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 135
+Tower at (3, 4) checking target at (5, 4): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 4): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 115
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 100
 Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (3, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (4, 3): dx = 0, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (3, 7): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 120
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 105
-Tower's range of 4!
-Tower range : 4
+Tower at (3, 2) checking target at (5, 4): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 4): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 85
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 70
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
 
-Tower at (2, 7) checking target at (3, 3): dx = 1, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (4, 3): dx = 2, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (3, 7): dx = 1, dy = 0, range = 4 -> In Range: 1
-Tower at (2, 7) is attacking. 
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 90
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 75
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 60
-[Critter Observer] Update: Critter at (3, 4), HP: 60
-[Critter Observer] Update: Critter at (3, 3), HP: 105
-Critter entered the exit at (3, 8)!
-[Critter Observer] Update: Critter at (3, 8), HP: 135
+Tower at (6, 1) checking target at (5, 4): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 4): dx = 2, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 30
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 15
+[Critter Observer] Update: Critter at (4, 4), HP: 15
+[Critter Observer] Update: Critter at (4, 5), HP: 70
+[Critter Observer] Update: Critter at (4, 6), HP: 70
+[Critter Observer] Update: Critter at (3, 6), HP: 70
 Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (3, 4): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (3, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (3, 8): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 45
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 30
-Burning effect applied: 5 damage for 3 seconds!
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 1) checking target at (3, 4): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (3, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (3, 8): dx = 1, dy = 7, range = 3 -> In Range: 0
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 90
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 75
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (3, 4): dx = 1, dy = 3, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (3, 3): dx = 1, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (3, 8): dx = 1, dy = 1, range = 4 -> In Range: 1
-Tower at (2, 7) is attacking. 
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 15
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
+Tower at (3, 4) checking target at (4, 4): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (3, 6): dx = 0, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 0
 Critter died!
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (4, 4): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (3, 6): dx = 0, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (4, 4): dx = 2, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (3, 6): dx = 3, dy = 5, range = 3 -> In Range: 0
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 0
 Critter died!
 Critter removed from game.
-Critter removed from game.
+[Critter Observer] Update: Critter at (3, 7), HP: 70
+[Critter Observer] Update: Critter at (3, 8), HP: 70
+[Critter Observer] Update: Critter at (4, 8), HP: 70
+[Critter Observer] Update: Critter at (5, 8), HP: 70
 Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (3, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 60
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 45
-Burning effect applied: 5 damage for 3 seconds!
+Tower at (3, 4) checking target at (5, 8): dx = 2, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) found no valid target. 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (3, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 30
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 15
-Tower's range of 4!
-Tower range : 4
+Tower at (3, 2) checking target at (5, 8): dx = 2, dy = 6, range = 3 -> In Range: 0
+Tower at (3, 2) found no valid target. 
+Tower's range of 3!
+Tower range : 3
 
-Tower at (2, 7) checking target at (3, 3): dx = 1, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) is attacking. 
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
-Critter died!
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
-Critter died!
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
-Critter died!
+Tower at (6, 1) checking target at (5, 8): dx = 1, dy = 7, range = 3 -> In Range: 0
+Tower at (6, 1) found no valid target. 
+Critter entered the exit at (5, 9)!
+[Critter Observer] Update: Critter at (5, 9), HP: 70
+Towers attempting to attack. Active towers: 3
+
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 4) checking target at (5, 9): dx = 2, dy = 5, range = 3 -> In Range: 0
+Tower at (3, 4) found no valid target. 
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (5, 9): dx = 2, dy = 7, range = 3 -> In Range: 0
+Tower at (3, 2) found no valid target. 
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (5, 9): dx = 1, dy = 8, range = 3 -> In Range: 0
+Tower at (6, 1) found no valid target. 
 Critter removed from game.
 All critters defeated or escaped!.
-Tower's cost 200 gold!
-Map updated! Redrawing grid...
-Tower successfully placed at (7, 5)
-Tower's range of 7!
-Tower placed at (5, 7) with range: 7.
-Invalid placement: Tower can only be placed on SCENERY cells!
-Invalid tower placement!
-Invalid placement: Tower can only be placed on SCENERY cells!
-Invalid tower placement!
-Tower's cost 200 gold!
-Tower's power 20
-Tower's range of 7!
-Tower's level 1!
-Tower's cost 200 gold!
-Map updated! Redrawing grid...
-Tower successfully placed at (2, 4)
-Tower's range of 7!
-Tower placed at (4, 2) with range: 7.
 Player is ready! Critters will spawn one by one.
 
-Entry Point: (5, 0)
+Entry Point: (4, 0)
 
 Full Path: 
-(5, 0) 
-(5, 1) 
+(4, 0) 
+(4, 1) 
+(4, 2) 
 (5, 2) 
-(5, 3) 
-(4, 3) 
-(3, 3) 
-(3, 4) 
-(3, 5) 
+(6, 2) 
+(6, 3) 
+(6, 4) 
+(5, 4) 
+(4, 4) 
+(4, 5) 
+(4, 6) 
 (3, 6) 
 (3, 7) 
 (3, 8) 
+(4, 8) 
+(5, 8) 
+(5, 9) 
 
 
-First Path Cell: (5, 0)
+First Path Cell: (4, 0)
 Entry matches first path cell. Spawning correctly.
-Towers attempting to attack. Active towers: 5
+Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) found no valid target. 
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) found no valid target. 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 195
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 180
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) found no valid target. 
-Tower's range of 7!
-Tower range : 7
-
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) is attacking. 
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 160
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 140
-Tower's range of 7!
-Tower range : 7
-
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) is attacking. 
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 120
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 100
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 125
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 110
 Burning effect applied: 5 damage for 3 seconds!
-Towers attempting to attack. Active towers: 5
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 95
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 80
+Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) found no valid target. 
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) found no valid target. 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 85
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 70
-Tower's range of 4!
-Tower range : 4
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 65
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 50
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
 
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) found no valid target. 
-Tower's range of 7!
-Tower range : 7
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 35
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 20
+[Critter Observer] Update: Critter at (4, 0), HP: 20
+Towers attempting to attack. Active towers: 3
 
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) is attacking. 
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 50
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 30
-Tower's range of 7!
-Tower range : 7
+Tower's range of 3!
+Tower range : 3
 
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) is attacking. 
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 10
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) found no valid target. 
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 5
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 0
 Critter died!
 Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 0
+Critter died!
 Critter removed from game.
-[Critter Observer] Update: Critter at (5, 0), HP: 140
-Towers attempting to attack. Active towers: 5
+[Critter Observer] Update: Critter at (4, 0), HP: 210
+[Critter Observer] Update: Critter at (4, 0), HP: 210
+Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) found no valid target. 
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) found no valid target. 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 125
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 110
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) found no valid target. 
-Tower's range of 7!
-Tower range : 7
-
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) is attacking. 
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 190
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 170
-Tower's range of 7!
-Tower range : 7
-
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) is attacking. 
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 150
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 130
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 195
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 180
 Burning effect applied: 5 damage for 3 seconds!
-[Critter Observer] Update: Critter at (5, 1), HP: 110
-[Critter Observer] Update: Critter at (5, 0), HP: 140
-Towers attempting to attack. Active towers: 5
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 165
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 150
+[Critter Observer] Update: Critter at (4, 1), HP: 150
+[Critter Observer] Update: Critter at (4, 1), HP: 210
+[Critter Observer] Update: Critter at (4, 0), HP: 140
+Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (5, 1): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) found no valid target. 
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 1) checking target at (5, 1): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 95
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 80
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (5, 1): dx = 3, dy = 6, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) found no valid target. 
-Tower's range of 7!
-Tower range : 7
-
-Tower at (7, 5) checking target at (5, 1): dx = 2, dy = 4, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) is attacking. 
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 110
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 90
-Tower's range of 7!
-Tower range : 7
-
-Tower at (2, 4) checking target at (5, 1): dx = 3, dy = 3, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) is attacking. 
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 70
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 50
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 135
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 120
 Burning effect applied: 5 damage for 3 seconds!
-[Critter Observer] Update: Critter at (5, 2), HP: 80
-[Critter Observer] Update: Critter at (5, 1), HP: 140
-[Critter Observer] Update: Critter at (5, 0), HP: 50
-Towers attempting to attack. Active towers: 5
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 105
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 90
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 75
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 60
+[Critter Observer] Update: Critter at (4, 2), HP: 60
+[Critter Observer] Update: Critter at (4, 2), HP: 210
+[Critter Observer] Update: Critter at (4, 1), HP: 140
+[Critter Observer] Update: Critter at (4, 0), HP: 210
+Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (5, 2): dx = 1, dy = 4, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 1): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) found no valid target. 
+Tower at (3, 4) checking target at (4, 2): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 2): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 45
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 30
+Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 1): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 125
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 110
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (5, 2): dx = 3, dy = 5, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 1): dx = 3, dy = 6, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) found no valid target. 
-Tower's range of 7!
-Tower range : 7
-
-Tower at (7, 5) checking target at (5, 2): dx = 2, dy = 3, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 1): dx = 2, dy = 4, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) is attacking. 
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 30
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 10
-Tower's range of 7!
-Tower range : 7
-
-Tower at (2, 4) checking target at (5, 2): dx = 3, dy = 2, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 1): dx = 3, dy = 3, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) is attacking. 
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 0
-Critter died!
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 0
+Tower at (3, 2) checking target at (4, 2): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 2): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 15
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 0
 Critter died!
 Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (4, 2): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 2): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 125
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 110
 Critter removed from game.
-[Critter Observer] Update: Critter at (5, 3), HP: 80
-[Critter Observer] Update: Critter at (5, 2), HP: 110
-[Critter Observer] Update: Critter at (5, 0), HP: 210
-[Critter Observer] Update: Critter at (5, 0), HP: 210
-Towers attempting to attack. Active towers: 5
-
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 6) checking target at (5, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 2): dx = 1, dy = 4, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 65
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 50
-Burning effect applied: 5 damage for 3 seconds!
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 1) checking target at (5, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 95
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 80
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (5, 3): dx = 3, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (5, 2): dx = 3, dy = 5, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) is attacking. 
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 35
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 20
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 5
-Tower's range of 7!
-Tower range : 7
-
-Tower at (7, 5) checking target at (5, 3): dx = 2, dy = 2, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 2): dx = 2, dy = 3, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) is attacking. 
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 190
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 170
-Tower's range of 7!
-Tower range : 7
-
-Tower at (2, 4) checking target at (5, 3): dx = 3, dy = 1, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 2): dx = 3, dy = 2, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) is attacking. 
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 150
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 130
-Burning effect applied: 5 damage for 3 seconds!
-[Critter Observer] Update: Critter at (4, 3), HP: 5
-[Critter Observer] Update: Critter at (5, 3), HP: 80
-[Critter Observer] Update: Critter at (5, 1), HP: 130
-[Critter Observer] Update: Critter at (5, 1), HP: 210
-[Critter Observer] Update: Critter at (5, 0), HP: 210
-Towers attempting to attack. Active towers: 5
-
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 6) checking target at (4, 3): dx = 0, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 1): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 1): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 0
-Critter died!
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 0
-Critter died!
-Burning effect applied: 5 damage for 3 seconds!
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 1) checking target at (4, 3): dx = 0, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 1): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 1): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 115
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 100
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (4, 3): dx = 2, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (5, 3): dx = 3, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (5, 1): dx = 3, dy = 6, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 1): dx = 3, dy = 6, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) is attacking. 
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
-Critter died!
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
-Critter died!
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
-Critter died!
-Tower's range of 7!
-Tower range : 7
-
-Tower at (7, 5) checking target at (4, 3): dx = 3, dy = 2, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 3): dx = 2, dy = 2, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 1): dx = 2, dy = 4, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 1): dx = 2, dy = 4, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) is attacking. 
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 80
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 60
-Tower's range of 7!
-Tower range : 7
-
-Tower at (2, 4) checking target at (4, 3): dx = 2, dy = 1, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 3): dx = 3, dy = 1, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 1): dx = 3, dy = 3, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 1): dx = 3, dy = 3, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) is attacking. 
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 40
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 20
-Burning effect applied: 5 damage for 3 seconds!
-Critter removed from game.
-Towers attempting to attack. Active towers: 5
-
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 6) checking target at (5, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 1): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 1): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 0): dx = 1, dy = 6, range = 3 -> In Range: 0
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 65
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 50
-Burning effect applied: 5 damage for 3 seconds!
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 1) checking target at (5, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 1): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 1): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 0): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 5
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 0
-Critter died!
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (5, 3): dx = 3, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (5, 1): dx = 3, dy = 6, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 1): dx = 3, dy = 6, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 0): dx = 3, dy = 7, range = 4 -> In Range: 0
-Tower at (2, 7) is attacking. 
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 35
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 20
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 5
-Tower's range of 7!
-Tower range : 7
-
-Tower at (7, 5) checking target at (5, 3): dx = 2, dy = 2, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 1): dx = 2, dy = 4, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 1): dx = 2, dy = 4, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 0): dx = 2, dy = 5, range = 7 -> In Range: 1
-Tower at (7, 5) is attacking. 
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 0
-Critter died!
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 0
-Critter died!
-Tower's range of 7!
-Tower range : 7
-
-Tower at (2, 4) checking target at (5, 3): dx = 3, dy = 1, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 1): dx = 3, dy = 3, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 1): dx = 3, dy = 3, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 0): dx = 3, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) is attacking. 
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 0
-Critter died!
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 0
-Critter died!
-Burning effect applied: 5 damage for 3 seconds!
-Critter removed from game.
-[Critter Observer] Update: Critter at (4, 3), HP: 5
 [Critter Observer] Update: Critter at (5, 2), HP: 210
-[Critter Observer] Update: Critter at (5, 1), HP: 210
-[Critter Observer] Update: Critter at (5, 0), HP: 140
-[Critter Observer] Update: Critter at (5, 1), HP: 140
+[Critter Observer] Update: Critter at (4, 2), HP: 110
+[Critter Observer] Update: Critter at (4, 1), HP: 210
+[Critter Observer] Update: Critter at (4, 0), HP: 140
+[Critter Observer] Update: Critter at (4, 0), HP: 140
+[Critter Observer] Update: Critter at (4, 0), HP: 140
+Towers attempting to attack. Active towers: 3
+
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 4) checking target at (5, 2): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 2): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) checking target at (4, 0): dx = 1, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 95
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 80
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (5, 2): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 2): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 0): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 65
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 50
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 2): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 0): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 195
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 180
+[Critter Observer] Update: Critter at (6, 2), HP: 180
+[Critter Observer] Update: Critter at (5, 2), HP: 50
+[Critter Observer] Update: Critter at (4, 2), HP: 210
+[Critter Observer] Update: Critter at (4, 1), HP: 140
+[Critter Observer] Update: Critter at (4, 1), HP: 140
+[Critter Observer] Update: Critter at (4, 1), HP: 140
+Towers attempting to attack. Active towers: 3
+
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 4) checking target at (6, 2): dx = 3, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (5, 2): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 2): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 195
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 180
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (6, 2): dx = 3, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (5, 2): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 2): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 165
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 150
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (6, 2): dx = 0, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 2): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 165
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 150
+Towers attempting to attack. Active towers: 3
+
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 4) checking target at (6, 2): dx = 3, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (5, 2): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 2): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 1): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 135
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 120
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (6, 2): dx = 3, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (5, 2): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 2): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 1): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 105
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 90
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (6, 2): dx = 0, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 2): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 1): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 135
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 120
+[Critter Observer] Update: Critter at (6, 3), HP: 120
+[Critter Observer] Update: Critter at (6, 2), HP: 50
+[Critter Observer] Update: Critter at (5, 2), HP: 90
+[Critter Observer] Update: Critter at (4, 2), HP: 140
+[Critter Observer] Update: Critter at (4, 2), HP: 140
+[Critter Observer] Update: Critter at (4, 2), HP: 140
+Towers attempting to attack. Active towers: 3
+
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 4) checking target at (6, 3): dx = 3, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (6, 2): dx = 3, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (5, 2): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 2): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 2): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 2): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 125
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 110
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (6, 3): dx = 3, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (6, 2): dx = 3, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (5, 2): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 2): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 2): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 2): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 95
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 80
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (6, 3): dx = 0, dy = 2, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (6, 2): dx = 0, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 2): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 2): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 2): dx = 2, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 35
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 20
+[Critter Observer] Update: Critter at (6, 4), HP: 120
+[Critter Observer] Update: Critter at (6, 3), HP: 20
+[Critter Observer] Update: Critter at (6, 2), HP: 90
+[Critter Observer] Update: Critter at (5, 2), HP: 80
 [Critter Observer] Update: Critter at (5, 2), HP: 140
-Towers attempting to attack. Active towers: 5
+[Critter Observer] Update: Critter at (5, 2), HP: 140
+Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (4, 3): dx = 0, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 2): dx = 1, dy = 4, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 1): dx = 1, dy = 5, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (5, 2): dx = 1, dy = 4, range = 3 -> In Range: 0
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 0
-Critter died!
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 0
-Critter died!
+Tower at (3, 4) checking target at (6, 4): dx = 3, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (6, 3): dx = 3, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (6, 2): dx = 3, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (5, 2): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (5, 2): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (5, 2): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 65
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 50
 Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (4, 3): dx = 0, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 1): dx = 1, dy = 0, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 195
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 180
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (4, 3): dx = 2, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (5, 2): dx = 3, dy = 5, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 1): dx = 3, dy = 6, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (5, 2): dx = 3, dy = 5, range = 4 -> In Range: 0
-Tower at (2, 7) is attacking. 
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
-Critter died!
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
-Critter died!
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
-Critter died!
-Tower's range of 7!
-Tower range : 7
-
-Tower at (7, 5) checking target at (4, 3): dx = 3, dy = 2, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 2): dx = 2, dy = 3, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 1): dx = 2, dy = 4, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 2): dx = 2, dy = 3, range = 7 -> In Range: 1
-Tower at (7, 5) is attacking. 
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 190
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 170
-Tower's range of 7!
-Tower range : 7
-
-Tower at (2, 4) checking target at (4, 3): dx = 2, dy = 1, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 2): dx = 3, dy = 2, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 1): dx = 3, dy = 3, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 2): dx = 3, dy = 2, range = 7 -> In Range: 1
-Tower at (2, 4) is attacking. 
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 150
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 130
+Tower at (3, 2) checking target at (6, 4): dx = 3, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (6, 3): dx = 3, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (6, 2): dx = 3, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (5, 2): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (5, 2): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (5, 2): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 35
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 20
 Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (6, 4): dx = 0, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (6, 3): dx = 0, dy = 2, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (6, 2): dx = 0, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 75
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 60
+[Critter Observer] Update: Critter at (5, 4), HP: 120
+[Critter Observer] Update: Critter at (6, 4), HP: 20
+[Critter Observer] Update: Critter at (6, 3), HP: 60
+[Critter Observer] Update: Critter at (6, 2), HP: 20
+[Critter Observer] Update: Critter at (6, 2), HP: 140
+[Critter Observer] Update: Critter at (6, 2), HP: 140
+Towers attempting to attack. Active towers: 3
+
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 4) checking target at (5, 4): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (6, 4): dx = 3, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (6, 3): dx = 3, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (6, 2): dx = 3, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (6, 2): dx = 3, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (6, 2): dx = 3, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 105
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 90
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (5, 4): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (6, 4): dx = 3, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (6, 3): dx = 3, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (6, 2): dx = 3, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (6, 2): dx = 3, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (6, 2): dx = 3, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 75
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 60
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (5, 4): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (6, 4): dx = 0, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (6, 3): dx = 0, dy = 2, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (6, 2): dx = 0, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (6, 2): dx = 0, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (6, 2): dx = 0, dy = 1, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 5
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 0
+Critter died!
 Critter removed from game.
-[Critter Observer] Update: Critter at (5, 3), HP: 130
-[Critter Observer] Update: Critter at (5, 2), HP: 180
-[Critter Observer] Update: Critter at (5, 3), HP: 140
-[Critter Observer] Update: Critter at (4, 3), HP: 140
-[Critter Observer] Update: Critter at (3, 3), HP: 140
-[Critter Observer] Update: Critter at (3, 4), HP: 140
-Towers attempting to attack. Active towers: 5
+[Critter Observer] Update: Critter at (4, 4), HP: 60
+[Critter Observer] Update: Critter at (5, 4), HP: 20
+[Critter Observer] Update: Critter at (6, 4), HP: 60
+[Critter Observer] Update: Critter at (6, 3), HP: 140
+[Critter Observer] Update: Critter at (6, 3), HP: 140
+[Critter Observer] Update: Critter at (6, 4), HP: 140
+Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (5, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 2): dx = 1, dy = 4, range = 3 -> In Range: 0
-Tower at (4, 6) checking target at (3, 4): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 125
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 110
+Tower at (3, 4) checking target at (4, 4): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (5, 4): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (6, 4): dx = 3, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (6, 3): dx = 3, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (6, 4): dx = 3, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 45
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 30
 Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (5, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 2): dx = 1, dy = 1, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (3, 4): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 165
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 150
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (5, 3): dx = 3, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (5, 2): dx = 3, dy = 5, range = 4 -> In Range: 0
-Tower at (2, 7) checking target at (3, 4): dx = 1, dy = 3, range = 4 -> In Range: 1
-Tower at (2, 7) is attacking. 
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 95
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 80
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 65
-Tower's range of 7!
-Tower range : 7
-
-Tower at (7, 5) checking target at (5, 3): dx = 2, dy = 2, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 2): dx = 2, dy = 3, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (3, 4): dx = 4, dy = 1, range = 7 -> In Range: 1
-Tower at (7, 5) is attacking. 
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 110
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 90
-Tower's range of 7!
-Tower range : 7
-
-Tower at (2, 4) checking target at (5, 3): dx = 3, dy = 1, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 2): dx = 3, dy = 2, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (3, 4): dx = 1, dy = 0, range = 7 -> In Range: 1
-Tower at (2, 4) is attacking. 
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 70
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 50
-Burning effect applied: 5 damage for 3 seconds!
-[Critter Observer] Update: Critter at (4, 3), HP: 50
-[Critter Observer] Update: Critter at (5, 3), HP: 150
-[Critter Observer] Update: Critter at (3, 5), HP: 65
-[Critter Observer] Update: Critter at (3, 6), HP: 65
-[Critter Observer] Update: Critter at (3, 7), HP: 65
-Critter entered the exit at (3, 8)!
-[Critter Observer] Update: Critter at (3, 8), HP: 65
-Towers attempting to attack. Active towers: 5
-
-Tower's range of 3!
-Tower range : 3
-
-Tower at (4, 6) checking target at (4, 3): dx = 0, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (5, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) checking target at (3, 8): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 50
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 35
+Tower at (3, 2) checking target at (4, 4): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (5, 4): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (6, 4): dx = 3, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (6, 3): dx = 3, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (6, 4): dx = 3, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 15
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 0
+Critter died!
 Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (4, 3): dx = 0, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (5, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) checking target at (3, 8): dx = 1, dy = 7, range = 3 -> In Range: 0
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 35
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 20
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (4, 3): dx = 2, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (5, 3): dx = 3, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) checking target at (3, 8): dx = 1, dy = 1, range = 4 -> In Range: 1
-Tower at (2, 7) is attacking. 
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 20
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 5
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 0
-Critter died!
-Tower's range of 7!
-Tower range : 7
-
-Tower at (7, 5) checking target at (4, 3): dx = 3, dy = 2, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (5, 3): dx = 2, dy = 2, range = 7 -> In Range: 1
-Tower at (7, 5) checking target at (3, 8): dx = 4, dy = 3, range = 7 -> In Range: 1
-Tower at (7, 5) is attacking. 
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 0
-Critter died!
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 0
-Critter died!
-Tower's range of 7!
-Tower range : 7
-
-Tower at (2, 4) checking target at (4, 3): dx = 2, dy = 1, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (5, 3): dx = 3, dy = 1, range = 7 -> In Range: 1
-Tower at (2, 4) checking target at (3, 8): dx = 1, dy = 4, range = 7 -> In Range: 1
-Tower at (2, 4) is attacking. 
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 0
-Critter died!
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 0
-Critter died!
-Burning effect applied: 5 damage for 3 seconds!
+Tower at (6, 1) checking target at (4, 4): dx = 2, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (5, 4): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (6, 4): dx = 0, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (6, 3): dx = 0, dy = 2, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (6, 4): dx = 0, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 125
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 110
 Critter removed from game.
+[Critter Observer] Update: Critter at (4, 4), HP: 20
+[Critter Observer] Update: Critter at (5, 4), HP: 60
+[Critter Observer] Update: Critter at (6, 4), HP: 110
+[Critter Observer] Update: Critter at (5, 4), HP: 140
+[Critter Observer] Update: Critter at (4, 4), HP: 140
+[Critter Observer] Update: Critter at (4, 5), HP: 140
+Towers attempting to attack. Active towers: 3
+
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 4) checking target at (4, 4): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (5, 4): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (6, 4): dx = 3, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (4, 5): dx = 1, dy = 1, range = 3 -> In Range: 1
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 5
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (4, 4): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (5, 4): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (6, 4): dx = 3, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (4, 5): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (4, 4): dx = 2, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (5, 4): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (6, 4): dx = 0, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (4, 5): dx = 2, dy = 4, range = 3 -> In Range: 0
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 95
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 80
 Critter removed from game.
-[Critter Observer] Update: Critter at (4, 3), HP: 150
-[Critter Observer] Update: Critter at (3, 3), HP: 150
-Towers attempting to attack. Active towers: 5
+[Critter Observer] Update: Critter at (4, 4), HP: 60
+[Critter Observer] Update: Critter at (5, 4), HP: 80
+[Critter Observer] Update: Critter at (4, 6), HP: 140
+[Critter Observer] Update: Critter at (3, 6), HP: 140
+[Critter Observer] Update: Critter at (3, 7), HP: 140
+[Critter Observer] Update: Critter at (3, 8), HP: 140
+Towers attempting to attack. Active towers: 3
 
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 6) checking target at (3, 3): dx = 1, dy = 3, range = 3 -> In Range: 1
-Tower at (4, 6) is attacking. 
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 135
-Tower at (4, 6) attacked! Critter lost 15 HP, now at 120
+Tower at (3, 4) checking target at (4, 4): dx = 1, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (5, 4): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (3, 8): dx = 0, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 45
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 30
 Burning effect applied: 5 damage for 3 seconds!
 Tower's range of 3!
 Tower range : 3
 
-Tower at (4, 1) checking target at (3, 3): dx = 1, dy = 2, range = 3 -> In Range: 1
-Tower at (4, 1) is attacking. 
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 105
-Tower at (4, 1) attacked! Critter lost 15 HP, now at 90
-Tower's range of 4!
-Tower range : 4
-
-Tower at (2, 7) checking target at (3, 3): dx = 1, dy = 4, range = 4 -> In Range: 1
-Tower at (2, 7) is attacking. 
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 75
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 60
-Tower at (2, 7) attacked! Critter lost 15 HP, now at 45
-Tower's range of 7!
-Tower range : 7
-
-Tower at (7, 5) checking target at (3, 3): dx = 4, dy = 2, range = 7 -> In Range: 1
-Tower at (7, 5) is attacking. 
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 25
-Tower at (7, 5) attacked! Critter lost 20 HP, now at 5
-Tower's range of 7!
-Tower range : 7
-
-Tower at (2, 4) checking target at (3, 3): dx = 1, dy = 1, range = 7 -> In Range: 1
-Tower at (2, 4) is attacking. 
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 0
-Critter died!
-Tower at (2, 4) attacked! Critter lost 20 HP, now at 0
+Tower at (3, 2) checking target at (4, 4): dx = 1, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (5, 4): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (3, 8): dx = 0, dy = 6, range = 3 -> In Range: 0
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 15
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 0
 Critter died!
 Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (4, 4): dx = 2, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (5, 4): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (3, 8): dx = 3, dy = 7, range = 3 -> In Range: 0
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 65
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 50
+Critter removed from game.
+Towers attempting to attack. Active towers: 3
+
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 4) checking target at (5, 4): dx = 2, dy = 0, range = 3 -> In Range: 1
+Tower at (3, 4) checking target at (3, 8): dx = 0, dy = 4, range = 3 -> In Range: 0
+Tower at (3, 4) is attacking. 
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 35
+Tower at (3, 4) attacked! Critter lost 15 HP, now at 20
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (5, 4): dx = 2, dy = 2, range = 3 -> In Range: 1
+Tower at (3, 2) checking target at (3, 8): dx = 0, dy = 6, range = 3 -> In Range: 0
+Tower at (3, 2) is attacking. 
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 5
+Tower at (3, 2) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Burning effect applied: 5 damage for 3 seconds!
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (5, 4): dx = 1, dy = 3, range = 3 -> In Range: 1
+Tower at (6, 1) checking target at (3, 8): dx = 3, dy = 7, range = 3 -> In Range: 0
+Tower at (6, 1) is attacking. 
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Tower at (6, 1) attacked! Critter lost 15 HP, now at 0
+Critter died!
+Critter removed from game.
+[Critter Observer] Update: Critter at (4, 8), HP: 140
+[Critter Observer] Update: Critter at (5, 8), HP: 140
+Critter entered the exit at (5, 9)!
+[Critter Observer] Update: Critter at (5, 9), HP: 140
+Towers attempting to attack. Active towers: 3
+
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 4) checking target at (5, 9): dx = 2, dy = 5, range = 3 -> In Range: 0
+Tower at (3, 4) found no valid target. 
+Tower's range of 3!
+Tower range : 3
+
+Tower at (3, 2) checking target at (5, 9): dx = 2, dy = 7, range = 3 -> In Range: 0
+Tower at (3, 2) found no valid target. 
+Tower's range of 3!
+Tower range : 3
+
+Tower at (6, 1) checking target at (5, 9): dx = 1, dy = 8, range = 3 -> In Range: 0
+Tower at (6, 1) found no valid target. 
 Critter removed from game.
 All critters defeated or escaped!.
