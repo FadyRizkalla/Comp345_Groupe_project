@@ -4,21 +4,21 @@
 #include <iostream>
 #include <cctype>
 #include <optional>
-#include "map.h"
-#include "sfml_map_observer.h"
-#include "Player.h"
-#include "Tower.h"
+#include "./Map/map.h"
+#include "./Map/sfml_map_observer.h"
+#include "./Player/Player.h"
+#include "./Towers/Tower.h"
 #include <vector>
 #include <cstdlib>
 #include <ctime>
-#include "Goblin_Critter.h"
-#include "Ogre_Critter.h"
-#include "TowerView.h"
-#include "CritterView.h"
-#include "TargetingStrategy.h"
-#include "TowerDecorator.h"
+#include "./Critters/Goblin_Critter.h"
+#include "./Critters/Ogre_Critter.h"
+#include "./Towers/TowerView.h"
+#include "./Critters/CritterView.h"
+#include "./Towers/TargetingStrategy.h"
+#include "./Towers/TowerDecorator.h"
 #include <algorithm>
-#include "CritterFactory.h"
+#include "./Critters/CritterFactory.h"
 #include <fstream>
 
 
@@ -215,7 +215,7 @@ int main() {
 	crittersInEndZoneText.setPosition({10.f, 750.f});
 
     sf::Texture sceneryTexture;
-if (!sceneryTexture.loadFromFile("scenery.png")) {
+if (!sceneryTexture.loadFromFile("./Map/scenery.png")) {
     std::cerr << "Error loading scenery texture!" << std::endl;
     return -1;
 }
@@ -224,7 +224,7 @@ sf::Sprite scenerySprite(sceneryTexture);
 
 
 sf::Texture pathTexture;
-if (!pathTexture.loadFromFile("path.png")) {
+if (!pathTexture.loadFromFile("./Map/path.png")) {
     std::cerr << "Error loading path texture!" << std::endl;
     return -1;
 }
@@ -232,7 +232,7 @@ if (!pathTexture.loadFromFile("path.png")) {
 sf::Sprite pathSprite(pathTexture);
 
 sf::Texture towerTexture;
-if (!towerTexture.loadFromFile("tower.png")) {
+if (!towerTexture.loadFromFile("./Towers/tower.png")) {
     std::cerr << "Error loading tower texture!" << std::endl;
     return -1;
 }
@@ -240,14 +240,14 @@ sf::Sprite towerSprite(towerTexture);
 
     // Load the Critter textures
 sf::Texture ogreTexture;
-    if (!ogreTexture.loadFromFile("ogre.png")) {
+    if (!ogreTexture.loadFromFile("./Critters/ogre.png")) {
         std::cerr << "Error loading ogre texture!" << std::endl;
         return -1;
     }
 sf::Sprite ogreSprite(ogreTexture);
 
 sf::Texture goblinTexture;
-    if (!goblinTexture.loadFromFile("goblin.png")) {
+    if (!goblinTexture.loadFromFile("./Critters/goblin.png")) {
         std::cerr << "Error loading goblin texture!" << std::endl;
         return -1;
     }

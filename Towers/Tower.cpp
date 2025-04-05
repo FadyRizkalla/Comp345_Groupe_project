@@ -4,11 +4,11 @@
 
 #include "Tower.h"
 #include "TowerObserver.h"
-#include "Critter.h"
+#include "./Critters/Critter.h"
 #include <iostream>
 #include <cmath>
-#include "Map.h"
-#include "Player.h"
+#include "./Map/Map.h"
+#include "./Player/Player.h"
 #include <algorithm>
 #include <fstream>
 

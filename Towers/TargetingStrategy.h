@@ -6,7 +6,7 @@
 #define TARGETING_STRATEGY_H
 
 #include <vector>
-#include "Critter.h"
+#include "./Critters/Critter.h"
 
 class Tower;
 

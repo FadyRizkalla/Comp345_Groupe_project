@@ -17,51 +17,51 @@ FetchContent_MakeAvailable(SFML)
 
 set(SOURCES
         main.cpp
-        Map.cpp
-        Player.cpp
-        Tower.cpp
-        ArcherTower.cpp
-        CrossbowTower.cpp
-        SniperTower.cpp
-        IceWall.cpp
-        TurretTower.cpp
-        Critter.cpp
-        Ogre_Critter.cpp
-        Goblin_Critter.cpp
-        map_observer.cpp
-        sfml_map_observer.cpp
-        TowerObserver.cpp
-        CritterObserver.cpp
-        CritterView.cpp
-        TargetingStrategy.cpp
-        TowerDecorator.cpp
-        Goblin_Critter.cpp
-        Ogre_Critter.cpp
-        CritterFactory.cpp
+        ./Map/Map.cpp
+        ./Player/Player.cpp
+        ./Towers/Tower.cpp
+        ./Towers/ArcherTower.cpp
+        ./Towers/CrossbowTower.cpp
+        ./Towers/SniperTower.cpp
+        ./Towers/IceWall.cpp
+        ./Towers/TurretTower.cpp
+        ./Critters/Critter.cpp
+        ./Critters/Ogre_Critter.cpp
+        ./Critters/Goblin_Critter.cpp
+        ./Map/map_observer.cpp
+        ./Map/sfml_map_observer.cpp
+        ./Towers/TowerObserver.cpp
+        ./Critters/CritterObserver.cpp
+        ./Critters/CritterView.cpp
+        ./Towers/TargetingStrategy.cpp
+        ./Towers/TowerDecorator.cpp
+        ./Critters/Goblin_Critter.cpp
+        ./Critters/Ogre_Critter.cpp
+        ./Critters/CritterFactory.cpp
 )
 
 set(HEADERS
-        Map.h
-        Player.h
-        Tower.h
-        ArcherTower.h
-        CrossbowTower.h
-        SniperTower.h
-        IceWall.h
-        TurretTower.h
-        Critter.h
-        Ogre_Critter.h
-        Goblin_Critter.h
-        map_observer.h
-        sfml_map_observer.h
-        TowerObserver.h
-        CritterObserver.h
-        CritterView.h
-        TargetingStrategy.h
-        TowerDecorator.h
-        Goblin_Critter.h
-        Ogre_Critter.h
-        CritterFactory.h
+        ./Map/Map.h
+        ./Player/Player.h
+        ./Towers/Tower.h
+        ./Towers/ArcherTower.h
+        ./Towers/CrossbowTower.h
+        ./Towers/SniperTower.h
+        ./Towers/IceWall.h
+        ./Towers/TurretTower.h
+        ./Critters/Critter.h
+        ./Critters/Ogre_Critter.h
+        ./Critters/Goblin_Critter.h
+        ./Map/map_observer.h
+        ./Map/sfml_map_observer.h
+        ./Towers/TowerObserver.h
+        ./Critters/CritterObserver.h
+        ./Critters/CritterView.h
+        ./Towers/TargetingStrategy.h
+        ./Towers/TowerDecorator.h
+        ./Critters/Goblin_Critter.h
+        ./Critters/Ogre_Critter.h
+        ./Critters/CritterFactory.h
 )
 
 add_executable(Comp345_Groupe_project ${SOURCES} ${HEADERS})

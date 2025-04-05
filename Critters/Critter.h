@@ -4,7 +4,7 @@
 #include <iostream>
 #include <vector>
 #include "CritterObserver.h"
-#include "map.h"
+#include "./Map/map.h"
 
 class CritterObserver;
 

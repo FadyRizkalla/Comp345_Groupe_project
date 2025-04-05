@@ -1,3 +1,0 @@
-Critter:
-public attributes
- {reward,hit point, strength, speed, level}

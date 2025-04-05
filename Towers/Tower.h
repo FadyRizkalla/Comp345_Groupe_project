@@ -1,10 +1,10 @@
 #ifndef TOWER_H
 #define TOWER_H
 
-#include "Player.h"
+#include "./Player/Player.h"
 #include <vector>
-#include "Map.h"
-#include "Critter.h"
+#include "./Map/Map.h"
+#include "./Critters/Critter.h"
 #include "TowerObserver.h"
 #include "TargetingStrategy.h"
 

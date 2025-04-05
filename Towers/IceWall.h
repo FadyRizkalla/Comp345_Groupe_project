@@ -5,7 +5,7 @@
 #ifndef ICEWALL_H
 #define ICEWALL_H
 #include "Tower.h"
-#include "Critter.h"
+#include "./Critters/Critter.h"
 
 
 

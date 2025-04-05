@@ -4,8 +4,8 @@
 
 #include "IceWall.h"
 #include "Tower.h"
-#include "Critter.h"
-#include "Player.h"
+#include "./Critters/Critter.h"
+#include "./Player/Player.h"
 #include <iostream>
 #include <fstream>
 
