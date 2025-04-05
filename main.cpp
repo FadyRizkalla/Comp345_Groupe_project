@@ -826,14 +826,17 @@ goblinSprite.setScale(
 
                 //critter drawing
 
-                float startX = (800 - (gridWidth * cellSize)) / 2;
-                float startY = (800 - (gridHeight * cellSize)) / 2 + 30;
+
 
                 for (int i = 0; i < critterSpawnIndex; i++) {
 
+                    float startX = (800 - (gridWidth * cellSize)) / 2;
+                    float startY = (500 - (gridHeight * cellSize)) / 2 + 30;
+                    float critterOffset = (cellSize - 20) / 2;
+
                     sf::Vector2f critterPosition(
-                        startX + critters[i]->getPosition().second * cellSize,
-                        startY + critters[i]->getPosition().first * cellSize
+                        startX + critters[i]->getPosition().second * cellSize + critterOffset,
+                        startY + critters[i]->getPosition().first * cellSize + critterOffset
 
                     );
 
